@@ -1,0 +1,5027 @@
+/* screen - budgeting-app */
+
+.budgeting-app {
+  background-color: var(--primarywhite);
+  height: 16965px;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.budgeting-app .overlap-group15 {
+  height: 480px;
+  left: 582px;
+  position: absolute;
+  top: 3760px;
+  width: 860px;
+}
+
+.budgeting-app .rectangle-251 {
+  display: block;
+  height: 480px;
+  left: 294px;
+  position: absolute;
+  top: 0;
+  width: 566px;
+  opacity: 0;
+}
+
+.budgeting-app .rectangle-251.animate-enter {
+  animation: animate-enter-frames 1.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+}
+
+@keyframes animate-enter-frames {
+  from{opacity: 0;
+}
+to{opacity: 1;
+}
+}
+
+.budgeting-app .text-16 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 300px;
+  width: 352px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-16.animate-enter38 {
+  animation: animate-enter38-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter38-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-18 {
+  left: 1px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 140px;
+  width: 351px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-18.animate-enter40 {
+  animation: animate-enter40-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter40-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .saly-32 {
+  height: 333px;
+  left: 525px;
+  position: absolute;
+  top: 75px;
+  /* transform: rotate(360deg); */
+  width: 333px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .saly-32.animate-enter81 {
+  animation: animate-enter81-frames 4.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter81-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .saly-32-1 {
+  height: 333px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  /* transform: rotate(-180deg); */
+  width: 333px;
+}
+
+.budgeting-app .overlap-group5 {
+  height: 602px;
+  left: 83px;
+  position: absolute;
+  top: 9920px;
+  width: 1355px;
+}
+
+.budgeting-app .rectangle-249 {
+  display: block;
+  height: 480px;
+  left: 573px;
+  position: absolute;
+  top: 40px;
+  width: 782px;
+  opacity: 0;
+}
+
+.budgeting-app .rectangle-249.animate-enter1 {
+  animation: animate-enter1-frames 1.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+}
+
+@keyframes animate-enter1-frames {
+  from{opacity: 0;
+}
+to{opacity: 1;
+}
+}
+
+.budgeting-app .text-22 {
+  left: 888px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 277px;
+  width: 236px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-22.animate-enter46 {
+  animation: animate-enter46-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter46-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .wireframes {
+  color: var(--primarywhite);
+  font-family: var(--font-family-avenir-roman);
+  font-size: var(--font-size-xxxl);
+  height: 55px;
+  left: 888px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 202px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .wireframes.animate-enter47 {
+  animation: animate-enter47-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter47-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .wireframe-open-2-1 {
+  display: block;
+  height: 602px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 926px;
+  opacity: 0;
+}
+
+.budgeting-app .wireframe-open-2-1.animate-enter63 {
+  animation: animate-enter63-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+}
+
+@keyframes animate-enter63-frames {
+  from{opacity: 0;
+}
+to{opacity: 1;
+}
+}
+
+.budgeting-app .overlap-group7 {
+  height: 1373px;
+  left: 161px;
+  position: absolute;
+  top: 15592px;
+  width: 1284px;
+}
+
+.budgeting-app .rectangle-250 {
+  display: block;
+  height: 1004px;
+  left: 536px;
+  position: absolute;
+  top: 369px;
+  width: 749px;
+  opacity: 0;
+}
+
+.budgeting-app .rectangle-250.animate-enter2 {
+  animation: animate-enter2-frames 1.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+}
+
+@keyframes animate-enter2-frames {
+  from{opacity: 0;
+}
+to{opacity: 1;
+}
+}
+
+.budgeting-app .text-30 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 867px;
+  width: 581px;
+}
+
+.budgeting-app .rectangle-248 {
+  background-color: var(--mist-gray);
+  filter: blur(150px);;
+  height: 580px;
+  left: 753px;
+  position: absolute;
+  top: 60px;
+  width: 283px;
+}
+
+.budgeting-app .giving-1 {
+  display: block;
+  height: 583px;
+  left: 696px;
+  position: absolute;
+  top: 0;
+  width: 290px;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+.budgeting-app .giving-1.animate-enter76 {
+  animation: animate-enter76-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+@keyframes animate-enter76-frames {
+  from{opacity: 0;
+transform: translate(25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group17 {
+  height: 551px;
+  left: 103px;
+  position: absolute;
+  top: 6360px;
+  width: 1230px;
+}
+
+.budgeting-app .kids-budgeting-or-case-study-1 {
+  display: block;
+  height: 535px;
+  left: 0;
+  position: absolute;
+  top: 16px;
+  width: 1230px;
+  opacity: 0;
+}
+
+.budgeting-app .kids-budgeting-or-case-study-1.animate-enter3 {
+  animation: animate-enter3-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+}
+
+@keyframes animate-enter3-frames {
+  from{opacity: 0;
+}
+to{opacity: 1;
+}
+}
+
+.budgeting-app .text-1 {
+  left: 12px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 467px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-1.animate-enter5 {
+  animation: animate-enter5-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter5-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group8 {
+  height: 766px;
+  left: -64px;
+  position: absolute;
+  top: 7745px;
+  width: 1398px;
+}
+
+.budgeting-app .frame-2 {
+  display: block;
+  height: 766px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1398px;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+.budgeting-app .frame-2.animate-enter4 {
+  animation: animate-enter4-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+@keyframes animate-enter4-frames {
+  from{opacity: 0;
+transform: translate(25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-3 {
+  left: 179px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 135px;
+  width: 350px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-3.animate-enter7 {
+  animation: animate-enter7-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter7-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .for-the-parents {
+  height: 33px;
+  left: 179px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 71px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .for-the-parents.animate-enter18 {
+  animation: animate-enter18-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter18-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .group {
+  align-items: flex-start;
+  display: flex;
+  height: 3px;
+  justify-content: center;
+  left: 550px;
+  position: absolute;
+  top: 7643px;
+}
+
+.budgeting-app .overlap-group19 {
+  align-items: flex-end;
+  background-image: url(../img/vector@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 4px;
+  justify-content: flex-end;
+  margin-top: -0.54px;
+  min-width: 5px;
+  padding: 1.3px 1.5px;
+}
+
+.budgeting-app .vector {
+  height: 2px;
+  width: 2px;
+}
+
+.budgeting-app .text-2 {
+  left: 115px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 7360px;
+  width: 350px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-2.animate-enter6 {
+  animation: animate-enter6-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter6-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group2 {
+  height: 942px;
+  left: 119px;
+  position: absolute;
+  top: 122px;
+  width: 1321px;
+}
+
+.budgeting-app .text-4 {
+  height: 57px;
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 79px;
+  width: 1027px;
+}
+
+.budgeting-app .span1 {
+  color: var(--main-text);
+  font-family: var(--font-family-avenir-regular);
+  font-size: var(--font-size-xs);
+}
+
+.budgeting-app .budget-open-1 {
+  height: 942px;
+  left: 571px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 750px;
+}
+
+.budgeting-app .overview {
+  height: 39px;
+  left: 115px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 1038px;
+  width: 89px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .overview.animate-enter8 {
+  animation: animate-enter8-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter8-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .my-role {
+  height: 55px;
+  left: 121px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 1680px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .my-role.animate-enter9 {
+  animation: animate-enter9-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter9-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group13 {
+  height: 115px;
+  left: 117px;
+  position: absolute;
+  top: 542px;
+  width: 369px;
+}
+
+.budgeting-app .kids-budgeting-app {
+  height: 55px;
+  left: 2px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .kids-budgeting-app.animate-enter10 {
+  animation: animate-enter10-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter10-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-5 {
+  height: 69px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 23.1px;
+  position: absolute;
+  top: 46px;
+  width: 326px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-5.animate-enter21 {
+  animation: animate-enter21-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter21-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .project-timeline {
+  height: 55px;
+  left: 119px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 2200px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .project-timeline.animate-enter11 {
+  animation: animate-enter11-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter11-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .user-research {
+  height: 55px;
+  left: 117px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 2640px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .user-research.animate-enter12 {
+  animation: animate-enter12-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter12-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .market-analysis {
+  height: 55px;
+  left: 117px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 3280px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .market-analysis.animate-enter13 {
+  animation: animate-enter13-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter13-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .user-insights {
+  height: 55px;
+  left: 118px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 3760px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .user-insights.animate-enter14 {
+  animation: animate-enter14-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter14-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .user-personas {
+  height: 55px;
+  left: 115px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 4320px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .user-personas.animate-enter15 {
+  animation: animate-enter15-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter15-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .site-map {
+  height: 55px;
+  left: 115px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 6280px;
+  width: 165px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .site-map.animate-enter16 {
+  animation: animate-enter16-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter16-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .for-the-kids {
+  height: 33px;
+  left: 115px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 7296px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .for-the-kids.animate-enter17 {
+  animation: animate-enter17-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter17-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group3 {
+  height: 118px;
+  left: 115px;
+  position: absolute;
+  top: 1294px;
+  width: 545px;
+}
+
+.budgeting-app .the-problem {
+  height: 42px;
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 118px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .the-problem.animate-enter19 {
+  animation: animate-enter19-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter19-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-7 {
+  height: 78px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 23.1px;
+  position: absolute;
+  top: 40px;
+  width: 545px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-7.animate-enter23 {
+  animation: animate-enter23-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter23-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group1 {
+  height: 156px;
+  left: 117px;
+  position: absolute;
+  top: 1440px;
+  width: 582px;
+}
+
+.budgeting-app .the-solution {
+  height: 45px;
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 116px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .the-solution.animate-enter20 {
+  animation: animate-enter20-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter20-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-14 {
+  height: 134px;
+  left: 1px;
+  letter-spacing: 0;
+  line-height: 23.1px;
+  position: absolute;
+  top: 22px;
+  width: 581px;
+}
+
+.budgeting-app .text-6 {
+  height: 187px;
+  left: 115px;
+  letter-spacing: 0;
+  line-height: 23.1px;
+  position: absolute;
+  top: 1093px;
+  width: 587px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-6.animate-enter22 {
+  animation: animate-enter22-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter22-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group {
+  height: 168px;
+  left: 118px;
+  position: absolute;
+  top: 2335px;
+  width: 545px;
+}
+
+.budgeting-app .number {
+  height: 137px;
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .number.animate-enter24 {
+  animation: animate-enter24-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter24-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-8 {
+  height: 137px;
+  left: 233px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-8.animate-enter25 {
+  animation: animate-enter25-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter25-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .surname {
+  height: 40px;
+  left: 1px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 128px;
+  width: 235px;
+}
+
+.budgeting-app .frames {
+  height: 40px;
+  left: 310px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 128px;
+  width: 235px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .frames.animate-enter26 {
+  animation: animate-enter26-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter26-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .line-4 {
+  display: block;
+  height: 160px;
+  left: 156px;
+  position: absolute;
+  top: 8px;
+  width: 2px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .line-4.animate-enter27 {
+  animation: animate-enter27-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter27-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group14 {
+  height: 323px;
+  left: 177px;
+  position: absolute;
+  top: 1758px;
+  width: 250px;
+}
+
+.budgeting-app .text-9 {
+  height: 81px;
+  left: 31px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 242px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-9.animate-enter28 {
+  animation: animate-enter28-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter28-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .saly-16 {
+  background-image: url(../img/saly-16@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 250px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 250px;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+.budgeting-app .saly-16.animate-enter59 {
+  animation: animate-enter59-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+@keyframes animate-enter59-frames {
+  from{opacity: 0;
+transform: translate(-25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-10 {
+  height: 135px;
+  left: 625px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 2007px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-10.animate-enter29 {
+  animation: animate-enter29-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter29-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-11 {
+  height: 81px;
+  left: 1090px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 2004px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-11.animate-enter30 {
+  animation: animate-enter30-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter30-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-12 {
+  height: 143px;
+  left: 117px;
+  letter-spacing: 0;
+  line-height: 23.1px;
+  position: absolute;
+  top: 3360px;
+  width: 279px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-12.animate-enter31 {
+  animation: animate-enter31-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter31-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group12 {
+  height: 167px;
+  left: 118px;
+  position: absolute;
+  top: 2720px;
+  width: 733px;
+}
+
+.budgeting-app .text-13 {
+  left: 0;
+  letter-spacing: 0;
+  line-height: 23.1px;
+  position: absolute;
+  top: 0;
+  width: 587px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-13.animate-enter32 {
+  animation: animate-enter32-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter32-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-31 {
+  height: 46px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 23.1px;
+  position: absolute;
+  top: 121px;
+  width: 351px;
+  opacity: 0;
+}
+
+.budgeting-app .text-31.animate-enter53 {
+  animation: animate-enter53-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+}
+
+@keyframes animate-enter53-frames {
+  from{opacity: 0;
+}
+to{opacity: 1;
+}
+}
+
+.budgeting-app .text-32 {
+  height: 46px;
+  left: 389px;
+  letter-spacing: 0;
+  line-height: 23.1px;
+  position: absolute;
+  top: 120px;
+  width: 344px;
+  opacity: 0;
+}
+
+.budgeting-app .text-32.animate-enter54 {
+  animation: animate-enter54-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+}
+
+@keyframes animate-enter54-frames {
+  from{opacity: 0;
+}
+to{opacity: 1;
+}
+}
+
+.budgeting-app .surname-1 {
+  height: 27px;
+  left: 118px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 3854px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .surname-1.animate-enter33 {
+  animation: animate-enter33-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter33-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .surname-2 {
+  height: 27px;
+  left: 118px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 4014px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .surname-2.animate-enter34 {
+  animation: animate-enter34-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter34-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .surname-3 {
+  height: 27px;
+  left: 583px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 3854px;
+  width: 151px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .surname-3.animate-enter35 {
+  animation: animate-enter35-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter35-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .surname-4 {
+  height: 27px;
+  left: 583px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 4014px;
+  width: 159px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .surname-4.animate-enter36 {
+  animation: animate-enter36-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter36-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-15 {
+  left: 118px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 3900px;
+  width: 351px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-15.animate-enter37 {
+  animation: animate-enter37-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter37-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-17 {
+  left: 118px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 4060px;
+  width: 351px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-17.animate-enter39 {
+  animation: animate-enter39-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter39-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group18 {
+  height: 680px;
+  left: 114px;
+  position: absolute;
+  top: 4400px;
+  width: 584px;
+}
+
+.budgeting-app .text-19 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 584px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-19.animate-enter41 {
+  animation: animate-enter41-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter41-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .frame-105 {
+  height: 637px;
+  left: 3px;
+  position: absolute;
+  top: 43px;
+  width: 465px;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+.budgeting-app .frame-105.animate-enter82 {
+  animation: animate-enter82-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+@keyframes animate-enter82-frames {
+  from{opacity: 0;
+transform: translate(-25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group19-1 {
+  height: 637px;
+  position: relative;
+}
+
+.budgeting-app .rectangle-252 {
+  height: 446px;
+  left: 116px;
+  position: absolute;
+  top: 0;
+  width: 313px;
+}
+
+.budgeting-app .rectangle-37 {
+  background-color: var(--shakespeare);
+  border-radius: 30px;
+  box-shadow: 0px 6px 6px #2f669033;
+  height: 199px;
+  left: 0;
+  position: absolute;
+  top: 438px;
+  width: 465px;
+}
+
+.budgeting-app .name {
+  left: 17px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 447px;
+  width: 257px;
+}
+
+.budgeting-app .environment {
+  height: 40px;
+  left: 18px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 477px;
+  width: 117px;
+}
+
+.budgeting-app .needs {
+  height: 40px;
+  left: 259px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 477px;
+  width: 73px;
+}
+
+.budgeting-app .group-12 {
+  height: 76px;
+  left: 116px;
+  position: absolute;
+  top: 527px;
+  width: 116px;
+}
+
+.budgeting-app .text-40 {
+  left: 18px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 521px;
+  width: 100px;
+}
+
+.budgeting-app .text-41 {
+  left: 259px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 517px;
+  width: 176px;
+}
+
+.budgeting-app .overlap-group10 {
+  height: 563px;
+  left: 82px;
+  position: absolute;
+  top: 8679px;
+  width: 939px;
+}
+
+.budgeting-app .text-20 {
+  left: 32px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 469px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-20.animate-enter42 {
+  animation: animate-enter42-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter42-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .image-28 {
+  display: block;
+  height: 512px;
+  left: 0;
+  position: absolute;
+  top: 51px;
+  width: 939px;
+  opacity: 0;
+}
+
+.budgeting-app .image-28.animate-enter64 {
+  animation: animate-enter64-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+}
+
+@keyframes animate-enter64-frames {
+  from{opacity: 0;
+}
+to{opacity: 1;
+}
+}
+
+.budgeting-app .user-flow {
+  height: 55px;
+  left: 114px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 8600px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .user-flow.animate-enter43 {
+  animation: animate-enter43-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter43-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .wireframe-sketches {
+  height: 33px;
+  left: 115px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 10852px;
+  width: 235px;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+.budgeting-app .wireframe-sketches.animate-enter44 {
+  animation: animate-enter44-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+@keyframes animate-enter44-frames {
+  from{opacity: 0;
+transform: translate(-25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group9 {
+  height: 376px;
+  left: -2px;
+  position: absolute;
+  top: 10908px;
+  width: 1440px;
+}
+
+.budgeting-app .text-21 {
+  height: 33px;
+  left: 121px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 343px;
+  width: 260px;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+.budgeting-app .text-21.animate-enter45 {
+  animation: animate-enter45-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+@keyframes animate-enter45-frames {
+  from{opacity: 0;
+transform: translate(-25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .frame-110 {
+  height: 360px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+.budgeting-app .frame-110.animate-enter80 {
+  animation: animate-enter80-frames 3.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+@keyframes animate-enter80-frames {
+  from{opacity: 0;
+transform: translate(25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .frame-16 {
+  height: 360px;
+  left: 1px;
+  position: absolute;
+  top: 0;
+  width: 482px;
+}
+
+.budgeting-app .overlap-group19-2 {
+  height: 360px;
+  left: 484px;
+  position: absolute;
+  top: 0;
+  width: 956px;
+}
+
+.budgeting-app .frame-17 {
+  height: 360px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 472px;
+}
+
+.budgeting-app .frame-16-1 {
+  height: 360px;
+  left: 460px;
+  position: absolute;
+  top: 0;
+  width: 496px;
+}
+
+.budgeting-app .style-guide {
+  height: 55px;
+  left: 117px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 11400px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .style-guide.animate-enter48 {
+  animation: animate-enter48-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter48-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .visual-design {
+  height: 55px;
+  left: 117px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 12032px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .visual-design.animate-enter49 {
+  animation: animate-enter49-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter49-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .dream-purchase {
+  height: 55px;
+  left: 187px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 14429px;
+  width: 294px;
+}
+
+.budgeting-app .surname-5 {
+  height: 55px;
+  left: 193px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 15152px;
+}
+
+.budgeting-app .giving-portal {
+  height: 55px;
+  left: 193px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 15865px;
+}
+
+.budgeting-app .wrap-up {
+  height: 55px;
+  left: 157px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 16379px;
+}
+
+.budgeting-app .image-16 {
+  height: 1px;
+  left: -311px;
+  object-fit: cover;
+  position: absolute;
+  top: 13294px;
+  width: 1px;
+}
+
+.budgeting-app .frame-44 {
+  height: 234px;
+  left: 117px;
+  position: absolute;
+  top: 11526px;
+  width: 466px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .frame-44.animate-enter51 {
+  animation: animate-enter51-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter51-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .group-5 {
+  height: 233px;
+  position: relative;
+  top: -4px;
+  width: 478px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .group-5.animate-enter50 {
+  animation: animate-enter50-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter50-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .helvetica-neue {
+  color: var(--main-text);
+  font-family: var(--font-family-helvetica_neue-regular);
+  font-size: var(--font-size-xxxl);
+  height: 48px;
+  left: 1px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+}
+
+.budgeting-app .surname-6 {
+  color: var(--main-text);
+  font-family: var(--font-family-helvetica_neue-bold);
+  font-size: 22px;
+  font-weight: 700;
+  height: 27px;
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 61px;
+}
+
+.budgeting-app .overlap-group19-3 {
+  height: 144px;
+  left: 0;
+  position: absolute;
+  top: 89px;
+  width: 468px;
+}
+
+.budgeting-app .text-23 {
+  color: var(--main-text);
+  font-family: var(--font-family-helvetica_neue-bold);
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  height: 46px;
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 368px;
+}
+
+.budgeting-app .text-24 {
+  color: var(--main-text);
+  font-family: var(--font-family-helvetica_neue-bold);
+  font-size: var(--font-size-s);
+  font-weight: 700;
+  height: 40px;
+  left: 1px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 43px;
+  width: 466px;
+}
+
+.budgeting-app .text-25 {
+  color: var(--main-text);
+  font-family: var(--font-family-helvetica_neue-regular);
+  font-size: 12px;
+  height: 40px;
+  left: 2px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 80px;
+  width: 466px;
+}
+
+.budgeting-app .text-thin-12pt {
+  color: var(--main-text);
+  font-family: var(--font-family-helvetica_neue-thin);
+  font-size: 12px;
+  font-weight: 100;
+  height: 40px;
+  left: 2px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 104px;
+  width: 466px;
+}
+
+.budgeting-app .text-26 {
+  left: 115px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 12112px;
+  width: 534px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-26.animate-enter52 {
+  animation: animate-enter52-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter52-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-27 {
+  left: 157px;
+  letter-spacing: -1.12px;
+  position: absolute;
+  top: 14509px;
+  width: 455px;
+}
+
+.budgeting-app .text-28 {
+  left: 187px;
+  letter-spacing: -1.12px;
+  position: absolute;
+  top: 15232px;
+  width: 431px;
+}
+
+.budgeting-app .text-29 {
+  color: #358597;
+  font-family: var(--font-family-avenir-book);
+  font-size: var(--font-size-m);
+  left: 193px;
+  letter-spacing: -1.12px;
+  position: absolute;
+  top: 15945px;
+  width: 425px;
+}
+
+.budgeting-app .image-25 {
+  height: 39px;
+  left: 157px;
+  object-fit: cover;
+  position: absolute;
+  top: 16793px;
+  width: 25px;
+}
+
+.budgeting-app .view-the-prototype {
+  color: var(--secondaryheader);
+  cursor: pointer;
+  font-family: var(--font-family-avenir-book);
+  font-size: var(--font-size-m);
+  left: 193px;
+  letter-spacing: 0;
+  position: absolute;
+  text-decoration: underline;
+  top: 16810px;
+}
+
+.budgeting-app .frame-106 {
+  height: 163px;
+  left: 118px;
+  position: absolute;
+  top: 2896px;
+  width: 175px;
+  opacity: 0;
+}
+
+.budgeting-app .frame-106.animate-enter56 {
+  animation: animate-enter56-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+}
+
+@keyframes animate-enter56-frames {
+  from{opacity: 0;
+}
+to{opacity: 1;
+}
+}
+
+.budgeting-app .group-15 {
+  height: 163px;
+  width: 177px;
+  opacity: 0;
+}
+
+.budgeting-app .group-15.animate-enter55 {
+  animation: animate-enter55-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+}
+
+@keyframes animate-enter55-frames {
+  from{opacity: 0;
+}
+to{opacity: 1;
+}
+}
+
+.budgeting-app .overlap-group19-4 {
+  height: 158px;
+  position: relative;
+  top: 5px;
+  width: 173px;
+}
+
+.budgeting-app .ellipse-1 {
+  height: 158px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 158px;
+}
+
+.budgeting-app .ellipse-2 {
+  height: 28px;
+  left: 93px;
+  position: absolute;
+  top: 54px;
+  width: 80px;
+}
+
+.budgeting-app .percent {
+  color: var(--primarywhite);
+  font-family: var(--font-family-avenir-roman);
+  font-size: var(--font-size-xxxl);
+  height: 50px;
+  left: 6px;
+  letter-spacing: 0;
+  line-height: 57.8px;
+  position: absolute;
+  text-align: center;
+  top: 23px;
+  white-space: nowrap;
+  width: 160px;
+}
+
+.budgeting-app .frame-107 {
+  height: 188px;
+  left: 508px;
+  position: absolute;
+  top: 2904px;
+  width: 407px;
+  opacity: 0;
+}
+
+.budgeting-app .frame-107.animate-enter58 {
+  animation: animate-enter58-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+}
+
+@keyframes animate-enter58-frames {
+  from{opacity: 0;
+}
+to{opacity: 1;
+}
+}
+
+.budgeting-app .group-7 {
+  height: 188px;
+  position: relative;
+  width: 419px;
+  opacity: 0;
+}
+
+.budgeting-app .group-7.animate-enter57 {
+  animation: animate-enter57-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+}
+
+@keyframes animate-enter57-frames {
+  from{opacity: 0;
+}
+to{opacity: 1;
+}
+}
+
+.budgeting-app .overlap-group21 {
+  align-items: flex-start;
+  background-color: var(--shakespeare);
+  display: flex;
+  height: 46px;
+  left: 0;
+  min-width: 317px;
+  padding: 0 8px;
+  position: absolute;
+  top: 0;
+}
+
+.budgeting-app .percent-1 {
+  height: 46px;
+  letter-spacing: 0;
+  width: 87px;
+}
+
+.budgeting-app .overlap-group19-5 {
+  align-items: flex-start;
+  background-color: var(--shakespeare);
+  display: flex;
+  height: 43px;
+  left: 0;
+  min-width: 124px;
+  padding: 0 8px;
+  position: absolute;
+  top: 72px;
+}
+
+.budgeting-app .percent-2 {
+  height: 43px;
+  letter-spacing: 0;
+  width: 87px;
+}
+
+.budgeting-app .overlap-group20 {
+  height: 47px;
+  left: 0;
+  position: absolute;
+  top: 141px;
+  width: 250px;
+}
+
+.budgeting-app .rectangle-244 {
+  background-color: var(--shakespeare);
+  height: 42px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 51px;
+}
+
+.budgeting-app .percent-3 {
+  height: 43px;
+  left: 8px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 87px;
+}
+
+.budgeting-app .text-33 {
+  height: 35px;
+  left: 60px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 12px;
+  width: 190px;
+}
+
+.budgeting-app .yes {
+  height: 35px;
+  left: 322px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 15px;
+  width: 87px;
+}
+
+.budgeting-app .place {
+  height: 35px;
+  left: 131px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 84px;
+  width: 87px;
+}
+
+.budgeting-app .saly-19 {
+  background-image: url(../img/1-1@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 237px;
+  left: 580px;
+  position: absolute;
+  top: 1723px;
+  width: 237px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .saly-19.animate-enter60 {
+  animation: animate-enter60-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter60-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .saly-10 {
+  background-image: url(../img/saly-10@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 237px;
+  left: 1032px;
+  position: absolute;
+  top: 1720px;
+  width: 237px;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+.budgeting-app .saly-10.animate-enter61 {
+  animation: animate-enter61-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+@keyframes animate-enter61-frames {
+  from{opacity: 0;
+transform: translate(25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .frame-1 {
+  display: block;
+  height: 631px;
+  left: 562px;
+  object-fit: cover;
+  position: absolute;
+  top: 6969px;
+  width: 862px;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+.budgeting-app .frame-1.animate-enter62 {
+  animation: animate-enter62-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+@keyframes animate-enter62-frames {
+  from{opacity: 0;
+transform: translate(25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .group-10 {
+  align-items: flex-start;
+  display: flex;
+  height: 505px;
+  left: 508px;
+  position: absolute;
+  top: 3160px;
+}
+
+.budgeting-app .overlap-group22 {
+  height: 505px;
+  position: relative;
+  width: 904px;
+}
+
+.budgeting-app .group-9 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 904px;
+}
+
+.budgeting-app .high-features {
+  height: 16px;
+  letter-spacing: 0;
+  line-height: 14.5px;
+  margin-right: 27.36px;
+  text-align: center;
+  white-space: nowrap;
+  width: 138px;
+}
+
+.budgeting-app .overlap-group19-6 {
+  height: 453px;
+  margin-right: 6.0px;
+  margin-top: 7px;
+  position: relative;
+  width: 898px;
+}
+
+.budgeting-app .group-8 {
+  align-items: flex-start;
+  display: flex;
+  height: 453px;
+  justify-content: flex-end;
+  left: 109px;
+  position: absolute;
+  top: 0;
+}
+
+.budgeting-app .overlap-group20-1 {
+  height: 454px;
+  margin-top: -0.25px;
+  position: relative;
+  width: 674px;
+}
+
+.budgeting-app .line-5 {
+  height: 454px;
+  left: 324px;
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+
+.budgeting-app .line-6 {
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 225px;
+  width: 674px;
+}
+
+.budgeting-app .high-usability {
+  height: 16px;
+  left: 760px;
+  letter-spacing: 0;
+  line-height: 14.5px;
+  position: absolute;
+  text-align: center;
+  top: 215px;
+  white-space: nowrap;
+  width: 138px;
+}
+
+.budgeting-app .low-usability {
+  height: 16px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 14.5px;
+  position: absolute;
+  text-align: center;
+  top: 211px;
+  white-space: nowrap;
+  width: 138px;
+}
+
+.budgeting-app .low-features {
+  height: 16px;
+  letter-spacing: 0;
+  line-height: 14.5px;
+  margin-right: 34.89px;
+  margin-top: 11px;
+  text-align: center;
+  white-space: nowrap;
+  width: 138px;
+}
+
+.budgeting-app .envelope-kid-1 {
+  height: 50px;
+  left: 124px;
+  object-fit: cover;
+  position: absolute;
+  top: 378px;
+  width: 106px;
+}
+
+.budgeting-app .x60x60bb {
+  height: 51px;
+  left: 262px;
+  object-fit: cover;
+  position: absolute;
+  top: 127px;
+  width: 50px;
+}
+
+.budgeting-app .banker-jr {
+  height: 50px;
+  left: 188px;
+  object-fit: cover;
+  position: absolute;
+  top: 38px;
+  width: 150px;
+}
+
+.budgeting-app .fam-zoo {
+  height: 50px;
+  left: 591px;
+  object-fit: cover;
+  position: absolute;
+  top: 54px;
+  width: 145px;
+}
+
+.budgeting-app .kids-home-bank {
+  height: 50px;
+  left: 188px;
+  object-fit: cover;
+  position: absolute;
+  top: 177px;
+  width: 51px;
+}
+
+.budgeting-app .peters-pig {
+  height: 51px;
+  left: 591px;
+  object-fit: cover;
+  position: absolute;
+  top: 348px;
+  width: 94px;
+}
+
+.budgeting-app .piggybot-main-image {
+  height: 50px;
+  left: 550px;
+  object-fit: cover;
+  position: absolute;
+  top: 108px;
+  width: 50px;
+}
+
+.budgeting-app .wireframe-open-1 {
+  height: 1px;
+  left: -900px;
+  object-fit: cover;
+  position: absolute;
+  top: 11038px;
+  width: 1px;
+}
+
+.budgeting-app .image-29 {
+  display: block;
+  height: 480px;
+  left: 83px;
+  position: absolute;
+  top: 9336px;
+  width: 916px;
+  opacity: 0;
+}
+
+.budgeting-app .image-29.animate-enter65 {
+  animation: animate-enter65-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+}
+
+@keyframes animate-enter65-frames {
+  from{opacity: 0;
+}
+to{opacity: 1;
+}
+}
+
+.budgeting-app .team-at-worksolid {
+  height: 128px;
+  left: 2011px;
+  position: absolute;
+  top: 1201px;
+  width: 422px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .team-at-worksolid.animate-enter66 {
+  animation: animate-enter66-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter66-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .developer {
+  align-items: center;
+  display: flex;
+  height: 128px;
+  left: 89px;
+  padding: 0 32.7px;
+  position: absolute;
+  top: -1px;
+}
+
+.budgeting-app .puzzle2 {
+  height: 1px;
+  margin-top: 44.29px;
+  width: 1px;
+}
+
+.budgeting-app .overlap-group19-7 {
+  align-self: flex-start;
+  height: 128px;
+  margin-left: 40px;
+  position: relative;
+  width: 104px;
+}
+
+.budgeting-app .body1 {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  padding: 3.1px 0;
+  position: absolute;
+  top: 35px;
+  transform: rotate(180deg);
+  width: 104px;
+}
+
+.budgeting-app .overlap-group20-2 {
+  height: 1px;
+  margin-right: -265.77px;
+  margin-top: 11px;
+  position: relative;
+  width: 1px;
+}
+
+.budgeting-app .neck6 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .neck7 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .shadowii1 {
+  height: 1px;
+  margin-right: -244.4px;
+  margin-top: 12px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .flex-row {
+  align-items: flex-start;
+  display: flex;
+  margin-right: -312.42px;
+  margin-top: 13px;
+  min-width: 84px;
+}
+
+.budgeting-app .overlap-group21-1 {
+  height: 47px;
+  position: relative;
+  width: 43px;
+}
+
+.budgeting-app .t-shirt2 {
+  height: 1px;
+  left: 36px;
+  position: absolute;
+  top: 10px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .welt {
+  height: 1px;
+  left: 36px;
+  position: absolute;
+  top: 32px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .lines {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  padding: 11.1px 0;
+  position: absolute;
+  top: 0;
+  width: 43px;
+}
+
+.budgeting-app .path-5 {
+  height: 1px;
+  margin-right: -321.64px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .path-6 {
+  height: 1px;
+  margin-right: -314.82px;
+  margin-top: 5px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .path-7 {
+  height: 1px;
+  margin-right: -314.68px;
+  margin-top: 3px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .path-8 {
+  height: 1px;
+  margin-right: -316.33px;
+  margin-top: 11px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .hoodie {
+  height: 1px;
+  margin-left: 2px;
+  margin-top: 3.93px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .weltii {
+  align-self: center;
+  height: 1px;
+  margin-left: 37px;
+  margin-top: 15.43px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .head6 {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  left: 26px;
+  padding: 9.3px 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(180deg);
+  width: 50px;
+}
+
+.budgeting-app .hair5 {
+  height: 1px;
+  margin-right: -353.52px;
+  margin-top: 6px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .flex-row-1 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: -357.97px;
+  margin-top: 10px;
+  min-width: 10px;
+}
+
+.budgeting-app .browii6 {
+  align-self: flex-end;
+  height: 1px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .brow6 {
+  height: 1px;
+  margin-left: 9px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .overlap-group22-1 {
+  height: 1px;
+  margin-right: -347.36px;
+  margin-top: 1px;
+  position: relative;
+  width: 1px;
+}
+
+.budgeting-app .face6 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .face7 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .flex-row-2 {
+  align-items: flex-start;
+  display: flex;
+  height: 12px;
+  margin-right: -357.48px;
+  margin-top: 2px;
+  min-width: 26px;
+}
+
+.budgeting-app .overlap-group23 {
+  height: 1px;
+  margin-top: 0.98px;
+  position: relative;
+  width: 1px;
+}
+
+.budgeting-app .ear2 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .ear3 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .beard2 {
+  align-self: flex-end;
+  height: 1px;
+  margin-bottom: 1.69px;
+  margin-left: 14px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2px;
+  min-height: 12px;
+  width: 1px;
+}
+
+.budgeting-app .eye10 {
+  height: 1px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .mouth6 {
+  height: 1px;
+  margin-left: 0.37px;
+  margin-top: 10px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .nose6 {
+  align-self: center;
+  height: 1px;
+  margin-bottom: 2.27px;
+  margin-left: 3px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .eyeii10 {
+  height: 1px;
+  margin-left: 2px;
+  margin-top: 0.08px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .hand {
+  align-items: flex-start;
+  display: flex;
+  height: 80px;
+  justify-content: flex-end;
+  left: 37px;
+  position: absolute;
+  top: 37px;
+  transform: rotate(180deg);
+}
+
+.budgeting-app .overlap-group24 {
+  height: 77px;
+  position: relative;
+  width: 57px;
+}
+
+.budgeting-app .woman {
+  align-items: center;
+  display: flex;
+  height: 77px;
+  left: 0;
+  padding: 0 28.4px;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+}
+
+.budgeting-app .puzzle1 {
+  height: 1px;
+  width: 1px;
+}
+
+.budgeting-app .path-9 {
+  height: 1px;
+  left: 51px;
+  position: absolute;
+  top: 71px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .path {
+  height: 1px;
+  left: 52px;
+  position: absolute;
+  top: 66px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .path-1 {
+  height: 1px;
+  left: 49px;
+  position: absolute;
+  top: 66px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .path-2 {
+  height: 1px;
+  left: 46px;
+  position: absolute;
+  top: 68px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .path-3 {
+  height: 1px;
+  left: 52px;
+  position: absolute;
+  top: 70px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .hand-ii {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  left: 38px;
+  padding: 5.4px 0;
+  position: absolute;
+  top: 98px;
+  transform: rotate(180deg);
+  width: 21px;
+}
+
+.budgeting-app .overlap-group26 {
+  height: 1px;
+  margin-right: -391.63px;
+  position: relative;
+  width: 1px;
+}
+
+.budgeting-app .path-10 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .path2 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .overlap-group28 {
+  height: 1px;
+  margin-right: -395.1px;
+  position: relative;
+  width: 1px;
+}
+
+.budgeting-app .path-11 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .path2-1 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .overlap-group27 {
+  height: 1px;
+  margin-right: -397.34px;
+  position: relative;
+  width: 1px;
+}
+
+.budgeting-app .path-12 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .path2-2 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .overlap-group25 {
+  height: 1px;
+  margin-right: -391.85px;
+  margin-top: 1px;
+  position: relative;
+  width: 1px;
+}
+
+.budgeting-app .path-13 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .path2-3 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .path-14 {
+  height: 1px;
+  margin-right: -392.96px;
+  transform: rotate(-180deg);
+  width: 1px;
+}
+
+.budgeting-app .puzzle {
+  height: 1px;
+  margin-left: 32px;
+  margin-top: 37.07px;
+  width: 1px;
+}
+
+.budgeting-app .line {
+  height: 1px;
+  left: 211px;
+  position: absolute;
+  top: 127px;
+  width: 1px;
+}
+
+.budgeting-app .graphs-and-stat-sticsoutlineii {
+  height: 136px;
+  left: 1626px;
+  position: absolute;
+  top: 1226px;
+  width: 339px;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+.budgeting-app .graphs-and-stat-sticsoutlineii.animate-enter67 {
+  animation: animate-enter67-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+@keyframes animate-enter67-frames {
+  from{opacity: 0;
+transform: translate(-25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group29 {
+  height: 137px;
+  position: relative;
+  width: 340px;
+}
+
+.budgeting-app .graphs-and-stat-ticsoutlineii {
+  align-items: flex-start;
+  display: flex;
+  height: 137px;
+  left: -1px;
+  padding: 0 24.7px;
+  position: absolute;
+  top: -1px;
+}
+
+.budgeting-app .overlap-group19-8 {
+  height: 137px;
+  position: relative;
+  width: 278px;
+}
+
+.budgeting-app .flower1 {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  top: 20px;
+  width: 70px;
+}
+
+.budgeting-app .leaves1 {
+  align-items: center;
+  display: flex;
+  height: 89px;
+  justify-content: flex-end;
+  min-width: 70px;
+  padding: 16.9px 5.6px;
+}
+
+.budgeting-app .path-15 {
+  align-self: flex-end;
+  height: 1px;
+  margin-bottom: 3.85px;
+  width: 1px;
+}
+
+.budgeting-app .path-16 {
+  height: 1px;
+  margin-bottom: 17.41px;
+  margin-left: 6px;
+  width: 1px;
+}
+
+.budgeting-app .path-17 {
+  height: 1px;
+  margin-left: 25px;
+  width: 1px;
+}
+
+.budgeting-app .path-18 {
+  align-self: flex-end;
+  height: 1px;
+  margin-left: 6px;
+  width: 1px;
+}
+
+.budgeting-app .pot2 {
+  height: 1px;
+  margin-right: 15.1px;
+  margin-top: 13px;
+  width: 1px;
+}
+
+.budgeting-app .whiteboard2 {
+  height: 137px;
+  left: 68px;
+  position: absolute;
+  top: 0;
+  width: 165px;
+}
+
+.budgeting-app .overlap-group20-3 {
+  height: 101px;
+  left: 15px;
+  position: absolute;
+  top: 16px;
+  width: 135px;
+}
+
+.budgeting-app .shape15 {
+  height: 1px;
+  left: 68px;
+  position: absolute;
+  top: 52px;
+  width: 1px;
+}
+
+.budgeting-app .graph5 {
+  align-items: flex-end;
+  display: flex;
+  height: 59px;
+  justify-content: flex-end;
+  left: 78px;
+  padding: 0.6px 3.4px;
+  position: absolute;
+  top: 43px;
+}
+
+.budgeting-app .rectangle {
+  height: 1px;
+  margin-bottom: 6.93px;
+  width: 1px;
+}
+
+.budgeting-app .rectangle-1 {
+  height: 1px;
+  margin-bottom: 9.94px;
+  margin-left: 13px;
+  width: 1px;
+}
+
+.budgeting-app .arrow1 {
+  align-self: center;
+  height: 1px;
+  margin-bottom: 18.37px;
+  margin-left: 8px;
+  width: 1px;
+}
+
+.budgeting-app .rectangle-2 {
+  align-self: center;
+  height: 1px;
+  margin-left: 4px;
+  margin-top: 27.36px;
+  width: 1px;
+}
+
+.budgeting-app .rectangle-3 {
+  background-color: var(--secondaryheader);
+  height: 38px;
+  margin-left: 9px;
+  width: 9px;
+}
+
+.budgeting-app .lines7 {
+  align-items: flex-start;
+  display: flex;
+  height: 4px;
+  left: 80px;
+  padding: 0.4px 10.8px;
+  position: absolute;
+  top: 47px;
+}
+
+.budgeting-app .path-4 {
+  align-self: flex-end;
+  height: 1px;
+  width: 1px;
+}
+
+.budgeting-app .path-19 {
+  height: 1px;
+  margin-left: 6px;
+  margin-top: 0;
+  width: 1px;
+}
+
+.budgeting-app .circlegraph4 {
+  align-items: flex-start;
+  display: flex;
+  height: 56px;
+  justify-content: flex-end;
+  left: 0;
+  padding: 5.2px 3.1px;
+  position: absolute;
+  top: 0;
+}
+
+.budgeting-app .path-20 {
+  align-self: center;
+  height: 1px;
+  margin-top: 18.5px;
+  width: 1px;
+}
+
+.budgeting-app .path-21 {
+  align-self: center;
+  height: 1px;
+  margin-left: 5px;
+  margin-top: 13.6px;
+  width: 1px;
+}
+
+.budgeting-app .flex-col-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 34px;
+  width: 67px;
+}
+
+.budgeting-app .flex-row-3 {
+  align-items: flex-end;
+  display: flex;
+  min-width: 67px;
+}
+
+.budgeting-app .group-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 4px;
+  min-width: 19px;
+  padding: 0.4px 2.1px;
+}
+
+.budgeting-app .path-22 {
+  align-self: flex-end;
+  height: 1px;
+  margin-bottom: 0;
+  width: 1px;
+}
+
+.budgeting-app .path-23 {
+  height: 1px;
+  margin-left: 6px;
+  width: 1px;
+}
+
+.budgeting-app .path-24 {
+  height: 1px;
+  margin-bottom: 0.33px;
+  margin-left: 47px;
+  width: 1px;
+}
+
+.budgeting-app .path-25 {
+  height: 1px;
+  margin-right: 13.47px;
+  margin-top: 3px;
+  width: 1px;
+}
+
+.budgeting-app .path-26 {
+  height: 1px;
+  margin-left: 27.4px;
+  width: 1px;
+}
+
+.budgeting-app .path-27 {
+  height: 1px;
+  margin-right: 31.97px;
+  margin-top: 8px;
+  width: 1px;
+}
+
+.budgeting-app .path-28 {
+  align-self: flex-end;
+  height: 1px;
+  margin-right: 2.59px;
+  margin-top: 8px;
+  width: 1px;
+}
+
+.budgeting-app .path-29 {
+  height: 1px;
+  margin-left: 7.99px;
+  margin-top: 3px;
+  width: 1px;
+}
+
+.budgeting-app .path-30 {
+  align-self: flex-start;
+  height: 1px;
+  margin-left: 15.99px;
+  margin-top: 1px;
+  width: 1px;
+}
+
+.budgeting-app .path-31 {
+  height: 1px;
+  margin-left: 4px;
+  margin-top: 5.94px;
+  width: 1px;
+}
+
+.budgeting-app .path-32 {
+  height: 1px;
+  margin-left: 1px;
+  margin-top: 8.99px;
+  width: 1px;
+}
+
+.budgeting-app .path-33 {
+  align-self: center;
+  height: 1px;
+  margin-left: 1px;
+  margin-top: 13.43px;
+  width: 1px;
+}
+
+.budgeting-app .layoutii1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 16px;
+  position: absolute;
+  top: 82px;
+  width: 63px;
+}
+
+.budgeting-app .oragnebar {
+  height: 1px;
+  margin-right: 0;
+  margin-top: 5px;
+  width: 1px;
+}
+
+.budgeting-app .lines8 {
+  align-items: flex-start;
+  display: flex;
+  height: 14px;
+  justify-content: flex-end;
+  margin-top: 12px;
+  min-width: 63px;
+  padding: 0.4px 8.9px;
+}
+
+.budgeting-app .path-34 {
+  align-self: center;
+  height: 1px;
+  margin-bottom: 0.73px;
+  margin-left: 4px;
+  width: 1px;
+}
+
+.budgeting-app .path-35 {
+  height: 1px;
+  margin-left: 4px;
+  margin-top: 0;
+  width: 1px;
+}
+
+.budgeting-app .path-36 {
+  height: 1px;
+  margin-left: 32px;
+  margin-top: 0;
+  width: 1px;
+}
+
+.budgeting-app .layout3 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 115px;
+  padding: 0.4px 5.0px;
+  position: absolute;
+  top: 26px;
+  width: 27px;
+}
+
+.budgeting-app .rectangle-4 {
+  height: 1px;
+  margin-top: 4px;
+  width: 1px;
+}
+
+.budgeting-app .path-37 {
+  height: 1px;
+  margin-right: 12.48px;
+  margin-top: 8px;
+  width: 1px;
+}
+
+.budgeting-app .flex-row-4 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  margin-top: 2px;
+  min-width: 15px;
+}
+
+.budgeting-app .rectangle-5 {
+  height: 1px;
+  margin-left: 13px;
+  width: 1px;
+}
+
+.budgeting-app .path-38 {
+  height: 1px;
+  margin-right: 12.48px;
+  margin-top: 2px;
+  width: 1px;
+}
+
+.budgeting-app .man7 {
+  align-items: flex-start;
+  display: flex;
+  height: 80px;
+  left: 201px;
+  padding: 0.0px 0;
+  position: absolute;
+  top: 57px;
+}
+
+.budgeting-app .handii7 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  height: 14px;
+  min-width: 28px;
+  padding: 4.2px 6.9px;
+}
+
+.budgeting-app .path-39 {
+  height: 1px;
+  width: 1px;
+}
+
+.budgeting-app .path-40 {
+  align-self: center;
+  height: 1px;
+  margin-left: 7px;
+  margin-top: 0;
+  width: 1px;
+}
+
+.budgeting-app .body5 {
+  align-self: center;
+  height: 1px;
+  margin-bottom: 0.75px;
+  margin-left: 20px;
+  width: 1px;
+}
+
+.budgeting-app .neck5 {
+  height: 1px;
+  margin-left: 3px;
+  margin-top: 15.28px;
+  width: 1px;
+}
+
+.budgeting-app .line8 {
+  height: 1px;
+  left: 145px;
+  position: absolute;
+  top: 136px;
+  width: 1px;
+}
+
+.budgeting-app .head6-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 249px;
+  padding: 9.3px 4.0px;
+  position: absolute;
+  top: 18px;
+  width: 49px;
+}
+
+.budgeting-app .hair5-1 {
+  height: 1px;
+  margin-right: 1.92px;
+  margin-top: 6px;
+  width: 1px;
+}
+
+.budgeting-app .flex-row-5 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 1.0px;
+  margin-top: 10px;
+  min-width: 10px;
+}
+
+.budgeting-app .brow6-1 {
+  height: 1px;
+  width: 1px;
+}
+
+.budgeting-app .browii6-1 {
+  align-self: flex-end;
+  height: 1px;
+  margin-left: 9px;
+  width: 1px;
+}
+
+.budgeting-app .overlap-group22-2 {
+  align-items: flex-start;
+  background-image: url(../img/star-1@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  margin-left: 10.31px;
+  margin-top: 1px;
+  min-width: 1px;
+}
+
+.budgeting-app .face7-1 {
+  height: 1px;
+  width: 1px;
+}
+
+.budgeting-app .flex-row-6 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  height: 12px;
+  margin-top: 2px;
+  min-width: 26px;
+}
+
+.budgeting-app .eyeii10-1 {
+  height: 1px;
+  margin-top: 0.08px;
+  width: 1px;
+}
+
+.budgeting-app .nose6-1 {
+  align-self: center;
+  height: 1px;
+  margin-bottom: 2.26px;
+  margin-left: 2px;
+  width: 1px;
+}
+
+.budgeting-app .flex-col-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3px;
+  min-height: 12px;
+  width: 1px;
+}
+
+.budgeting-app .eye10-1 {
+  height: 1px;
+  margin-left: 0.36px;
+  width: 1px;
+}
+
+.budgeting-app .mouth6-1 {
+  height: 1px;
+  margin-top: 10px;
+  width: 1px;
+}
+
+.budgeting-app .beard2-1 {
+  align-self: flex-end;
+  height: 1px;
+  margin-bottom: 1.68px;
+  margin-left: 2px;
+  width: 1px;
+}
+
+.budgeting-app .overlap-group21-2 {
+  align-items: flex-end;
+  background-image: url(../img/star-1@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 14px;
+  margin-top: 0.98px;
+  min-width: 1px;
+}
+
+.budgeting-app .ear3-1 {
+  height: 1px;
+  width: 1px;
+}
+
+.budgeting-app .frame-113 {
+  height: 368px;
+  left: 740px;
+  position: absolute;
+  top: 11550px;
+  width: 612px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .frame-113.animate-enter68 {
+  animation: animate-enter68-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter68-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .primary {
+  height: 18px;
+  left: 2px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 79px;
+}
+
+.budgeting-app .secondary {
+  height: 18px;
+  left: 352px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 107px;
+}
+
+.budgeting-app .ellipse-24 {
+  height: 102px;
+  left: -6px;
+  position: absolute;
+  top: 159px;
+  width: 102px;
+}
+
+.budgeting-app .ellipse-14 {
+  height: 102px;
+  left: -6px;
+  position: absolute;
+  top: 40px;
+  width: 102px;
+}
+
+.budgeting-app .ellipse-21 {
+  height: 102px;
+  left: -6px;
+  position: absolute;
+  top: 278px;
+  width: 102px;
+}
+
+.budgeting-app .ellipse-15 {
+  background-color: #a64ce9;
+  border-radius: 45px;
+  height: 90px;
+  left: 350px;
+  position: absolute;
+  top: 40px;
+  width: 90px;
+}
+
+.budgeting-app .ellipse-23 {
+  background-color: var(--lilac);
+  border-radius: 45px;
+  height: 90px;
+  left: 352px;
+  position: absolute;
+  top: 160px;
+  width: 90px;
+}
+
+.budgeting-app .text-34 {
+  left: 119px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 44px;
+  width: 145px;
+}
+
+.budgeting-app .text-35 {
+  left: 120px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 156px;
+  width: 145px;
+}
+
+.budgeting-app .text-36 {
+  left: 120px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 278px;
+  width: 145px;
+}
+
+.budgeting-app .text-37 {
+  left: 469px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 154px;
+  width: 145px;
+}
+
+.budgeting-app .text-38 {
+  left: 469px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 39px;
+  width: 145px;
+}
+
+.budgeting-app .frame-112 {
+  height: 160px;
+  left: 115px;
+  position: absolute;
+  top: 11761px;
+  width: 351px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .frame-112.animate-enter69 {
+  animation: animate-enter69-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter69-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .icons {
+  height: 18px;
+  left: 2px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 79px;
+}
+
+.budgeting-app .buttons {
+  height: 18px;
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 81px;
+  width: 79px;
+}
+
+.budgeting-app .vector-1 {
+  height: 30px;
+  left: 321px;
+  position: absolute;
+  top: 30px;
+  width: 30px;
+}
+
+.budgeting-app .vector-2 {
+  height: 30px;
+  left: 256px;
+  position: absolute;
+  top: 30px;
+  width: 41px;
+}
+
+.budgeting-app .vector-3 {
+  height: 30px;
+  left: 217px;
+  position: absolute;
+  top: 30px;
+  width: 22px;
+}
+
+.budgeting-app .frame-13 {
+  align-items: flex-start;
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  left: 167px;
+  position: absolute;
+  top: 30px;
+}
+
+.budgeting-app .overlap-group19-9 {
+  height: 30px;
+  position: relative;
+  width: 26px;
+}
+
+.budgeting-app .vector-4 {
+  height: 2px;
+  left: 17px;
+  position: absolute;
+  top: 17px;
+  width: 7px;
+}
+
+.budgeting-app .vector-5 {
+  height: 3px;
+  left: 19px;
+  position: absolute;
+  top: 21px;
+  width: 7px;
+}
+
+.budgeting-app .vector-6 {
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+
+.budgeting-app .carbonsettings {
+  align-items: flex-start;
+  display: flex;
+  height: 30px;
+  left: 113px;
+  padding: 1.5px 2.0px;
+  position: absolute;
+  top: 30px;
+  width: 30px;
+}
+
+.budgeting-app .overlap-group20-4 {
+  align-items: flex-end;
+  background-image: url(../img/vector-8@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 27px;
+  margin-left: 1px;
+  min-width: 26px;
+  padding: 7.5px 7.0px;
+}
+
+.budgeting-app .vector-7 {
+  height: 12px;
+  width: 12px;
+}
+
+.budgeting-app .ggawards {
+  align-items: flex-end;
+  display: flex;
+  height: 30px;
+  left: 5px;
+  padding: 2.5px 6.2px;
+  position: absolute;
+  top: 30px;
+  width: 30px;
+}
+
+.budgeting-app .group-2 {
+  background-image: url(../img/vector-10@2x.png);
+  background-size: 100% 100%;
+  height: 25px;
+  width: 18px;
+}
+
+.budgeting-app .carbonsearch {
+  align-items: flex-start;
+  display: flex;
+  height: 30px;
+  left: 59px;
+  padding: 1.5px 1.5px;
+  position: absolute;
+  top: 30px;
+  width: 30px;
+}
+
+.budgeting-app .vector-8 {
+  height: 26px;
+  width: 26px;
+}
+
+.budgeting-app .button-structure {
+  align-items: flex-start;
+  background-color: var(--lilac);
+  border-radius: 30px;
+  box-shadow: 0px 6px 6px #14317a1a;
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  left: 162px;
+  min-width: 114px;
+  position: absolute;
+  top: 127px;
+}
+
+.budgeting-app .btn-small {
+  color: var(--primarywhite);
+  font-family: var(--font-family-helvetica_neue-medium);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  letter-spacing: -0.41px;
+  line-height: 28.5px;
+  margin-top: -1px;
+  min-height: 32px;
+  text-align: center;
+  white-space: nowrap;
+  width: 174px;
+}
+
+.budgeting-app .button-structure-1 {
+  align-items: center;
+  background-color: var(--lilac);
+  border-radius: 30px;
+  box-shadow: 0px 6px 6px #14317a1a;
+  display: flex;
+  height: 39px;
+  justify-content: flex-end;
+  left: 3px;
+  min-width: 148px;
+  position: absolute;
+  top: 121px;
+}
+
+.budgeting-app .button-large {
+  color: var(--primarywhite);
+  font-family: var(--font-family-helvetica_neue-medium);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  letter-spacing: -0.41px;
+  line-height: 28.5px;
+  min-height: 32px;
+  text-align: center;
+  white-space: nowrap;
+  width: 174px;
+}
+
+.budgeting-app .frame-114 {
+  height: 1015px;
+  left: 115px;
+  position: absolute;
+  top: 12232px;
+  width: 1107px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .frame-114.animate-enter70 {
+  animation: animate-enter70-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter70-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .frame-20 {
+  height: 489px;
+  left: 250px;
+  position: absolute;
+  top: 0;
+  width: 231px;
+}
+
+.budgeting-app .frame-22 {
+  height: 489px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 233px;
+}
+
+.budgeting-app .frame-21 {
+  height: 489px;
+  left: 625px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 481px;
+}
+
+.budgeting-app .frame-22-1 {
+  height: 494px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 520px;
+  width: 481px;
+}
+
+.budgeting-app .frame-23 {
+  height: 494px;
+  left: 626px;
+  object-fit: cover;
+  position: absolute;
+  top: 521px;
+  width: 481px;
+}
+
+.budgeting-app .secured-accounts {
+  height: 59px;
+  left: 187px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 13672px;
+  width: 326px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .secured-accounts.animate-enter71 {
+  animation: animate-enter71-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter71-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-39 {
+  left: 157px;
+  letter-spacing: -1.12px;
+  position: absolute;
+  top: 13758px;
+  width: 392px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-39.animate-enter72 {
+  animation: animate-enter72-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter72-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group6 {
+  height: 631px;
+  left: 846px;
+  position: absolute;
+  top: 13423px;
+  width: 338px;
+}
+
+.budgeting-app .rectangle-245 {
+  background-color: var(--mist-gray);
+  filter: blur(150px);;
+  height: 540px;
+  left: 55px;
+  position: absolute;
+  top: 91px;
+  width: 283px;
+}
+
+.budgeting-app .login-1 {
+  display: block;
+  height: 575px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 294px;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+.budgeting-app .login-1.animate-enter73 {
+  animation: animate-enter73-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+@keyframes animate-enter73-frames {
+  from{opacity: 0;
+transform: translate(25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group16 {
+  height: 622px;
+  left: 857px;
+  position: absolute;
+  top: 14152px;
+  width: 350px;
+}
+
+.budgeting-app .rectangle-246 {
+  background-color: var(--mist-gray);
+  filter: blur(150px);;
+  height: 580px;
+  left: 67px;
+  position: absolute;
+  top: 42px;
+  width: 283px;
+}
+
+.budgeting-app .spending2-1 {
+  display: block;
+  height: 571px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 290px;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+.budgeting-app .spending2-1.animate-enter74 {
+  animation: animate-enter74-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+@keyframes animate-enter74-frames {
+  from{opacity: 0;
+transform: translate(25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group11 {
+  height: 620px;
+  left: 857px;
+  position: absolute;
+  top: 14872px;
+  width: 350px;
+}
+
+.budgeting-app .rectangle-247 {
+  background-color: var(--mist-gray);
+  filter: blur(150px);;
+  height: 580px;
+  left: 67px;
+  position: absolute;
+  top: 40px;
+  width: 283px;
+}
+
+.budgeting-app .savings-1 {
+  display: block;
+  height: 580px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 290px;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+.budgeting-app .savings-1.animate-enter75 {
+  animation: animate-enter75-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+transform: translate(25px, 0);
+}
+
+@keyframes animate-enter75-frames {
+  from{opacity: 0;
+transform: translate(25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .frame-111 {
+  height: 316px;
+  left: 9px;
+  position: absolute;
+  top: 10536px;
+  width: 1450px;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+.budgeting-app .frame-111.animate-enter79 {
+  animation: animate-enter79-frames 3.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+@keyframes animate-enter79-frames {
+  from{opacity: 0;
+transform: translate(-25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .wireframe-sketch-5 {
+  display: block;
+  height: 316px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 710px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .wireframe-sketch-5.animate-enter77 {
+  animation: animate-enter77-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter77-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .wireframe-sketch-5-1 {
+  display: block;
+  height: 316px;
+  left: 726px;
+  position: absolute;
+  top: 0;
+  width: 714px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .wireframe-sketch-5-1.animate-enter78 {
+  animation: animate-enter78-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  display: block;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter78-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .andre-martin-1 {
+  height: 1px;
+  left: -596px;
+  object-fit: cover;
+  position: absolute;
+  top: 6166px;
+  width: 1px;
+}
+
+.budgeting-app .image-27 {
+  height: 1px;
+  left: -596px;
+  object-fit: cover;
+  position: absolute;
+  top: 5598px;
+  width: 1px;
+}
+
+.budgeting-app .image-26 {
+  height: 1px;
+  left: -596px;
+  object-fit: cover;
+  position: absolute;
+  top: 5030px;
+  width: 1px;
+}
+
+.budgeting-app .wireframe-sketch-2 {
+  height: 1px;
+  left: -471px;
+  position: absolute;
+  top: 11112px;
+  width: 1px;
+}
+
+.budgeting-app .frame-109 {
+  height: 510px;
+  left: 119px;
+  position: absolute;
+  top: 5650px;
+  width: 504px;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+.budgeting-app .frame-109.animate-enter83 {
+  animation: animate-enter83-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+@keyframes animate-enter83-frames {
+  from{opacity: 0;
+transform: translate(-25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group30 {
+  height: 510px;
+  position: relative;
+  width: 506px;
+}
+
+.budgeting-app .rectangle-253 {
+  height: 319px;
+  left: 117px;
+  position: absolute;
+  top: 0;
+  width: 223px;
+}
+
+.budgeting-app .rectangle-38 {
+  background-color: var(--shakespeare);
+  border-radius: 30px;
+  box-shadow: 0px 6px 6px #2f669033;
+  height: 199px;
+  left: 0;
+  position: absolute;
+  top: 311px;
+  width: 465px;
+}
+
+.budgeting-app .name-1 {
+  left: 20px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 320px;
+  width: 257px;
+}
+
+.budgeting-app .environment-1 {
+  height: 38px;
+  left: 20px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 351px;
+  width: 235px;
+}
+
+.budgeting-app .needs-1 {
+  height: 38px;
+  left: 272px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 351px;
+  width: 234px;
+}
+
+.budgeting-app .group-13 {
+  height: 76px;
+  left: 117px;
+  position: absolute;
+  top: 397px;
+  width: 116px;
+}
+
+.budgeting-app .text-42 {
+  left: 21px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 391px;
+  width: 127px;
+}
+
+.budgeting-app .text-43 {
+  left: 272px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 391px;
+  width: 171px;
+}
+
+.budgeting-app .frame-108 {
+  height: 478px;
+  left: 117px;
+  position: absolute;
+  top: 5120px;
+  width: 465px;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+.budgeting-app .frame-108.animate-enter84 {
+  animation: animate-enter84-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(-25px, 0);
+}
+
+@keyframes animate-enter84-frames {
+  from{opacity: 0;
+transform: translate(-25px, 0);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group31 {
+  height: 478px;
+  position: relative;
+}
+
+.budgeting-app .rectangle-5-1 {
+  height: 299px;
+  left: 122px;
+  position: absolute;
+  top: 0;
+  width: 209px;
+}
+
+.budgeting-app .rectangle-254 {
+  background-color: var(--shakespeare);
+  border-radius: 30px;
+  box-shadow: 0px 6px 6px #2f669033;
+  height: 199px;
+  left: 0;
+  position: absolute;
+  top: 278px;
+  width: 465px;
+}
+
+.budgeting-app .environment-2 {
+  height: 40px;
+  left: 20px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 320px;
+  width: 362px;
+}
+
+.budgeting-app .needs-2 {
+  height: 40px;
+  left: 259px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 320px;
+  width: 62px;
+}
+
+.budgeting-app .group-14 {
+  height: 76px;
+  left: 117px;
+  position: absolute;
+  top: 368px;
+  width: 116px;
+}
+
+.budgeting-app .text-44 {
+  left: 20px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 362px;
+  width: 189px;
+}
+
+.budgeting-app .text-45 {
+  left: 259px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 362px;
+  width: 186px;
+}
+
+.budgeting-app .name-2 {
+  left: 18px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 293px;
+  width: 257px;
+}
+
+.budgeting-app .goals {
+  height: 40px;
+  left: 737px;
+  letter-spacing: 0;
+  line-height: 30.3px;
+  position: absolute;
+  top: 4714px;
+  width: 213px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .goals.animate-enter85 {
+  animation: animate-enter85-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter85-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-46 {
+  left: 737px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 4754px;
+  width: 312px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-46.animate-enter86 {
+  animation: animate-enter86-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter86-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .challenges {
+  height: 40px;
+  left: 740px;
+  letter-spacing: 0;
+  line-height: 16.6px;
+  position: absolute;
+  top: 5400px;
+  width: 208px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .challenges.animate-enter87 {
+  animation: animate-enter87-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter87-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-47 {
+  left: 740px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 5440px;
+  width: 499px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-47.animate-enter88 {
+  animation: animate-enter88-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter88-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .challenges-1 {
+  height: 39px;
+  left: 740px;
+  letter-spacing: 0;
+  line-height: 16.6px;
+  position: absolute;
+  top: 4881px;
+  width: 238px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .challenges-1.animate-enter89 {
+  animation: animate-enter89-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter89-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-48 {
+  left: 737px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 4920px;
+  width: 572px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-48.animate-enter90 {
+  animation: animate-enter90-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter90-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .overlap-group4 {
+  height: 165px;
+  left: 740px;
+  position: absolute;
+  top: 5836px;
+  width: 308px;
+}
+
+.budgeting-app .challenges-2 {
+  height: 40px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 16.6px;
+  position: absolute;
+  top: 125px;
+  width: 238px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .challenges-2.animate-enter91 {
+  animation: animate-enter91-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter91-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-50 {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 308px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-50.animate-enter94 {
+  animation: animate-enter94-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter94-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-49 {
+  left: 740px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 6001px;
+  width: 572px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-49.animate-enter92 {
+  animation: animate-enter92-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter92-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .group-6 {
+  align-items: flex-start;
+  display: flex;
+  height: 101px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.budgeting-app .overlap-group32 {
+  align-items: center;
+  background-color: var(--primarywhite);
+  display: flex;
+  height: 101px;
+  justify-content: flex-end;
+  min-width: 1440px;
+  padding: 0 51px;
+}
+
+.budgeting-app .artboard-1-copy-6 {
+  height: 65px;
+  object-fit: cover;
+  width: 85px;
+}
+
+.budgeting-app .work {
+  height: 40px;
+  letter-spacing: 0;
+  margin-left: 733px;
+  margin-top: 15.0px;
+  width: 79px;
+}
+
+.budgeting-app .resume {
+  height: 40px;
+  letter-spacing: 0;
+  margin-left: 22px;
+  margin-top: 15.0px;
+  width: 95px;
+}
+
+.budgeting-app .creative {
+  height: 40px;
+  letter-spacing: 0;
+  margin-left: 22px;
+  margin-top: 15.0px;
+  width: 94px;
+}
+
+.budgeting-app .overlap-group19-10 {
+  height: 40px;
+  margin-left: 9px;
+  margin-top: 15.0px;
+  position: relative;
+  width: 171px;
+}
+
+.budgeting-app .rectangle-1-1 {
+  background-color: var(--main-text);
+  border-radius: 10px;
+  height: 32px;
+  left: 0;
+  position: absolute;
+  top: 4px;
+  width: 105px;
+}
+
+.budgeting-app .place-1 {
+  height: 40px;
+  left: 13px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 158px;
+}
+
+.budgeting-app .goals-1 {
+  height: 37px;
+  left: 741px;
+  letter-spacing: 0;
+  line-height: 30.3px;
+  position: absolute;
+  top: 5799px;
+  width: 307px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .goals-1.animate-enter93 {
+  animation: animate-enter93-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter93-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .goals-2 {
+  height: 39px;
+  left: 741px;
+  letter-spacing: 0;
+  line-height: 30.3px;
+  position: absolute;
+  top: 5240px;
+  width: 313px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .goals-2.animate-enter95 {
+  animation: animate-enter95-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter95-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}
+
+.budgeting-app .text-51 {
+  left: 740px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 5279px;
+  width: 314px;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+.budgeting-app .text-51.animate-enter96 {
+  animation: animate-enter96-frames 2.00s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+transform: translate(0, 25px);
+}
+
+@keyframes animate-enter96-frames {
+  from{opacity: 0;
+transform: translate(0, 25px);
+}
+to{opacity: 1;
+transform: translate(0,0);
+}
+}

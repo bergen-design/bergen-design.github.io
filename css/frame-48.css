@@ -1,0 +1,72 @@
+/* screen - frame-48 */
+
+.frame-48 {
+  align-items: flex-start;
+  display: flex;
+  height: 80px;
+  min-width: 1440px;
+}
+
+.frame-48 .overlap-group {
+  align-items: flex-end;
+  background-color: var(--primarywhite);
+  display: flex;
+  height: 83px;
+  justify-content: flex-end;
+  min-width: 1440px;
+  padding: 2px 50px;
+}
+
+.frame-48 .artboard-1-copy-6 {
+  height: 65px;
+  margin-bottom: 1px;
+  object-fit: cover;
+  width: 85px;
+}
+
+.frame-48 .work {
+  height: 40px;
+  letter-spacing: 0;
+  margin-left: 734px;
+  width: 79px;
+}
+
+.frame-48 .resume {
+  height: 40px;
+  letter-spacing: 0;
+  margin-left: 22px;
+  width: 95px;
+}
+
+.frame-48 .creative {
+  height: 40px;
+  letter-spacing: 0;
+  margin-left: 22px;
+  width: 94px;
+}
+
+.frame-48 .overlap-group1 {
+  height: 40px;
+  margin-left: 9px;
+  position: relative;
+  width: 171px;
+}
+
+.frame-48 .rectangle-1 {
+  background-color: var(--main-text);
+  border-radius: 10px;
+  height: 32px;
+  left: 0;
+  position: absolute;
+  top: 4px;
+  width: 105px;
+}
+
+.frame-48 .place {
+  height: 40px;
+  left: 13px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 158px;
+}

@@ -1,0 +1,215 @@
+:root { 
+  --desert-storm: #f8f8f8;
+  --header-text: #18a999;
+  --lilac: #c990ea;
+  --main-text: #2f6690;
+  --mist-gray: #c4c4c480;
+  --primarywhite: #ffffff;
+  --secondary-dark-blue: #123840;
+  --secondaryheader: #995b85;
+  --shakespeare: #49b7d1;
+ 
+  --font-size-l: 18px;
+  --font-size-m: 16px;
+  --font-size-s: 14px;
+  --font-size-xl: 20px;
+  --font-size-xs: 10px;
+  --font-size-xxl: 24px;
+  --font-size-xxxl: 40px;
+ 
+  --font-family-avenir-book: "Avenir-Book", Helvetica;
+  --font-family-avenir-heavy: "Avenir-Heavy", Helvetica;
+  --font-family-avenir-medium: "Avenir-Medium", Helvetica;
+  --font-family-avenir-regular: "Avenir-Regular", Helvetica;
+  --font-family-avenir-roman: "Avenir-Roman", Helvetica;
+  --font-family-helvetica_neue-bold: "Helvetica Neue-Bold", Helvetica;
+  --font-family-helvetica_neue-medium: "Helvetica Neue-Medium", Helvetica;
+  --font-family-helvetica_neue-regular: "Helvetica Neue-Regular", Helvetica;
+  --font-family-helvetica_neue-thin: "Helvetica Neue-Thin", Helvetica;
+  --font-family-proxima_nova-bold: "Proxima Nova-Bold", Helvetica;
+  --font-family-proxima_nova-medium: "Proxima Nova-Medium", Helvetica;
+  --font-family-proxima_nova-semibold: "Proxima Nova-Semibold", Helvetica;
+}
+.avenir-book-normal-calypso-16px {
+  color: var(--main-text);
+  font-family: var(--font-family-avenir-book);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.avenir-regular-normal-calypso-16px {
+  color: var(--main-text);
+  font-family: var(--font-family-avenir-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.avenir-regular-normal-emerald-40px {
+  color: var(--header-text);
+  font-family: var(--font-family-avenir-regular);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.avenir-regular-normal-strikemaster-24px {
+  color: var(--secondaryheader);
+  font-family: var(--font-family-avenir-regular);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.avenir-medium-strikemaster-20px {
+  color: var(--secondaryheader);
+  font-family: var(--font-family-avenir-medium);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.avenir-roman-normal-strikemaster-40px {
+  color: var(--secondaryheader);
+  font-family: var(--font-family-avenir-roman);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.avenir-medium-white-20px {
+  color: var(--primarywhite);
+  font-family: var(--font-family-avenir-medium);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.avenir-medium-elephant-20px {
+  color: var(--secondary-dark-blue);
+  font-family: var(--font-family-avenir-medium);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.avenir-medium-calypso-20px {
+  color: var(--main-text);
+  font-family: var(--font-family-avenir-medium);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.avenir-medium-emerald-20px {
+  color: var(--header-text);
+  font-family: var(--font-family-avenir-medium);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.avenir-book-normal-white-16px {
+  color: var(--primarywhite);
+  font-family: var(--font-family-avenir-book);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.avenir-regular-normal-calypso-14px {
+  color: var(--main-text);
+  font-family: var(--font-family-avenir-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.avenir-book-normal-calypso-20px {
+  color: var(--main-text);
+  font-family: var(--font-family-avenir-book);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.avenir-book-normal-strikemaster-24px {
+  color: var(--secondaryheader);
+  font-family: var(--font-family-avenir-book);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.avenir-roman-normal-emerald-24px {
+  color: var(--header-text);
+  font-family: var(--font-family-avenir-roman);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.avenir-roman-normal-calypso-100px {
+  color: var(--main-text);
+  font-family: var(--font-family-avenir-roman);
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.avenir-roman-normal-calypso-20px {
+  color: var(--main-text);
+  font-family: var(--font-family-avenir-roman);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.avenir-medium-calypso-10px {
+  color: var(--main-text);
+  font-family: var(--font-family-avenir-medium);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.avenir-book-normal-white-24px {
+  color: var(--primarywhite);
+  font-family: var(--font-family-avenir-book);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.avenir-regular-normal-strikemaster-40px {
+  color: var(--secondaryheader);
+  font-family: var(--font-family-avenir-regular);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.avenir-medium-emerald-24px {
+  color: var(--header-text);
+  font-family: var(--font-family-avenir-medium);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.avenir-heavy-normal-emerald-40px {
+  color: var(--header-text);
+  font-family: var(--font-family-avenir-heavy);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.avenir-book-normal-strikemaster-14px {
+  color: var(--secondaryheader);
+  font-family: var(--font-family-avenir-book);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
