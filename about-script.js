@@ -1,19 +1,4 @@
-// Add personalized welcome
-setTimeout(
-    function addWelcome() {
 
-        var name = prompt("Hey! Welcome to my website, to get started please input your nickname below:", "");
-        if (name === null) {
-            let welcome = document.getElementById('welcome');
-            console.log(name);
-            document.getElementById("name").innerHTML = "";
-            
-        }else if (name != "") {
-            let welcome = document.getElementById('welcome');
-            console.log(name);
-            document.getElementById("name").innerHTML = name +"!";
-        }
-    }, 1000);
     // image slide in
     window.onscroll = function () { myFunction() };
 

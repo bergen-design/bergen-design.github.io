@@ -1,256 +1,313 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-    <meta name="og:type" content="website" />
-    <meta name="twitter:card" content="photo" />
-    <link rel="stylesheet" type="text/css" href="css/tablet.css" />
-    <link rel="stylesheet" type="text/css" href="css/frame-13.css" />
-    <link rel="stylesheet" type="text/css" href="css/frame-4.css" />
-    <style></style>
-    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
-    <link rel="stylesheet" type="text/css" href="css/globals.css" />
-    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
-  </head>
-  <body style="margin: 0; background: #ffffff">
-    <input type="hidden" id="anPageName" name="page" value="tablet" />
-    <div class="container-center-horizontal">
-      <form class="tablet screen" name="form1" action="form1" method="post">
-        <div class="flex-row">
-          <a href="index.html"><img class="artboard-1-copy-6" src="img/artboard-1-copy-6@2x.png" /></a>
-          <a href="javascript:ShowOverlay('frame-13', 'animate-appear');">
-            <div class="group-3">
-              <img class="line-4" src="img/line-4@2x.png" />
-              <img class="line-5" src="img/line-5@2x.png" />
-              <img class="line-6" src="img/line-6@2x.png" /></div
-          ></a>
-        </div>
-        <div class="text-52 valign-text-middle bp2-animate-enter">hello, my name is Micah Andre Bergen</div>
-        <div class="text-53 valign-text-middle bp2-animate-enter1">
-          I&#39;m a Designer on a mission to solve tomorrows problems, today with high quality, simple and beautiful
-          design solutions
-        </div>
-      <div id="work"> <a href="metro-case-study.html"><img class="group-2 smart-layers-pointers bp2-animate-enter4" show-on-scroll src="img/group-2@1x.png" alt="Island Metro Site" /></a> 
-       <a href="budgeting-app.html"> <img class="group-1 smart-layers-pointers bp2-animate-enter3" show-on-scroll src="img/group-1@1x.png" alt="Kids Budgeting App" /></a>
-      </div> <div class="overlap-group">
-          <div class="place valign-text-middle avenir-medium-emerald-24px">contact</div>
-          <img id="rectangle-10" class="rectangle-10 bp2-animate-enter2" show-on-scroll src="img/rectangle-10@1x.png" />
-          <input class="rectangle-6" name="110_12061" placeholder="" type="text" required /><input
-            class="rectangle-7"
-            name="110_12062"
-            placeholder=""
-            type="email"
-            required
-          /><input class="rectangle-8" name="110_12063" placeholder="" type="text" /><textarea
-            class="rectangle-9"
-            name="110_12064"
-            placeholder=""
-            type="text"
-          ></textarea>
-          <div class="place-1 valign-text-middle avenir-book-normal-calypso-16px">Name</div>
-          <div class="email valign-text-middle avenir-book-normal-calypso-16px">Email</div>
-          <div class="subject valign-text-middle avenir-book-normal-calypso-16px">Subject</div>
-          <div class="message valign-text-middle avenir-book-normal-calypso-16px">Message</div>
-          <!-- <a href="javascript:SubmitForm('form1')"> -->
-            <img class="property-1-default smart-layers-pointers" src="img/property-1-default@2x.png" />
-          </a>
-        </div>
-        <div class="rectangle-5"></div>
-      </form>
-    </div>
-    <div class="container-center-horizontal">
-      <form class="desktop-9 screen" name="form2" action="form2" method="post">
-        <div class="flex-row">
-          <img class="artboard-1-copy-6" src="img/artboard-1-copy-6@2x.png" />
-          <!-- <a href="javascript:ShowOverlay('frame-4', 'animate-appear');"> -->
-            <div class="dropdown"><a href="#work"><nav class=" work smart-layers-pointers valign-text-middle avenir-medium-elephant-20px">Work</nav></a></a>
-              <div id="work" class="dropdown-content work"><br><a href="metro-case-study.html"><p>Island Metro Redesign</p></a><br>
-                <a href="budgeting-app.html"><p>Kids Budgeting App</p></a></div>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micah Andre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </link>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body onload="addWelcome()">
+    <div class="header">
+        <div class="container-fluid ">
+            <div class="row mt-2 align-items-center justify-content-end">
+                <div class="col-md-3 justify-content-start align-items-center">
+                    <a href="#"><img id="imglogo" class="col-md-2 m-2" src="logo.png" alt="logo"></a>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="menu nav col-md-1 mt-2 justify-content-end align-items-center">
+                    <a onmouseover="changeColor(this)" class="nav-link" href="#work">
+                        <h5>Work</h5>
+                    </a>
+                </div>
+                <div class="menu nav col-md-1 mt-2 justify-content-end align-items-center">
+                    <a onmouseover="changeColor(this)" class="nav-link" href="about.html">
+                        <h5>About</h5>
+                    </a>
+                </div>
+                <div id="contact-btn" class="col-md-1 p-2 mx-5 justify-content-end align-items-center ">
+                    <a class="contact" href="#contactme">
+                        <h5>Contact</h5>
+                    </a>
+                </div>
+                <!-- <div class="menu nav col-md-1 mt-2 justify-content-end align-items-center">
+                    <a onmouseover="changeColor(this)" 
+                    onmouseover="increaseSize(this)"class="nav-link" href="404.html">
+                        <h5>Creative</h5>
+                    </a>
+                </div> -->
+               
+
             </div>
-          <nav class="resume smart-layers-pointers valign-text-middle avenir-medium-elephant-20px">Resume</nav>
-          <nav class="creative smart-layers-pointers valign-text-middle avenir-medium-elephant-20px">Creative</nav>
-          <div class="overlap-group1">
-            <a href="#contact"> <div class="rectangle-1 smart-layers-pointers"></div></a>
-            <a href="#contact">
-              <nav class="place smart-layers-pointers valign-text-middle avenir-medium-white-20px">Contact</nav></a>
-          
-          </div>
         </div>
-        <div class="text-54 valign-text-middle bp1-animate-enter">hello, my name is Micah Andre Bergen</div>
-        <div class="text-55 valign-text-middle bp1-animate-enter1">
-          I&#39;m a Designer on a mission to solve tomorrows problems, today with high quality, simple and beautiful
-          design solutions
-        </div>
-        <a href="metro-case-study.html"><img class="group-2 smart-layers-pointers bp1-animate-enter4" show-on-scroll src="img/group-2-1@1x.png" /></a>
-        <a href="budgeting-app.html"><img class="group-1 smart-layers-pointers bp1-animate-enter3" show-on-scroll src="img/group-1-1@1x.png" /></a>
-        <div class="overlap-group">
-          <div id="contact" class="place-1 valign-text-middle avenir-medium-emerald-24px">contact</div>
-          <img id="rectangle-10"
-            class="rectangle-10 bp1-animate-enter2"
-            show-on-scroll
-            src="img/rectangle-10-1@1x.png"
-          />
-          <input class="rectangle-6" name="106_12651" placeholder="" type="text" required /><input
-            class="rectangle-7"
-            name="106_12652"
-            placeholder=""
-            type="email"
-            required
-          /><input class="rectangle-8" name="106_12653" placeholder="" type="text" /><textarea
-            class="rectangle-9"
-            name="106_12654"
-            placeholder=""
-            type="text"
-          ></textarea>
-          <div class="place-2 valign-text-middle avenir-book-normal-calypso-16px">Name</div>
-          <div class="email valign-text-middle avenir-book-normal-calypso-16px">Email</div>
-          <div class="subject valign-text-middle avenir-book-normal-calypso-16px">Subject</div>
-          <div class="message valign-text-middle avenir-book-normal-calypso-16px">Message</div>
-          <a href="javascript:SubmitForm('form2')"
-            ><img class="property-1-default smart-layers-pointers" src="img/property-1-default@2x.png" />
-          </a>
-        </div>
-      </form>
     </div>
-    <div class="container-center-horizontal">
-      <form class="iphone screen" name="form3" action="form3" method="post">
-        <div class="flex-row">
-          <img class="artboard-1-copy-6" src="img/artboard-1-copy-6-2@2x.png" />
-          <a href="javascript:ShowOverlay('frame-13', 'animate-appear');">
-            <div class="group-3">
-              <img class="line-4" src="img/line-4-2@2x.png" />
-              <img class="line-5" src="img/line-5-2@2x.png" />
-              <img class="line-6" src="img/line-6-2@2x.png" /></div
-          ></a>
+    </div>
+    <div class="container-fluid">
+        <div id="WhoAmI" class="row my-5 align-items-center justify-content-center bp1-animate-enter text-54">
+            <div id="info" class="col-md-8 my-5 mx-5">
+                <br><br>
+                <div id="MyName" class=" pr-2 py-1"> Hello, <span id="name" style="font-weight: bold;"> </span> My name
+                    is <span id="title"> Micah Andre Bergen.</span></div>
+                <!-- <div id="title">
+                    <h4><b>I'm Micah Bergen,</b></h4>
+                </div> -->
+
+                <p class="att_info bp1-animate-enter1 text-55">
+                    I'm a Designer on a mission to solve tomorrows problems today with high quality, simple and
+                    beautiful design solutions
+                </p>
+                <!-- Hi, I'm Micah! My wife and I, along with our 4 kids, live on a small island off the
+                    coast of British Columbia, Canada. I am a natural dreamer and a coffee
+                    snob.
+                    I love to inovate and strategize about the future, reforming old ways of doing things into
+                    something better and more efficient.
+                    I am a natural problem solver, and I love working with people to bring out the best in them. -->
+
+            </div>
+            <div id="img" class="col-md-2 mt-3 mx-5 pl-1 pr-2 py-3">
+                <!-- <image id="profile" class="image" src="profile2.jpeg">
+                </image> -->
+            </div>
         </div>
-        <div class="overlap-group1">
-          <p class="text-56 valign-text-middle bp3-animate-enter">hello, my name is Micah Andre Bergen</p>
-          <div class="text-57 valign-text-middle bp3-animate-enter1">
-            I&#39;m a Designer on a mission to solve tomorrows problems, today with high quality, simple and beautiful
-            design solutions
-          </div>
+    </div>
+    <br><br>
+    <div class="container-fluid">
+        <div id="work" class="row">
+            <div class="col-md-1 justify-content-end"></div>
+            <div id="rectangle" class=".d-flex-inline row mx-3 justify-content-start group-2 bp1-animate-enter4" show-on-scroll>
+                <a href="metro-case-study.html" class="work">
+                    <div id="metro" class=" mt-4 col-md-5">
+                        <img id="metrologo" src="img/metro-logo.png" alt="Island Metro Logo">
+                        <br>
+                        A collaboration between BC Ferries and Salt Spring Transit, to create a platform for Gulf Island
+                        Residents and Tourist to easily find, navigate and book their travel needs.
+                        <br> <b>All in one spot.</b>
+                    </div>
+                </a>
+                <div class="col-md-3">
+                    <a href="metro-case-study.html" class="work"> <img id="metrodisplay" src="img/metro-home.png"
+                            alt="metro site home"></a>
+                </div>
+            </div>
         </div>
+        <div class="row"></div>
+    </div>
+    <br><br><br><br>
+    <div class="container-fluid">
+        <div id="work" class="row">
+            <div class="col-md-1 justify-content-end"></div>
+
+            <div id="rectangle" class="row mx-3 justify-content-start group-2 bp1-animate-enter4" show-on-scroll>
+                <a href="budgeting-app.html" class="work">
+                    <div id="Budget" class=" mt-5 col-md-5">
+                        <h1>Kids Budgeting App</h1>
+                        <br>
+                        <b>What if:</b> In one generation we could solve the debt problem in America.
+                    </div>
+                    <div class="col-md-3">
+                        <img id="kbdisplay" src="img/kbud-open.png" alt="Kids Budgeting App">
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+    <div class="container-fluid">
         <br>
-        <div id="work"></div><a href="metro-case-study.html"><img class="group-2 smart-layers-pointers bp3-animate-enter4" show-on-scroll src="img/group-2-2@2x.png" /></a>
-      </div>
-        <div class="overlap-group">
-          <div id="contact" class="place valign-text-middle avenir-medium-emerald-24px">contact</div>
-          <a href="budgeting-app.html"><img id="rectangle-10" class="rectangle-10 bp3-animate-enter2" show-on-scroll src="img/rectangle-10-5@1x.png" /></a>
-          <input class="rectangle-6" name="110_12096" placeholder="" type="text" required /><input
-            class="rectangle-7"
-            name="110_12097"
-            placeholder=""
-            type="email"
-            required
-          /><input class="rectangle-8" name="110_12098" placeholder="" type="text" /><textarea
-            class="rectangle-9"
-            name="110_12099"
-            placeholder=""
-            type="text"
-          ></textarea
-          ><img class="group-1 smart-layers-pointers bp3-animate-enter3" show-on-scroll src="img/group-1-2@2x.png" />
-          <div class="place-1 valign-text-middle avenir-book-normal-calypso-16px">Name</div>
-          <div class="email valign-text-middle avenir-book-normal-calypso-16px">Email</div>
-          <div class="subject valign-text-middle avenir-book-normal-calypso-16px">Subject</div>
-          <div class="message valign-text-middle avenir-book-normal-calypso-16px">Message</div>
-          <a href="javascript:SubmitForm('form3')"
-            ><img class="property-1-default smart-layers-pointers" src="img/property-1-default@2x.png" />
-          </a>
-        </div>
-        <div class="rectangle-5"></div>
-      </form>
-    </div>
-
-
-    <div id="overlay-frame-4" class="overlay" style="min-height: 2199px">
-      <div class="container-center-horizontal">
-        <div class="frame-4 screen"><img class="frame-3" src="img/frame-3@2x.png" /></div>
-      </div>
-      </div>
-    <div id="overlay-frame-13" class="overlay" style="min-height: 2199px">
-      <div class="container-center-horizontal">
-        <div class="frame-13 screen">
-          <div class="overlap-group-1">
-            <div class="group-4">
-              <div class="overlap-group1">
-                <div class="rectangle-1 smart-layers-pointers"></div>
-                <div class="work smart-layers-pointers valign-text-middle avenir-medium-calypso-20px"><a href="#work">Work</a></div>
-                <div class="about smart-layers-pointers valign-text-middle avenir-medium-calypso-20px">About</div>
-                <div class="creative smart-layers-pointers valign-text-middle avenir-medium-calypso-20px">Creative</div>
-                <div class="place smart-layers-pointers valign-text-middle avenir-medium-calypso-20px">Contact</div>
-                <a href="javascript:HideOverlay('frame-13', 'animate-disappear');">
-                  <div class="group-3">
-                    <div class="overlap-group">
-                      <img class="line-4" src="img/line-4-1@2x.png" />
-                      <img class="line-5" src="img/line-5-1@2x.png" />
-                      <img class="line-6" src="img/line-6-1@2x.png" />
-                    </div></div
-                ></a>
-              </div>
+        <div class="row">
+            <div class="col-md-1"> </div>
+            <div class="col-md-2">
+                <H2 class="headline">contact</H2>
             </div>
-            <div class="rectangle-1-1 smart-layers-pointers"></div>
-            <div class="work-1 smart-layers-pointers valign-text-middle avenir-medium-calypso-20px"><a href="#work"><Work</a></div>
-            <div class="about-1 smart-layers-pointers valign-text-middle avenir-medium-calypso-20px">About</div>
-            <div class="creative-1 smart-layers-pointers valign-text-middle avenir-medium-calypso-20px">Creative</div>
-            <div class="place-1 smart-layers-pointers valign-text-middle avenir-medium-calypso-20px">Contact</div>
-            <a href="javascript:HideOverlay('frame-13', 'animate-disappear');">
-              <div class="group-3-1">
-                <div class="overlap-group">
-                  <img class="line-4" src="img/line-4-1@2x.png" />
-                  <img class="line-5" src="img/line-5-1@2x.png" />
-                  <img class="line-6" src="img/line-6-1@2x.png" />
-                </div></div></a
-            ><img class="line-4" src="img/line-4-1@2x.png" />
-            <img class="line-5" src="img/line-5-1@2x.png" />
-            <img class="line-6" src="img/line-6-1@2x.png" />
-          </div>
         </div>
-      </div>
-    </div>
-    <div id="overlay-frame-13" class="overlay" style="min-height: 2199px">
-      <div class="container-center-horizontal">
-        <div class="frame-13 screen">
-          <div class="overlap-group-1">
-            <div class="group-4">
-              <div class="overlap-group1">
-                <div class="rectangle-1 smart-layers-pointers"></div>
-                <div class="work smart-layers-pointers valign-text-middle avenir-medium-calypso-20px"><a href="#work">Work</a></div>
-                <div class="about smart-layers-pointers valign-text-middle avenir-medium-calypso-20px">About</div>
-                <div class="creative smart-layers-pointers valign-text-middle avenir-medium-calypso-20px">Creative</div>
-                <div class="place smart-layers-pointers valign-text-middle avenir-medium-calypso-20px">Contact</div>
-                <a href="javascript:HideOverlay('frame-13', 'animate-disappear');">
-                  <div class="group-3">
-                    <div class="overlap-group">
-                      <img class="line-4" src="img/line-4-1@2x.png" />
-                      <img class="line-5" src="img/line-5-1@2x.png" />
-                      <img class="line-6" src="img/line-6-1@2x.png" />
-                    </div></div
-                ></a>
-              </div>
+        <div id="contactme" class="row">
+            <div class="col-md-1 justify-content-end"></div>
+            <div id="rectangle-contact" class="row align-items-center bp1-animate-enter5" show-on-scroll>
+                <div class="col-md-7">
+                    <!-- <label for="fullname">Name</label><br>
+                    <input type="text" name="fullname" id="fullname"><br> -->
+                    <form action="https://formspree.io/f/xvodvawo" method="POST" enctype="multipart/form-data"
+                        name="ContactForm">
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="email" required><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email"><br>
+                        <label for="message">Message</label><br>
+                        <textarea type="textarea" name="message" id="message"></textarea><br>
+                        <button id="lets-chat" type="submit">
+                            Let's Chat<span class="iconify send-icon" data-icon="fe:paper-plane"></span></button>
+                    </form>
+                </div>
+                <div class="col-md-5 justify-content-end align-items-end"></div>
             </div>
-            <div class="rectangle-1-1 smart-layers-pointers"></div>
-            <div class="work-1 smart-layers-pointers valign-text-middle avenir-medium-calypso-20px"><a href="#work">Work</a></div>
-            <div class="about-1 smart-layers-pointers valign-text-middle avenir-medium-calypso-20px">About</div>
-            <div class="creative-1 smart-layers-pointers valign-text-middle avenir-medium-calypso-20px">Creative</div>
-            <div class="place-1 smart-layers-pointers valign-text-middle avenir-medium-calypso-20px">Contact</div>
-            <a href="javascript:HideOverlay('frame-13', 'animate-disappear');">
-              <div class="group-3-1">
-                <div class="overlap-group">
-                  <img class="line-4" src="img/line-4-1@2x.png" />
-                  <img class="line-5" src="img/line-5-1@2x.png" />
-                  <img class="line-6" src="img/line-6-1@2x.png" />
-                </div></div></a
-            ><img class="line-4" src="img/line-4-1@2x.png" />
-            <img class="line-5" src="img/line-5-1@2x.png" />
-            <img class="line-6" src="img/line-6-1@2x.png" />
-          </div>
+
         </div>
-      </div>
-      </div>
-    <script src="script.js">
-    </script>
-   
-  </body>
+    </div>
+    <div class="container-fluid">
+        <div id="contactme" class="row">
+            <div class="col-md-3 align-items-center justify-content-start">
+
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container-fluid m-6">
+        <div id="projects" class="row my-5 justify-content-around">
+            <div id="boom" class="col-md-3">
+                <div class="flip-card ">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Boom.png" alt="prototype" style="width:100%;height:100%;">
+
+                        </div>
+                        <div class="flip-card-back justify-content-center">
+                            <video height="100%"  autoplay controls loop>
+                                <source src="boom_vid.mov" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 align-items-center justify-content-end  p-3">
+                <div class="header pt-1 px-1 "><b>Boom Budget</b>
+                    <i style="font-size: 12pt; font-family: PT Sans, sans-serif;">Budgeting for
+                        Kids</i>
+                </div>
+                <br>
+                <div class=" text-white">
+                    <h5><b>Design Prompt:</b></h5>
+                    <p>Create a Better Way To Teach Kids <br>(age 6-12) about budgetting</p>
+                </div>
+                <br>
+                <button class="rounded justify-content-center">See the Full Project</button>
+            </div>
+            <div id="projects" class="row my-5 justify-content-around">
+                <div id="boom" class="col-md-3">
+                    <div class="flip-card ">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="Boom.png" alt="prototype" style="width:400;height:100%;">
+
+                            </div>
+                            <div class="flip-card-back justify-content-center">
+                                <video height="100%" autoplay loop>
+                                    <source src="boom_vid.mov" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 align-items-center justify-content-end  p-3">
+                    <div class="header pt-1 px-1 "><b>Metro Magnificent</b>
+                        <i style="font-size: 12pt; font-family: PT Sans, sans-serif;">A Redesign
+                            for
+                            BC Ferries</i>
+                    </div>
+                    <br>
+                    <div class=" text-white">
+                        <h5><b>Design Prompt:</b></h5>
+                        <p>Create a Better Way To Teach Kids <br>(age 6-12) about budgetting</p>
+                    </div>
+                    <br>
+                    <button class="rounded justify-content-center">See the Full Project</button>
+                </div>
+
+                <div id="projects" class="row my-5 justify-content-around">
+                    <div id="boom" class="col-md-3">
+                        <div class="flip-card ">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="Boom.png" alt="prototype" style="width:400;height:100%;">
+
+                                </div>
+                                <div class="flip-card-back justify-content-center">
+                                    <video height="100%" autoplay loop>
+                                        <source src="boom_vid.mov" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 align-items-center justify-content-end  p-3">
+                        <div class="header pt-1 px-1 "><b>Consecrated Capstone</b>
+                            <i style="font-size: 12pt; font-family: PT Sans, sans-serif;">La Piece De
+                                Resistance</i>
+                        </div>
+                        <br>
+                        <div class=" text-white">
+                            <h5><b>Design Prompt:</b></h5>
+                            <p>Create a Better Way To Teach Kids <br>(age 6-12) about budgetting</p>
+                        </div>
+                        <br>
+                        <button class="rounded justify-content-center">See the Full Project</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div id="skillset" class="row justify-content-around">
+                    <div id="tech" class="col-md-2  my-4 ">
+                        <h4 onmouseover="increaseSize(this)">Technical Skills</h4>
+                        <br>
+                        <p class="skills border p-1 rounded">HTML, CSS, JavaScript</p>
+                        <p class="skills border p-1 rounded">Bootstrap and Flexbox</p>
+                        <p class="skills border p-1 rounded"> AJAX & JQUERY</p>
+                    </div>
+                    <div id="soft" class=" col-md-2 mx-2 my-4 ">
+                        <div>
+                            <h4 onmouseover="increaseSize(this)">Soft Skills</h4>
+                        </div>
+                        <br>
+                        <p class="skills border p-1 rounded">Effective Communication</p>
+                        <p class="skills border p-1 rounded">Work Ethic</p>
+                        <p class="skills border p-1 rounded">Problem Solver</p>
+                        <p class="skills border p-1 rounded">Time Management</p>
+                    </div>
+                    <div id="hobby" class="col-md-2 mx-2 my-4 ">
+                        <h4 onmouseover="increaseSize(this)">Hobbies</h4>
+                        <br>
+                        <p class="skills border p-1 rounded">Coffee</p>
+                        <p class="skills border p-1 rounded">Music</p>
+                        <p class="skills border p-1 rounded"> Photography</p>
+                    </div>
+
+                </div>
+                <div class="container-fluid advice row justify-content-center align-items-center">
+                    <div class="col-md-6 mt-10 "> -->
+    <!-- <h3 class="m-3"><u>Advice of the Day</u></h3>
+
+                    <div id="insertAdvice" class=" row justify-content-center align-items-center text-muted">
+                         <div id="insertAdvice" class=" advice col-md-6 mb-2 text-muted"> </div> -->
+    <!-- </div>
+                </div>
+            </div>
+        </div>  -->
+        <br><br><br>
+        <div class="row footer">
+            <div style="font-size: 12px" class="col-md-3 m-3">
+                <a class="social-link" href="https://www.instagram.com/the_micah_bergen/">instagram |</a>
+                <a class="social-link" href="https://www.facebook.com/micah.bergen.9/"> facebook |</a>
+                <a class="social-link" href="https://www.linkedin.com/in/micah-bergen/"> linkedin |</a>
+                <a class="social-link" href="https://github.com/bergen-design"> github</a><br>       
+            </div>
+            <div style="font-size: 10px" class="row m-3"> © Micah Andre Bergen 2021</div>
+        </div>
+        
+    <script src="script.js"></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+</body>
+
 </html>
