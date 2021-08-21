@@ -889,7 +889,10 @@ a.social-link:visited {
         margin-top: 50px;
     }
     .case-image{
-        width:50%;
+        width:100%;
+    }
+    .case-iimage-wire{
+      width: 70%;
     }
 }
 
