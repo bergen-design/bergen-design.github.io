@@ -1,11 +1,11 @@
 
-    // image slide in
+    // // image slide in
     window.onscroll = function () { myFunction() };
 
     function myFunction() {
-        if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-            let img = document.getElementById("profile");
-            img.className = "slideIn";
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            let img = document.getElementsById("myTop");
+            img.className = "show";
             console.log(img);
         }
     };
@@ -42,6 +42,27 @@ function getAdvice() {
         document.getElementById("insertAdvice").appendChild(input);
     });
 }
+// Add top button on scroll
+// Get
+// var button = document.getElementById("myTop");
+
+//on scroll
+// window.onscroll = function () { scrollFunction() };
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     let button = document.getElementById("myTop");
+//     img.className = "show";
+//     console.log(button);
+// }
+// }
+
+//onclick
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 getAdvice();
 
 function ShowOnScroll() {

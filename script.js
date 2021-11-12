@@ -47,6 +47,33 @@ title.onmouseover = function () {
         title.style.color = "#18A999";
     }
 };
+// After anima-src
+setTimeout(function () {
+  var instShowOnScroll = new ShowOnScroll();
+  instShowOnScroll.init();
+}, 250);
+
+// Add top button on scroll
+// Get
+var button = document.getElementById("myTop");
+
+//on scroll
+window.onscroll = function () { rollFunction() };
+
+function rollFunction() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10)
+  {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+};
+
+//onclick
+function topFunction() {
+  document.body.srollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
 //Advice add in
 function getAdvice() {
     $.getJSON("https:api.adviceslip.com/advice", function (result) {
@@ -185,40 +212,4 @@ function ShowOnScroll() {
     window.addEventListener("resize", this);
   };
 
-  // After anima-src
-  setTimeout(function () {
-    var instShowOnScroll = new ShowOnScroll();
-    instShowOnScroll.init();
-  }, 250);
-
- // image slide in
- window.onscroll = function () { myFunction() };
-
- function myFunction() {
-     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-         let img = document.getElementById("profile");
-         img.className = "slideIn";
-         console.log(img);
-     }
- };
-  // Add top button on scroll
-  // Get
-  var button = document.getElementById("myTop");
-
-  //on scroll
-  window.onscroll = function () { rollFunction() };
-
-  function rollFunction() {
-    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10)
-    {
-      button.style.display = "block";
-    } else {
-      button.style.display = "none";
-    }
-  };
-
-  //onclick
-  function topFunction() {
-    document.body.srollTop = 0;
-    document.documentElement.scrollTop = 0;
-  };
+  
