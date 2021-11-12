@@ -203,7 +203,7 @@ function ShowOnScroll() {
  };
   // Add top button on scroll
   // Get
-  var button = document.getElementById("myBtn");
+  var button = document.getElementById("myTop");
 
   //on scroll
   window.onscroll = function () { rollFunction() };

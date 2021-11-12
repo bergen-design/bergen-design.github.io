@@ -93,7 +93,7 @@
   font-weight: 500;
   src: url("../fonts/HelveticaNeueMedium.ttf") format("truetype");
 }
-#myBtn{
+#myTop{
   display: none;
   position: fixed;
   bottom: 20px;
@@ -109,7 +109,7 @@
   padding: 15px;
   border-radius: 5px;
 }
-#myBtn:hover{
+#myTop:hover{
   background-color: #2F6690;
   color:white;
 
