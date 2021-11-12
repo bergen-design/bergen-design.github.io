@@ -59,6 +59,37 @@ function getAdvice() {
 }
 getAdvice();
 
+// image slide in
+ window.onscroll = function () { myFunction() };
+
+ function myFunction() {
+     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+         let img = document.getElementById("profile");
+         img.className = "slideIn";
+         console.log(img);
+     }
+ };
+  // Add top button on scroll
+  // Get
+  // var button = document.getElementById("myBtn");
+
+  //on scroll
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10)
+    {
+    let button = document.getElementById("myBtn");
+    button.className ="show";
+    }
+  };
+
+  //onclick
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
 function ShowOnScroll() {
     this.toShow = [];
     this.nextEventY = undefined;
@@ -160,3 +191,34 @@ function ShowOnScroll() {
     instShowOnScroll.init();
   }, 250);
 
+ // image slide in
+ window.onscroll = function () { myFunction() };
+
+ function myFunction() {
+     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+         let img = document.getElementById("profile");
+         img.className = "slideIn";
+         console.log(img);
+     }
+ };
+  // Add top button on scroll
+  // Get
+  var button = document.getElementById("myBtn");
+
+  //on scroll
+  window.onscroll = function () { rollFunction() };
+
+  function rollFunction() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10)
+    {
+      button.style.display = "block";
+    } else {
+      button.style.display = "none";
+    }
+  };
+
+  //onclick
+  function topFunction() {
+    document.body.srollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };

@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooted App Case Study</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </link>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to Top">Top</button>
+    <div class="header">
+        <div class="container-fluid ">
+            <div class="row mt-2 align-items-center justify-content-end">
+                <div class="col-md-3 justify-content-start align-items-center">
+                    <a href="index.html"><img id="imglogo" class="col-md-2 m-2" src="logo.png" alt="logo"></a>
+                </div>
+                <div class="col-md-5"></div>
+                <div class="menu nav col-md-1 mt-2 mx-2 justify-content-end align-items-center">
+                    <a onmouseover="changeColor(this)" class="nav-link" href="index.html#work">
+                        <h5>Work</h5>
+                    </a>
+                </div>
+                <div class="menu nav col-md-1 mt-2 mx-2 justify-content-end align-items-center">
+                    <a onmouseover="changeColor(this)" class="nav-link" href="about.html">
+                        <h5>About</h5>
+                    </a>
+                </div>
+                <div id="contact-btn" class="col-md-1 p-2 mx-2 justify-content-end align-items-center ">
+                    <a class="contact" href="index.html#contactme">
+                        <h5>Contact</h5>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <br><br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-6">
+                <span style=" color: #2F6690; font-size: 14px;" class="avenir-regular-normal-calypso-14px">
+                    Passion Project for Bethel School of Technology <br>
+                    <span style="font-size: 10px;">Designed for Novice Urban Farmers</span></span>
+            </div>
+        </div>
+        <div class="row bp1-animate-enter text-54">
+            <div id="metro-intro" class="col-md-1"></div>
+            <div class="col-md-5">
+                <div style=" margin-top: 200px;  color: #2F6690; font-size: 14px;" class="col-md-8">
+                    <img style="width: 418px; height: 267px;" src="img/RootedLogo.png" alt="Rooted App Logo"><br>
+                    The average age of the American farmer is 57.5 years old.
+                    In the next 30 years almost 70% of the global population
+                    will live in an urban setting.
+                    Let’s equip the next generation with the tools to <b>thrive in sustainable urban agriculture</b><br>
+                </div>
+                <span style="display: inline-flex; "><img style=" width: 32px; height: 32px; margin-right: 10px; margin-top: 30px; color:#FFA630;" class="video"
+                    src="img/video2.png">
+                <a href="https://drive.google.com/file/d/1wzjQVZ906Co1Gsh0FQ0cndvac82ZPGYP/view?usp=sharing"
+                    target="_blank">
+                    <div style="margin-top: 35px;" class="view-the-prototype">Watch the Presentation</div>
+                </a></span>
+            </div>
+            <div class="col-md-4 m-2">
+                <img class="case-image" style=" width: 832px; height: 832px;" src="img/rootedheader1.png">
+            </div>
+        </div>
+
+        <br><br><br>
+        <div class="row my-3" show-on-scroll>
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <div class="animate-enter109" show-on-scroll>
+                    <h2 class="sec-head-b">Opportunity</h2>
+                </div>
+                <div class="text ">
+                    <ul>
+                        <li>In the next 30 years, 70% of the world will live in a city-like setting.
+                            This is a huge opportunity for learning and developing a new skill such as urban farming.
+                            This is particularly timely as there’s concern around inflation and food prices are on the
+                            rise. </li><br>
+                        <li> Providing growth suggestions based primarily on location, with the additional filter of
+                            food a user would like to eat, will allow those new to urban farming to successfully begin
+                            their journey.</li>
+                    </ul>
+                </div>
+                <div class="bp1-animate-enter " show-on-scroll>
+                    <h2 class="sec-head-b">The Problem</h2>
+                </div>
+                <div class="text">Homeowners between the age of 25-54 are looking for ways to learn, cultivate, and
+                    enjoy sustainable food from the comfort and convenience of home.
+                </div>
+                <div class="overlap-group9">
+                    <div class="bp1-animate-enter " show-on-scroll>
+                        <h2 class="sec-head-b">The Solution</h2>
+                    </div>
+                    <p class="text bp1-animate-enter " show-on-scroll>
+                        Create an app that provides users with community and knowlede to cultivate thier own,
+                        eco-friendly, sustainable, and ehalthy food from the comfort of their own home.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="background-color: #7BE8D6;">
+            <div class="col-md-1"></div>
+            <div class="col-md-11 justify-content-start bp1-animate-enter ">
+                <h1 class="prime-head text-white"><b>The Team</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-2 py-5 justify-content-center align-items-center">
+                    <img style="width:250px; height:250px;" src="img/team3.png" alt="Micah Bergen profile Image">
+
+                </div>
+                <div class="col-md-3  mt-5 pt-5 p-5 justify-content-center align-items-center">
+                    <h3 class="text-white p-2">Micah Bergen</h3>
+                    <h4 class="text-white p-2">UI/UX Designer</h4>
+                </div>
+                <div class="col-md-2 py-5 justify-content-center align-items-center">
+                    <img style="width:250px; height:250px;" src="img/team4.png" alt="Nicolle Smirlis profile Image">
+
+                </div>
+                <div class="col-md-3  mt-5 p-5 justify-content-center align-items-center">
+                    <a class="nic-prof" href="https://www.nicollesmirlis.com">
+                        <h3 class="p-2">Nicolle Smirlis</h3>
+                    </a>
+                    <h4 class="text-white p-2">UI/UX Designer</h4>
+                </div>
+            </div>
+            <div class="row m-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-11 justify-content-start bp1-animate-enter ">
+                <h1 class="prime-head"> Role</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <img class="case-image-ill-2 align-items-center justify-content-center" src="img/role1.png"
+                    alt="illustration: Graph and Search">
+            </div>
+            <div class="col-md-3 text m-5 mx-5 px-5">
+                <ul>
+                    <li>User Research</li>
+                    <li>Design Strategy</li>
+                    <li>User
+                        Interviews</li>
+                    <li>Competitive Analysis</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <img class="case-image-ill-2 align-items-center justify-content-center" src="img/role2.png"
+                    alt="illustration: Chat Bubble">
+            </div>
+            <div class="col-md-3 text my-3 mx-5 px-5">
+                <ul>
+                    <li>Affinity Mapping</li>
+                    <li>User Persona's</li>
+                    <li>Information Architecture</li>
+                    <li>User Flows</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <img class="case-image-ill-2 align-items-center justify-content-center" src="img/role3.png"
+                    alt="illustration: Phone">
+            </div>
+            <div class="col-md-3 text my-3 mx-5 px-5">
+                <ul>
+                    <li>Wireframes</li>
+                    <li>Usability Testing</li>
+                    <li>Visual Design</li>
+                    <li>Prototyping</li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div><br><br>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11 justify-content-start bp1-animate-enter ">
+            <h1 class="prime-head">Project Timeline</h1>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <span style="display: inline-flex;">
+                <h1 style="font-size: 100px; color: #17BEBB; margin-right: 50px;">6 </h1>
+                <div class="vl-r"></div>
+                <h1 style="margin-left:30px; font-size: 100px; color: #17BEBB;"> 190 + </h1>
+            </span>
+            <span style="display: inline-flex;" class="text">
+                <h4 style=" margin-right:100px;">Weeks</h4>
+                <h4>Frames</h4>
+            </span>
+        </div>
+    </div>
+    <br><br>
+    <div class="row my-3">
+        <div class="col-md-1"> </div>
+        <div class="col-md-3">
+            <h1 class="prime-head">Market Analysis</h1>
+            <div class="text">We completed a Market Analysis to compare the current market offerings with the best
+                ratings and features.
+                While we found a number of useful products, most were not optimized for urban farming. This allowed us
+                to also complete a SWOT analysis of our MVP in comparison and discover potential opportunities in the
+                market.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img class="case-image" src="img/market-analysis-root.png" alt="market table">
+        </div>
+        <div class="row"><img style="width:100%;" src="img/SWOT-root.png" alt="SWOT Analysis"></div>
+    </div>
+    <div style="background-color: #7BE8D6" class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11 justify-content-start bp1-animate-enter ">
+            <h1 class="prime-head text-white"><b>User</b> Insights</h1>
+        </div>
+    </div>
+    <div style="background-color: #7BE8D6;" class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <h2 class="sec-head">Key Insight 1 - How to Get Started</h2>
+            <div class="text text-white">About 75% of prospective farmers don’t start growing, because they don’t know
+                where to begin.
+
+                Providing a clear, concise, and easy to understand breakdown of plant and environment requirements will
+                simply the beginning stages and allow those who are learning to begin with confidence.
+            </div>
+            <h2 class="sec-head">Key Insight 2 - Location-based suggestions</h2>
+            <div class="text-white">Providing growth suggestions based primarily on location, with the additional filter
+                of food they would like to eat, will allow those new to urban farming to successfully begin their
+                journey .
+
+                Their early success will provide the encouragement necessary to remain consistently committed, inviting
+                them into more complex growth and long term satisfaction.
+            </div>
+            <h2 class="sec-head">Key Insight 3 - Community of 'Influencers'</h2>
+            <div class="text-white">For learning farmers with little commitment, knowing someone currently engaged in
+                farming provides them with the incentive needed to keep trying. When provided with a community of people
+                to learn along side, and access to expert knowledge will prove to be invaluable as they accomplish
+                something they never thought they could do.
+            </div>
+            <h2 class="sec-head">Key Insight 4 - Sustainable Practices plus, Tips and Tricks</h2>
+            <div class="text-white">When starting out, most budding farmers share common struggles with soil quality,
+                water usage and the overwhelming amount of work required to maintain an urban farm.
+
+                By focusing on sustainable farming and providing applicable tips and tricks, users can learn and
+                implement practices that will not only improve their overall farming experience by creating healthy,
+                long lasting ecosystems, but also their health and well-being.
+            </div>
+            <h2 class="sec-head">Key Insight 5 - Soil of benefits</h2>
+            <div class="text-white">There is a biological connection between the consumption of our food and the soil
+                that it is grown in. When the soil is unhealthy, it leads to health issues. If the soil is cultivated
+                well, it provides improved health benefits as well as therapeutic benefits for the individual.
+            </div>
+            <br><br>
+        </div>
+        <div id="looking" class="col-md-3 justify-content-end align-content-end">
+            <img class="case-image-ill" style="width:150%;" src="img/key-root.png" alt="3D guy with thumbs up">
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-11 justify-content-start bp1-animate-enter ">
+                <h1 class="prime-head">User Persona's</h1>
+                <div class="row">
+                    <div class="col-md-5 text">User Persona’s clearly outline the collective experience of interviewed
+                        users.
+                        Their insights are summarized to help us gain empathy for our target user while designing.</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-11">
+                    <img class="case-image" src="img/UserPersona1.png" alt="user persona Moore's">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-11">
+                    <img class="case-image" src="img/User Persona.002.png" alt="user persona Cameron">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-11">
+                    <img class="case-image" src="img/UserPersona3.png" alt="user persona Ruth">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-11 justify-content-start bp1-animate-enter ">
+                <h1 class="prime-head">Site Map</h1>
+                <div class="row">
+                    <div class="col-md-5 text">The site map outlines the overall layout for the final product. Fully
+                        designed with users in mind.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-11">
+                <img class="case-image" src="img/sitemap-root.png" alt="site-map">
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11 justify-content-start bp1-animate-enter ">
+            <h1 class="prime-head">User Flow</h1>
+            <div class="row">
+                <div class="col-md-5 text">User Flow demonstrates how a user will move through a product while
+                    utilizing the key features.</div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
+            <h3 class="sec-head-b">Update Growth Progress</h3>
+            <img class="case-image-sm" src="img/userFlow-Growth.png" alt="Update Growth Progress user flow">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
+            <h3 class="sec-head-b">Add to Garden</h3>
+            <img class="case-image-sm" src="img/UserFlow-Add.png" alt="Add to Garden user flow">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
+            <h3 class="sec-head-b">Ask an Expert</h3>
+            <img class="case-image-sm" src="img/UserFlow-Expert.png" alt="Ask an expert user flow">
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div id="wireframe-intro-1" style=" background-color: #7BE8D6;"
+            class="col-md-5 justify-content-start bp1-animate-enter ">
+            <h1 class="prime-head-b text-white">Design Phases</h1>
+            <div class="row">
+                <div class="col-md-5 text-white">Design Phases are an overview of the iteration process of an initial
+                    concept from wireframe sketch to visual design and
+                    determine the final design layout of a product.</div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #7BE8D6" class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <img class="case-image" src="img/Frame 130.png" alt="wireframe intro">
+        </div>
+        <div id="wireframe-intro" class="col-md-5 justify-content-start bp1-animate-enter ">
+            <h1 class="prime-head text-white">Design Phases</h1>
+            <div class="col-md-6 text-white">Design Phases are an overview of the iteration process of an initial
+                concept from wireframe sketch to visual design and
+                determine the final design layout of a product.
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
+            <h2 class="sec-head-b">Dashboard</h2>
+            <div class="row dpz">
+                <img src="img/Frame 131.png" alt="Dashboad Design Phases">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
+            <h2 class="sec-head-b">Camera</h2>
+            <div class="row dpz">
+                <img src="img/Frame 132.png" alt="Camera Design Phases">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
+            <h2 class="sec-head-b">Add to Garden</h2>
+            <div class="row dpz">
+                <img src="img/Frame 133.png" alt="Add to Garden Design Phases">
+            </div>
+        </div>
+    </div><br><br>
+    <div class="row" style="background-color: #FFFDF5;">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <h1 class="prime-head">Usability Testing</h1>
+            <div class="text">Usability testing was completed 3 times using both the hi-fidelity wireframes and visual
+                design,<br> Each time the feedback was taken back to the design team to adjust and re-design the final
+                product.
+                <br><b>This was the discovery:</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2 p-3 m-4">
+                <h2 class="round-point m-3">1</h2>
+
+                <h4>
+                    <b class="sec-head p-2">Letter slider distracted from search bar</b>
+                </h4>
+                <span class="text">
+                    <b style="color: #150461">What we did:</b> Improve the hierarchy and design of both to engage users
+                    with the search bar
+                    first.
+                </span>
+
+            </div>
+
+            <div class="col-md-2 p-3 m-4">
+                <h2 class="round-point m-3">2</h2>
+
+                <h4>
+                    <b class="sec-head p-2">Growth tracker not easily found</b>
+                </h4>
+                <span class="text">
+                    <b style="color: #150461">What we did:</b> Moved the growth tracker to the top of the plant care
+                    page.
+                </span>
+            </div>
+            <div class="col-md-2 p-3 m-4">
+                <h2 class="round-point m-3">3</h2>
+
+                <h4>
+                    <b class="sec-head p-2">“My Garden” icon was confusing</b>
+                </h4>
+                <span class="text">
+                    <b style="color: #150461">What we did:</b> The icon was changed to make the design communication
+                    clear.
+                </span>
+            </div>
+            <div class="col-md-2 p-3 m-4">
+                <h2 class="round-point m-3">4</h2>
+
+                <h4>
+                    <b class="sec-head p-2">Too many clicks to plant in user’s garden</b>
+                </h4>
+                <span class="text">
+                    <b style="color: #150461">What we did:</b> Reduced the number of clicks and improved the cards to
+                    simplify the planting process.
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2 p-3 m-4">
+                <h2 class="round-point m-3">5</h2>
+
+                <h4>
+                    <b class="sec-head p-2">Menu difficult to understand</b>
+                </h4>
+                <span class="text">
+                    <b style="color: #150461">What we did:</b> Added label text and increased the font size.
+                </span>
+            </div>
+            <div class="col-md-2 p-3 m-4">
+                <h2 class="round-point m-3">6</h2>
+
+                <h4>
+                    <b class="sec-head p-2">Login or signup?</b>
+                </h4>
+                <span class="text">
+                    <b style="color: #150461">What we did:</b> Swapped the sign up and login.
+                </span>
+            </div>
+            <div class="col-md-2 p-3 m-4">
+                <h2 class="round-point m-3">7</h2>
+
+                <h4>
+                    <b class="sec-head p-2">Edit plot and post buttons hard to find</b>
+                </h4>
+                <span class="text">
+                    <b style="color: #150461">What we did:</b> increased the hierarchy (using color) and the size of
+                    both buttons to increase visibility.
+                </span>
+            </div>
+            <div class="col-md-2">
+                <img class="case-image-ill" style="width:120%;" src="img/Object/Other 12.png" alt="Feedback Box">
+            </div>
+        </div>
+    </div>
+    <div class="row group-5 animate-enter164" show-on-scroll>
+        <div class="col-md-1"></div>
+
+        <div class="col-md-11">
+            <h1 class="prime-head">Branding</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 m-4 py-5 align-items-end justify-content-end">
+            <h1 class="sec-head-b">Acceptable Combinations</h1>
+            <p class="text">Artworks have been created for a range of common reproduction methods and contexts
+                (light and dark backgrounds).
+
+                The one color logo can be rendered in any of the colors from the palette to create harmony between
+                the
+                logo and background.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img style="width: 100%;" src="img/logo-comb.png" alt="Logo Combinations">
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 my-4 px-4 align-items-end justify-content-end">
+            <h1 class="sec-head-b">Iconography</h1>
+            <p class="text">Iconography should be kept light to allow the overall feeling to be fresh and modern. When
+                selecting
+                icons, stick to transparent backgrounds, and thin strokes to allow the design to breath.
+                <br><br>
+                <b style="color: #150461;">General Elements</b>
+                <br><i>Carbon, IBM</i>
+                <br><i>Material Design, Google</i>
+                <br><br>
+                <b style="color: #150461;">Community / Camera </b>
+                <br> Fluent, Microsoft
+                <br><br>
+                <b style="color: #150461;">Rooted-U </b>
+                <br><i>Majesticons, Garret Halfmann</i>
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img style="width: 100%;" src="img/icon.png" alt="Suitable Icons">
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 my-4 px-4 align-items-end justify-content-end">
+            <h1 class="sec-head-b">Photography</h1>
+            <p class="text">Photography is key to the development of Rooted and the user experience. As such, select
+                photos showcasing the grass roots, and community elements of Rooted. <br><br>
+                When chosen correctly, eye-catching photos will engage and inspire the user, specifically drawing
+                attention to the natural beauty that exists within urban farming. Photos of produce should be vibrant.
+                Macro photography works great for this. <br><br>
+
+                Photography showcasing growth elements can have a grungy, hands-in-the-dirt feel, yet should always lean
+                toward the light and airy filters to fit with the overall modern and refreshing feel of the product.
+                <br>
+            </p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <img style="width: 75%;" src="img/photo.png" alt="Photography Example">
+        </div>
+    </div>
+
+    <div id="showoff-start" class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+            <h1 class="  prime-head">Digital Solution</h1>
+            <div class="text">A digital solution providing users with urban farming practices, knowledge and community
+                to cultivate eco-friendly, sustainable, and healthy food from the comfort of their own home.
+
+                <br> Content is primarily curated on a user's location, and supplemented with their own personal
+                preference so that they can enjoy the process just as much as they enjoy the final product.
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <img id="showoff-start" class="case-image" src="img/dig.png" alt="UI Preview">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="wireframe-intro-1" class=" display-items col-md-5 justify-content-start bp1-animate-enter ">
+                <h1 class="prime-head"><b>My Garden</h1>
+                <div class="row">
+                    <div class="col-md-10 text">
+                        <ul>
+                            <li>Regular reminders</li>
+                            <li>Based on skill level</li>
+                            <li>Localized suggestions</li>
+                            <li>Search for your favorite</li>
+                            <li>Assign it to a garden bed</li>
+                            <li>Best practices growth</li>
+                            <li>Companion planting</li>
+                            <li>Sun exposure</li>
+                            <li>Watering requirements</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- <div class="col-md-1"></div> -->
+        <div class="col-md-5">
+            <img style="width: 130%; margin-top: 200px;" src="img/mygarden.png" alt="My Garden View ">
+        </div>
+        <div class="col-md-1"></div>
+        <div id="wireframe-intro" class=" display-items col-md-4 justify-content-start bp1-animate-enter ">
+            <h1 class="prime-head"><b>My Garden</h1>
+            <div class="row">
+                <div class="col-md-10 text">
+                    <ul>
+                        <li>Regular reminders</li>
+                        <li>Based on skill level</li>
+                        <li>Localized suggestions</li>
+                        <li>Search for your favorite</li>
+                        <li>Assign it to a garden bed</li>
+                        <li>Best practices growth</li>
+                        <li>Companion planting</li>
+                        <li>Sun exposure</li>
+                        <li>Watering requirements</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="showoff-start" class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 pt-5 mt-5">
+            <h1 class="  prime-head">Picture-Perfect Plants</h1>
+            <div class="text">
+                <ul>
+                    <li>Take a picture, improve plant growth</li>
+                    <li>Plant Education</li>
+                    <li>Health Assessment</li>
+                    <li>Add picture(s) to "My Garden"</li>
+                    <li>Share picture(s) of farming journey</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <img id="showoff-start" class="case-image" src="img/picture-perf.png" alt="Picture Perfect Plants UI">
+        </div>
+    </div>
+    <div class="row">
+        <div id="wireframe-intro-1" class=" col-md-5 justify-content-start bp1-animate-enter ">
+            <h1 class="prime-head"><b>Growth Tracker</h1>
+            <div class="row">
+                <div class="col-md-10 text">
+                    <ul>
+                        <li>Collect before and after pictures</li>
+                        <li>Measure Progress, visually</li>
+                        <li>Provide stats and data</li>
+                        <li>Review plant performance</li>
+                        <li>Share photos with friends</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <!-- <div class="col-md-1"></div> -->
+        <div class="col-md-5">
+            <img style="width: 120%;" src="img/growth.png" alt="growth tracker ">
+        </div>
+        <div class="col-md-1"></div>
+        <div id="wireframe-intro" class=" display-items col-md-4 justify-content-start bp1-animate-enter ">
+            <h1 class="prime-head"><b>Growth Tracker</h1>
+            <div class="col-md-10 text">
+                <ul>
+                <li>Collect before and after pictures</li>
+                <li>Measure Progress, visually</li>
+                <li>Provide stats and data</li>
+                <li>Review plant performance</li>
+                <li>Share photos with friends</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="  col-md-4 justify-content-start bp1-animate-enter ">
+            <h1 class="display-items prime-head">Rooted-U (University)</h1>
+            <div class="row">
+                <div class="text">
+                    <ul>
+                    <li>Tips, tricks and best practices</li>
+                    <li>Content based on garden layout</li>
+                    <li>Video lessons, articles</li>
+                    <li>Start becoming an expert</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 my-5 pt-5">
+            <img style="width:150%;" src="img/rootedu.png" alt="Bookings & Reservations ">
+        </div>
+    </div>
+    <div class="row">
+        <div id="wireframe-intro-1" class=" col-md-5 justify-content-start bp1-animate-enter ">
+            <h1 class="prime-head"><b>Community</h1>
+            <div class="row">
+                <div class="col-md-10 text"><ul>
+                    <li>A communirt for users</li>
+                    <li>Get/give advice and guidance</li>
+                    <li>Share passions, ask questions</li>
+                    <li>Option to ask an expert</li>
+                    <li>Browse through posts and articles</li>
+                    <li>Get answers to specific problems</li>
+                    <li>Sell produce to community</li>
+                    <li>Connects growers and Buyers</li>
+                    </ul></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- <div class="col-md-1"></div> -->
+        <div class="col-md-5 mt-5 pt-5">
+            <img style="width: 120%;" src="img/community.png" alt="Community Screens ">
+        </div>
+        <div class="col-md-1"></div>
+        <div id="wireframe-intro" class=" display-items col-md-4 justify-content-start bp1-animate-enter ">
+            <h1 class="prime-head"><b>Community</h1>
+            <div class="col-md-12 text"><ul>
+                <li>A communirt for users</li>
+                <li>Get/give advice and guidance</li>
+                <li>Share passions, ask questions</li>
+                <li>Option to ask an expert</li>
+                <li>Browse through posts and articles</li>
+                <li>Get answers to specific problems</li>
+                <li>Sell produce to community</li>
+                <li>Connects growers and Buyers</li>
+                </ul></div>
+        </div>
+    </div>
+    <div style=" background-color: #FFA630;" class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <h1 class="prime-head text-white">Wrap Up</h1>
+            <div class="text-white">At the outset of this project, the prompt was to help users learn a new skill. 
+                With an incredible team, six weeks of research and development, iterations and testing our team is incredibly proud of the high quality, functional and beautiful product that was produced.
+               <br>
+
+                In creating this product the greatest challenge was also the greatest strength. Working together as a team, and challenging design decissions made the entire team better designers and produced the best possible product for the user.
+
+                The product is now ready to ship to developers.</div>
+        
+                <br><br> <br><br>   </div>
+        
+    </div>
+    <br>
+    <div style="background-color: #FFFFFF;" class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
+            <span style="display: inline-flex;"><img style="width: 25px; margin: 5px;" class="image-25"
+                    src="img/image-25@2x.png" />
+                <a href="https://www.figma.com/proto/oytHKEKvtaoNsZP2LiqvYm/Rooted-Design-File?page-id=60%3A3299&node-id=241%3A10529&starting-point-node-id=241%3A10529"
+                    target="_blank">
+                    <div style="margin-top: 20px;" class="view-the-prototype">View the Prototype</div>
+                </a></span>
+                <span style="display: inline-flex;"><img style=" width: 32px; height: 32px; margin-left: 30px; margin-right: 10px;" class="video"
+                    src="img/video.png">
+                <a href="https://drive.google.com/file/d/1wzjQVZ906Co1Gsh0FQ0cndvac82ZPGYP/view?usp=sharing"
+                    target="_blank">
+                    <div style="margin-top: 10px;" class="view-the-prototype">Watch the Presentation</div>
+                </a></span>
+            <br><br><br><br><br><br>
+        </div>
+    </div>
+    </div>
+
+    <div style="background-color: #F8F8F8;" class="row footer">
+        <div style="font-size: 12px" class="col-md-3 m-3">
+            <a class="social-link" href="https://www.instagram.com/the_micah_bergen/">instagram |</a>
+            <a class="social-link" href="https://www.facebook.com/micah.bergen.9/"> facebook |</a>
+            <a class="social-link" href="https://www.linkedin.com/in/micah-bergen/"> linkedin |</a>
+            <a class="social-link" href="https://github.com/bergen-design"> github</a><br>
+        </div>
+        <div style="font-size: 10px" class="row m-3"> © Micah Andre Bergen 2021</div>
+    </div>
+
+
+    <script src="about-script.js"></script>
+</body>
+
+</html>
