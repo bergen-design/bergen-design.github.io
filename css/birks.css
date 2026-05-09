@@ -1,4 +1,4 @@
- {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -623,13 +623,13 @@ label #res-sign-two {
 }
 
 /* Popup positions */
-.popup-1 { top: 12vh; left: 2%; max-height: 72vh; overflow-y: auto; }
+.popup-1 { top: 16vh; left: 2%; max-height: 72vh; overflow-y: auto; }
 .popup-2 { top: 12vh; left: 2%; max-height: 72vh; overflow-y: auto; }
-.popup-3 { top: 16vh; left: 2%; max-height: 72vh; overflow-y: auto; }
+.popup-3 { top: 12vh; left: 2%; max-height: 72vh; overflow-y: auto; }
 .popup-4 { top: 12vh; left: 2%; max-height: 72vh; overflow-y: auto; }
 .popup-5 { top: 12vh; left: 2%; max-height: 72vh; overflow-y: auto; }
 .popup-6 { top: 12vh; left: 2%; max-height: 72vh; overflow-y: auto; }
-.popup-7 { top: 12vh; left: 2%; max-height: 72vh; overflow-y: auto; }
+.popup-7 { top: 16vh; left: 2%; max-height: 72vh; overflow-y: auto; }
 
 .toggle-container {
     display: flex;
