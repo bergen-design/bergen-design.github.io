@@ -18,314 +18,298 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 
-<body onload="addWelcome()">
-    <div class="header">
-        <div class="container-fluid ">
-            <div class="row mt-2 align-items-center justify-content-end">
-                <div class="col-md-3 justify-content-start align-items-center">
-                    <a href="#"><img id="imglogo" class="col-md-2 m-2" src="logo.png" alt="logo"></a>
-                </div>
-                <div class="col-md-5"></div>
-                <div class="menu nav col-md-1 mt-2 mx-2 justify-content-end align-items-center">
-                    <a onmouseover="changeColor(this)" class="nav-link" href="#work">
-                        <h5>Work</h5>
-                    </a>
-                </div>
-                <div class="menu nav col-md-1 mt-2 mx-2 justify-content-end align-items-center">
-                    <a onmouseover="changeColor(this)" class="nav-link" href="about.html">
-                        <h5>About</h5>
-                    </a>
-                </div>
-                <div id="contact-btn" class="col-md-1 p-2 mx-2 justify-content-end align-items-center ">
-                    <a class="contact" href="#contactme">
-                        <h5>Contact</h5>
-                    </a>
-                </div>
-                <!-- <div class="menu nav col-md-1 mt-2 justify-content-end align-items-center">
-                    <a onmouseover="changeColor(this)" 
-                    onmouseover="increaseSize(this)"class="nav-link" href="404.html">
-                        <h5>Creative</h5>
-                    </a>
-                </div> -->
-               
+<body>
+    <!--onload="addWelcome()"-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <header class="header">
+        <nav class="navigation">
+            <input type="checkbox" id="mob-ham-nav">
+            <label for="mob-ham-nav">
+                <i class="material-icons" id="res-sign-one">menu</i>
+                <i class="material-icons" id="res-sign-two">close</i>
+            </label>
+                <a href="index.html"><img class="site-logo" src="profile.gif" alt="Logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#latestwork">Work</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item btn2"><a class="" href="#contactme" style="color:#f2f2f2;">Contact</a></li>
+            </ul>
+           
+            
+            
+        </nav>
+    </header>
 
+    <div class="container-fluid">
+        <div id="WhoAmI" class="row my-6 align-items-center justify-content-center bp1-animate-enter text-54">
+            <div id="info" class="col-md-10 my-5 mx-1">
+                <br><br><br><br><!--
+                <div id="ID"> 
+                    <p><b>Micah Andre Bergen</b><br>
+                        <span id="ID2">UI/ UX Designer | Product Designer | Futurist.</span>
+                    </p>
+                </div>
+                <br>-->
+                
+                <div class=" pr-2 py-1">
+                    <p id="MyName">Hi, <span id="name"> </span>I'm Micah. </p>
+                   <!-- oninput="cacheInput(this)"-->
+                    <p> <span id="what">I help companies 4x their user engagement
+                            using</span> </p>
+                    <p class="att_info bp1-animate-enter1">
+                        <br> <span class="values">research driven, human centered and creative
+                            designs.</span>
+                    </p>
+                </div>
             </div>
+           
+
+        </div>
+
+
+
+
+
+        <br><br><br>
+       <div class="proj-trigger-zone"></div>
+
+        <!--
+        <div class="row">
+            <div class="col-md-12">-->
+        <div id="latestwork" class="recent-proj">
+            <H2 class="rec-proj-head">RECENT PROJECTS</H2>
+            <div class="proj"><a href="connections-global.html">
+                <h2 class=" proj-small-1" >CONNECTIONS <span class="proj-small-3">GLOBAL</span></h2>
+            </a></div>
+            <div class="proj"><a href="maa-min.html">
+                <h2 class="proj">MAAMIN</h2>
+            </a></div>
+            <div class="proj"><a href="selah-retreat.html">
+                <h2 class="proj">SELAH RETREAT</h2>
+            </a></div>
+            <div class="proj"><a href="cassie-morell.html">
+                <h2 class="proj">CASSIE <span class=" proj-small-3">MORRELL</span></h2>
+            </a></div>
+            <div class="proj"><a href="bridesmaids-revisited.html">
+                <h2 class=" proj-small-1">BRIDESMAIDS <span class=" proj-small-3">REVISITED</span></h2>
+            </a></div>
+            <div class="proj"><a href="heavenly-treats.html">
+                <h2 class=" proj-small-3">HEAVENLY <span class=" proj-small-2">TREATS 4U</span></h2>
+            </a></div>
+            <div class="proj"><a href="ryan-collins.html">
+                <h2 class="proj">RYAN COLLINS</h2>
+            </a></div>
+            <div class="proj"><a href="briana-collins.html">
+                <h2 class=" proj-small-3">BRIANNA <span class="">COLLINS</span></h2>
+            </a></div>
+            <div class="proj"><a href="premiere.html">
+                <h2 class="proj">PREMIERE</h2>
+            </a></div>
+            <div class="proj"><a href="lec-inc.html">
+                <h2 class="proj">LEC INC</h2>
+            </a></div>
+            <div class="proj"><a href="bridal-app.html">
+                <h2 class="proj">BRIDAL APP</h2>
+            </a></div>
+            <div class="proj"><a href="birks.html">
+                <h2 class="proj">BIRKS</h2>
+            </a></div>
+            <div class="proj"><a href="maison-birks.html">
+                <h2 class="proj">MAISON BIRKS</h2>
+            </a></div>
+            <div class="proj"><a href="mercedes.html">
+                <h2 class="proj proj-small-2" >MERCEDES <span class="proj-small-1">DASHBOARD</span></h2>
+            </a></div>
+            <div class="proj"><a href="midnight.html">
+                <h2 class="proj proj-small-3" >MIDNIGHT</h2>
+            </a></div>
+            <div class="proj"><a href="rooted-app.html">
+                <h2 class="proj">ROOTED</h2>
+            </a></div>
+            <div class="proj"><a href="metro.html">
+                <h2 class="proj" >ISLAND METRO</h2>
+            </a></div>
+            
+            <div class="proj"><a href="budget.html">
+                <h2 class="proj">BOINGO BUDGET</h2>
+            </a></div>
         </div>
     </div>
-    </div>
-    <div class="container-fluid">
-        <div id="WhoAmI" class="row my-5 align-items-center justify-content-center bp1-animate-enter text-54">
-            <div id="info" class="col-md-8 my-5 mx-5">
-                <br><br>
-                <div id="MyName" class=" pr-2 py-1"> Hello, <span id="name" style="font-weight: bold;"> </span> My name
-                    is <span id="title"> Micah Andre Bergen.</span></div>
-                <!-- <div id="title">
-                    <h4><b>I'm Micah Bergen,</b></h4>
-                </div> -->
+    <!-- <div id="work" class="project-image">
+                        <img src="img/Rooted-Cover.png" alt="Project Image"> 
+                        <div class="overlay2">
+                            <div class="col-md-6">
+                                <img id="rootedlogo" style="width:80%;" src="img/RootedLogo.png" alt="RootedLogo"><br>
+                                <p class="overlay-description">
+                                    The average age of the American farmer is 57.5 years old. In the next 30 years
+                                    almost
+                                    70% of
+                                    the global population will live in an urban setting. Let’s equip the next generation
+                                    with
+                                    the tools to thrive in sustainable urban agriculture.
+                                <h6 class="overlay-title">View Project</h6>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    -->
 
-                <p class="att_info bp1-animate-enter1 text-55">
-                    I'm a Designer on a mission to solve tomorrow's problems today with high quality, simple and
-                    beautiful design solutions.
-                </p>
-                <!-- Hi, I'm Micah! My wife and I, along with our 4 kids, live on a small island off the
-                    coast of British Columbia, Canada. I am a natural dreamer and a coffee
-                    snob.
-                    I love to inovate and strategize about the future, reforming old ways of doing things into
-                    something better and more efficient.
-                    I am a natural problem solver, and I love working with people to bring out the best in them. -->
-
-            </div>
-            <div id="img" class="col-md-2 mt-3 mx-5 pl-1 pr-2 py-3">
-                <!-- <image id="profile" class="image" src="profile2.jpeg">
-                </image> -->
-            </div>
+    <!--    
         </div>
-    </div>
-    <br><br>
-    <div class="container-fluid">
-        <div id="work" class="row">
-            <div class="col-md-1 justify-content-end"></div>
-            <div id="rectangle" class=".d-flex-inline row mx-3 justify-content-start group-2 bp1-animate-enter4" show-on-scroll>
-                <a href="rooted-app.html" class="work">
-                    <div id="rooted" class=" mt-4 col-md-5">
-                        <img id="rootedlogo" style="width:70%;" src="img/RootedLogo.png" alt="RootedLogo">
-                        <br>
-                        The average age of the American farmer is 57.5 years old. In the next 30 years almost 70% of the global population will live in an urban setting. Let’s equip the next generation with the tools to thrive in sustainable urban agriculture.
+        <div class="row">
+            <div class="col-md-12">
+                <a href="metro.html">
+                    <div class="project-image">
+                        <img src="img/Island-Metro.png" alt="Project Image">
+                        <div class="overlay2">
+                            <div class="col-md-6">
+
+                                <p class="overlay-description">
+                                    <br><br><br>
+                                    <img id="metrologo" src="img/metro-logo.png" alt="Island Metro Logo"><br>
+                                    A collaboration between BC Ferries and Salt Spring Transit, to create a platform for
+                                    Gulf Island
+                                    Residents and Tourist to easily find, navigate and book their travel needs.
+                                    <br> <b>All in one spot.</b>
+                                <h6 class="overlay-title">View Project</h6>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </a>
-                <div class="col-md-3">
-                    <a href="rooted-app.html" class="work"> <img id="metrodisplay" style="width:50%;" src="img/dig.png"
-                            alt="my garden screen"></a>
-                </div>
             </div>
         </div>
-        <div class="row"></div>
-    </div>
-    <br><br><br><br>
-    <div class="container-fluid">
-        <div id="work" class="row">
-            <div class="col-md-1 justify-content-end"></div>
-            <div id="rectangle" class=".d-flex-inline row mx-3 justify-content-start group-2 bp1-animate-enter4" show-on-scroll>
-                <a href="metro.html" class="work">
-                    <div id="metro" class=" mt-4 col-md-5">
-                        <img id="metrologo" src="img/metro-logo.png" alt="Island Metro Logo">
-                        <br>
-                        A collaboration between BC Ferries and Salt Spring Transit, to create a platform for Gulf Island
-                        Residents and Tourist to easily find, navigate and book their travel needs.
-                        <br> <b>All in one spot.</b>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="budget.html">
+                    <div class="project-image">
+                        <img src="img/kbud-open.png" alt="Project Image">
+                        <div class="overlay2">
+                            <div class="col-md-6">
+                                <p class="overlay-description">
+                                    <br><br><br><br>
+                                <h1>Kids Budgeting App</h1>
+                                <br>
+                                <b>What if:</b> In one generation we could solve the debt problem in America.
+                                <h6 class="overlay-title">View Project</h6>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </a>
-                <div class="col-md-3">
-                    <a href="metro.html" class="work"> <img id="metrodisplay" src="img/metro-home.png"
-                            alt="metro site home"></a>
-                </div>
             </div>
         </div>
-        <div class="row"></div>
     </div>
-    <br><br><br><br>
-    <div class="container-fluid">
-        <div id="work" class="row">
-            <div class="col-md-1 justify-content-end"></div>
+    -->
 
-            <div id="rectangle" class="row mx-3 justify-content-start group-2 bp1-animate-enter4" show-on-scroll>
-                <a href="budget.html" class="work">
-                    <div id="Budget" class=" mt-5 col-md-5">
-                        <h1>Kids Budgeting App</h1>
-                        <br>
-                        <b>What if:</b> In one generation we could solve the debt problem in America.
-                    </div>
-                    <div class="col-md-3">
-                        <img id="kbdisplay" src="img/kbud-open.png" alt="Kids Budgeting App">
-                </a>
-            </div>
-        </div>
-    </div>
-    </div>
 
     <br><br><br><br><br><br><br><br>
-    <div class="container-fluid">
-        <br>
-        <div class="row">
-            <div class="col-md-1"> </div>
-            <div class="col-md-2">
-                <H2 class="headline">contact</H2>
-            </div>
-        </div>
-        <div id="contactme" class="row">
-            <div class="col-md-1 justify-content-end"></div>
-            <div id="rectangle-contact" class="row align-items-center bp1-animate-enter5" show-on-scroll>
-                <div class="col-md-7">
-                    <!-- <label for="fullname">Name</label><br>
-                    <input type="text" name="fullname" id="fullname"><br> -->
-                    <form action="https://formspree.io/f/xvodvawo" method="POST" enctype="multipart/form-data"
-                        name="ContactForm">
-                        <label for="name">Name</label><br>
-                        <input type="text" name="name" id="email" required><br>
-                        <label for="email">Email</label><br>
-                        <input type="email" name="email" id="email"><br>
-                        <label for="message">Message</label><br>
-                        <textarea type="textarea" name="message" id="message"></textarea><br>
-                        <button id="lets-chat" type="submit">
-                            Let's Chat<span class="iconify send-icon" data-icon="fe:paper-plane"></span></button>
-                    </form>
-                </div>
-                <div class="col-md-5 justify-content-end align-items-end"></div>
-            </div>
 
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div id="contactme" class="row">
-            <div class="col-md-3 align-items-center justify-content-start">
-
-            </div>
-        </div>
-    </div>
-    <!-- <div class="container-fluid m-6">
-        <div id="projects" class="row my-5 justify-content-around">
-            <div id="boom" class="col-md-3">
-                <div class="flip-card ">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="Boom.png" alt="prototype" style="width:100%;height:100%;">
-
-                        </div>
-                        <div class="flip-card-back justify-content-center">
-                            <video height="100%"  autoplay controls loop>
-                                <source src="boom_vid.mov" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 align-items-center justify-content-end  p-3">
-                <div class="header pt-1 px-1 "><b>Boom Budget</b>
-                    <i style="font-size: 12pt; font-family: PT Sans, sans-serif;">Budgeting for
-                        Kids</i>
-                </div>
-                <br>
-                <div class=" text-white">
-                    <h5><b>Design Prompt:</b></h5>
-                    <p>Create a Better Way To Teach Kids <br>(age 6-12) about budgetting</p>
-                </div>
-                <br>
-                <button class="rounded justify-content-center">See the Full Project</button>
-            </div>
-            <div id="projects" class="row my-5 justify-content-around">
-                <div id="boom" class="col-md-3">
-                    <div class="flip-card ">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="Boom.png" alt="prototype" style="width:400;height:100%;">
-
-                            </div>
-                            <div class="flip-card-back justify-content-center">
-                                <video height="100%" autoplay loop>
-                                    <source src="boom_vid.mov" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 align-items-center justify-content-end  p-3">
-                    <div class="header pt-1 px-1 "><b>Metro Magnificent</b>
-                        <i style="font-size: 12pt; font-family: PT Sans, sans-serif;">A Redesign
-                            for
-                            BC Ferries</i>
-                    </div>
-                    <br>
-                    <div class=" text-white">
-                        <h5><b>Design Prompt:</b></h5>
-                        <p>Create a Better Way To Teach Kids <br>(age 6-12) about budgetting</p>
-                    </div>
-                    <br>
-                    <button class="rounded justify-content-center">See the Full Project</button>
-                </div>
-
-                <div id="projects" class="row my-5 justify-content-around">
-                    <div id="boom" class="col-md-3">
-                        <div class="flip-card ">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="Boom.png" alt="prototype" style="width:400;height:100%;">
-
-                                </div>
-                                <div class="flip-card-back justify-content-center">
-                                    <video height="100%" autoplay loop>
-                                        <source src="boom_vid.mov" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 align-items-center justify-content-end  p-3">
-                        <div class="header pt-1 px-1 "><b>Consecrated Capstone</b>
-                            <i style="font-size: 12pt; font-family: PT Sans, sans-serif;">La Piece De
-                                Resistance</i>
-                        </div>
-                        <br>
-                        <div class=" text-white">
-                            <h5><b>Design Prompt:</b></h5>
-                            <p>Create a Better Way To Teach Kids <br>(age 6-12) about budgetting</p>
-                        </div>
-                        <br>
-                        <button class="rounded justify-content-center">See the Full Project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div id="skillset" class="row justify-content-around">
-                    <div id="tech" class="col-md-2  my-4 ">
-                        <h4 onmouseover="increaseSize(this)">Technical Skills</h4>
-                        <br>
-                        <p class="skills border p-1 rounded">HTML, CSS, JavaScript</p>
-                        <p class="skills border p-1 rounded">Bootstrap and Flexbox</p>
-                        <p class="skills border p-1 rounded"> AJAX & JQUERY</p>
-                    </div>
-                    <div id="soft" class=" col-md-2 mx-2 my-4 ">
-                        <div>
-                            <h4 onmouseover="increaseSize(this)">Soft Skills</h4>
-                        </div>
-                        <br>
-                        <p class="skills border p-1 rounded">Effective Communication</p>
-                        <p class="skills border p-1 rounded">Work Ethic</p>
-                        <p class="skills border p-1 rounded">Problem Solver</p>
-                        <p class="skills border p-1 rounded">Time Management</p>
-                    </div>
-                    <div id="hobby" class="col-md-2 mx-2 my-4 ">
-                        <h4 onmouseover="increaseSize(this)">Hobbies</h4>
-                        <br>
-                        <p class="skills border p-1 rounded">Coffee</p>
-                        <p class="skills border p-1 rounded">Music</p>
-                        <p class="skills border p-1 rounded"> Photography</p>
-                    </div>
-
-                </div>
-                <div class="container-fluid advice row justify-content-center align-items-center">
-                    <div class="col-md-6 mt-10 "> -->
-    <!-- <h3 class="m-3"><u>Advice of the Day</u></h3>
-
-                    <div id="insertAdvice" class=" row justify-content-center align-items-center text-muted">
-                         <div id="insertAdvice" class=" advice col-md-6 mb-2 text-muted"> </div> -->
-    <!-- </div>
-                </div>
-            </div>
-        </div>  -->
-        <br><br><br>
-        <div class="row footer">
-            <div style="font-size: 12px" class="col-md-3 m-3">
-                <a class="social-link" href="https://www.instagram.com/the_micah_bergen/">instagram |</a>
-                <a class="social-link" href="https://www.facebook.com/micah.bergen.9/"> facebook |</a>
-                <a class="social-link" href="https://www.linkedin.com/in/micah-bergen/"> linkedin |</a>
-                <a class="social-link" href="https://github.com/bergen-design"> github</a><br>       
-            </div>
-            <div style="font-size: 10px" class="row m-3"> © Micah Andre Bergen 2021</div>
-        </div>
+    <br>
+    <div class="row">
         
+        <div class="col-md-10" style="padding-left: 20%;">
+            <H2 class="headline">What do you say,<span class="name"> </span> Let's work together!</H2>
+        </div>
+    </div>
+    <div id="contactme" class="row">
+        <div class="col-md-1 justify-content-end"></div>
+        <div id="rectangle-contact" class="row align-items-center bp1-animate-enter5" show-on-scroll>
+            <div class="col-md-7">
+                <!-- <label for="fullname">Name</label><br>
+                    <input type="text" name="fullname" id="fullname"><br> -->
+                <form action="https://formspree.io/f/xvodvawo" method="POST" enctype="multipart/form-data"
+                    name="ContactForm">
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="email" placeholder="Full Name" required><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Email" required> <br>
+                    <label for="message">Message</label><br>
+                    <textarea type="textarea" name="message" id="message" placeholder="How can I help?"
+                        required></textarea><br>
+                    <button id="lets-chat" type="submit">
+                        Let's Chat<span class="iconify send-icon" data-icon="fe:paper-plane"></span></button>
+                </form>
+            </div>
+            <div class="col-md-5 justify-content-end align-items-end"></div>
+        </div>
+
+    </div>
+
+
+    <div id="contactme" class="row">
+        <div class="col-md-3 align-items-center justify-content-start">
+
+        </div>
+    </div>
+    </div>
+
+    <!--
+    <div id="skillset" class="row justify-content-around">
+        <div id="tech" class="col-md-2  my-4 ">
+            <h4 onmouseover="increaseSize(this)">Technical Skills</h4>
+            <br>
+            <p class="skills border p-1 rounded">HTML, CSS, JavaScript</p>
+            <p class="skills border p-1 rounded">Bootstrap and Flexbox</p>
+            <p class="skills border p-1 rounded"> AJAX & JQUERY</p>
+        </div>
+        <div id="soft" class=" col-md-2 mx-2 my-4 ">
+            <div>
+                <h4 onmouseover="increaseSize(this)">Soft Skills</h4>
+            </div>
+            <br>
+            <p class="skills border p-1 rounded">Effective Communication</p>
+            <p class="skills border p-1 rounded">Work Ethic</p>
+            <p class="skills border p-1 rounded">Problem Solver</p>
+            <p class="skills border p-1 rounded">Time Management</p>
+        </div>
+        <div id="hobby" class="col-md-2 mx-2 my-4 ">
+            <h4 onmouseover="increaseSize(this)">Hobbies</h4>
+            <br>
+            <p class="skills border p-1 rounded">Coffee</p>
+            <p class="skills border p-1 rounded">Music</p>
+            <p class="skills border p-1 rounded"> Photography</p>
+        </div>
+
+    </div>
+    -->
+
+
+    <div class="row footer">
+
+        <div class="col-md-5"></div>
+        <div style="font-size: 24px; font-weight: 200;" class="col-md-3 mt-3">
+
+           
+            <hr>
+            <div id="insertAdvice" class=" row justify-content-center align-items-center text-muted" style="color:#343434; padding: 20px;">
+                <div id="insertAdvice" class=" advice col-md-6 text-muted"> </div>
+            </div>
+            <p class="text-muted" style="text-align: center; font-size: 12px; ">Advice of the Day</p>
+            <hr>
+            <a class="social-link col-md-3" href="https://www.instagram.com/the_micah_bergen/"><iconify-icon
+                    icon="bxl:instagram"></iconify-icon>
+            </a>
+
+            <a class="social-link col-md-3" href="https://www.linkedin.com/in/micah-bergen/"> <iconify-icon
+                    icon="jam:linkedin-square"></iconify-icon>
+            </a>
+           
+        </div>
+        <div class="col-md-12"></div>
+        <div style="font-size: 10px; text-align: center; justify-content: center; align-self: center; padding-left: 40px;" class="row m-1 mx-4"> © Micah Andre Bergen 2025</div>
+    </div>
+
     <script src="script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
 </body>

@@ -4,7 +4,7 @@
 
     function myFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            let img = document.getElementsById("myTop");
+            let img = document.getElementById("myTop");
             img.className = "show";
             console.log(img);
         }

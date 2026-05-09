@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design for Resource Management - UI/UX Design Case Study</title>
+    <meta name="description" content="UI/UX design case study for a resource management platform">
+    <meta name="keywords" content="UI/UX design, resource management, user experience, user interface, case study">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="birks.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+
+    <div class="mini-control-island">
+        <div class="segmented-toggle">
+            <button class="segment-option" data-view="ia">Information Architecture</button>
+            <button class="segment-option" data-view="lofi">Lo-Fi Designs</button>
+            <button class="segment-option active" data-view="hifi">Hi-Fi Designs</button>
+            <div class="segment-indicator"></div>
+        </div>
+        <div class="ia-flyout" id="iaFlyout" aria-hidden="true">
+            <button class="mini-control-btn ia-flyout-btn" data-stack="sitemap">Sitemap</button>
+            <button class="mini-control-btn ia-flyout-btn" data-stack="userflows">User Flows</button>
+        </div>
+    </div>
+
+    <!-- Background iframe -->
+    <div class="background-iframe">
+        <div class="loading-animation" id="loadingAnimation">
+            <div class="loading-spinner"></div>
+        </div>
+        <iframe id="caseStudyFrame" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="http://maisonbirks.com" allowfullscreen title="Maison Birks Website" onload="hideLoadingAnimation()"></iframe>
+        <div class="image-stack" id="imageStack" aria-live="polite" hidden></div>
+    </div>
+
+    <div class="overlay-container active" id="overlayContainer">
+        <button class="back-button" onclick="window.location.href='index.html'">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im05IDExbC00IDRsNCA0bS00LTRoMTFhNCA0IDAgMCAwIDAtOGgtMSIvPjwvc3ZnPg==" alt="Back" class="back-icon">
+            <span>Home</span>
+        </button>
+        <!-- Popup 1: Project Overview -->
+        <div class="popup popup-1" data-index="0">
+            <h2>Project Overview</h2>
+            <p><strong>Category:</strong> Consulting, Design, Development</p>
+            <p><strong>Software:</strong> Salesforce, Figma, HTML, CSS</p>
+            <p><strong>Website:</strong> <a href="https://www.birks.com" target="_blank">www.birks.com</a></p>
+            <p>I was asked to provide UI/UX consultation, ensure UI/UX best practices, and complete the site build on Salesforce with custom code for this prestigious luxury jewelry brand's international expansion.</p>
+        </div>
+
+        <!-- Popup 2: The Challenge -->
+        <div class="popup popup-2" data-index="1">
+            <h2>The Challenge</h2>
+            <p>Global expansion is no small feat. It comes with a special set of challenges, especially for a prestigious luxury brand looking to revamp their online presence. This is a tale of innovation, challenge, and triumph.</p>
+            <p>The prestigious luxury jewelry company faced several challenges with their international website launch:</p>
+            <ul>
+                <li><strong>UX and Accessibility Issues:</strong> The designs they were provided from another agency lacked UX best practices and accessibility criteria, necessitating consultation and redesign.</li>
+                <li><strong>Platform Challenges:</strong> The website was built on a mixed platform, leading to localization issues and content cross-pollination.</li>
+                <li><strong>Scope Management:</strong> Certain elements, though provided to the development agency, were not outlined in the Statement of Work (SOW), requiring additional solutions to be found.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 3: The Solution -->
+        <div class="popup popup-3" data-index="2">
+            <h2>The Solution</h2>
+            <p>Thinking about design is hard, but not thinking about it can be disastrous.</p>
+            <p>I provided comprehensive UI/UX consultation and implementation, including:</p>
+            <ul>
+                <li><strong>UX Best Practices:</strong> Implemented industry-standard UX principles to enhance user experience and accessibility.</li>
+                <li><strong>Custom Development:</strong> Built custom solutions on Salesforce to address the platform's limitations and requirements.</li>
+                <li><strong>Localization Strategy:</strong> Developed a robust approach to handle multiple languages and regional requirements.</li>
+                <li><strong>Quality Assurance:</strong> Conducted thorough testing to ensure all components met the highest standards of quality and performance.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 4: The Results -->
+        <div class="popup popup-4" data-index="3">
+            <h2>The Results</h2>
+            <p>The successful implementation of UI/UX best practices and the custom Salesforce build resulted in:</p>
+            <ul>
+                <li><strong>Improved User Experience:</strong> Delivered a seamless and intuitive interface that met the high standards expected from a luxury brand.</li>
+                <li><strong>Enhanced Accessibility:</strong> Ensured the website was accessible to all users, meeting international accessibility standards.</li>
+                <li><strong>Streamlined Localization:</strong> Successfully implemented a solution for managing multiple languages and regional content without cross-pollination.</li>
+                <li><strong>Technical Excellence:</strong> Delivered a robust and scalable solution on the Salesforce platform with custom code that addressed all technical challenges.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 5: Key Achievements -->
+        <div class="popup popup-5" data-index="4">
+            <h2>Key Achievements</h2>
+            <p>This project demonstrated the power of thoughtful design and technical excellence in solving complex business challenges.</p>
+            <ul>
+                <li>Successfully delivered a global e-commerce platform that met the luxury brand's high standards</li>
+                <li>Overcame significant technical challenges related to platform limitations and localization requirements</li>
+                <li>Established new benchmarks for UX design and accessibility in the luxury e-commerce space</li>
+                <li>Created a foundation for future enhancements and expansions</li>
+                <li>Received positive feedback from both the client and end-users for the improved user experience</li>
+            </ul>
+        </div>
+
+        <!-- Popup 6: Technical Implementation -->
+        <div class="popup popup-6" data-index="5">
+            <h2>Technical Implementation</h2>
+            <p>The project required careful planning and execution to ensure a smooth transition and optimal performance.</p>
+            <ul>
+                <li><strong>Phased Rollout:</strong> Implemented changes in stages to minimize disruption and allow for testing.</li>
+                <li><strong>Custom Development:</strong> Created tailored solutions for unique functionality requirements.</li>
+                <li><strong>Performance Optimization:</strong> Ensured fast loading times and smooth interactions across all devices.</li>
+                <li><strong>Cross-Browser Compatibility:</strong> Tested and optimized for all major browsers and devices.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 7: Wrapping Up -->
+        <div class="popup popup-7" data-index="6">
+            <h2>Wrapping Up</h2>
+            <p>This project stands as a testament to the power of user-centered design in transforming digital experiences. By focusing on both aesthetics and functionality, I was able to help this luxury brand achieve remarkable business results while enhancing their digital presence.</p>
+            <p>The success of this redesign demonstrates how thoughtful UI/UX can directly impact the bottom line, even for established luxury brands with discerning customers.</p>
+            <p><em>This engagement was completed under a white label agreement</em></p>
+        </div>
+
+        <div class="control-bar">
+            <div class="toggle-container">
+                <div class="toggle-label" id="toggleLabel">Hide Overview</div>
+                <button class="toggle-overlay active" id="toggleBtn">
+                    <div class="toggle-slider">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xNCAxMmMtMS4wOTUgMC0yLS45MDUtMi0yYzAtLjM1NC4xMDMtLjY4My4yNjgtLjk3M0MxMi4xNzggOS4wMiAxMi4wOTIgOSAxMiA5YTMuMDIgMy4wMiAwIDAgMC0zIDNjMCAxLjY0MiAxLjM1OCAzIDMgM3MzLTEuMzU4IDMtM2MwLS4wOTItLjAyLS4xNzgtLjAyNy0uMjY4Yy0uMjkuMTY1LS42MTkuMjY4LS45NzMuMjY4Ii8+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTIgNWMtNy42MzMgMC05LjkyNyA2LjYxNy05Ljk0OCA2LjY4NEwxLjk0NiAxMmwuMTA1LjMxNkMyLjA3MyAxMi4zODMgNC4zNjcgMTkgMTIgMTlzOS45MjctNi42MTcgOS45NDgtNi42ODRsLjEwNi0uMzE2bC0uMTA1LS4zMTZDMjEuOTI3IDExLjYxNyAxOS42MzMgNSAxMiA1bTAgMTJjLTUuMzUxIDAtNy40MjQtMy44NDYtNy45MjYtNUM0LjU3OCAxMC44NDIgNi42NTIgNyAxMiA3YzUuMzUxIDAgNy40MjQgMy44NDYgNy45MjYgNWMtLjUwNCAxLjE1OC0yLjU3OCA1LTcuOTI2IDUiLz48L3N2Zz4=" alt="Show" class="toggle-icon" id="showIcon">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0yIDUuMjdMMy4yOCA0TDIwIDIwLjcyTDE4LjczIDIybC0zLjA4LTMuMDhjLTEuMTUuMzgtMi4zNy41OC0zLjY1LjU4Yy01IDAtOS4yNy0zLjExLTExLTcuNWMuNjktMS43NiAxLjc5LTMuMzEgMy4xOS00LjU0ek0xMiA5YTMgMyAwIDAgMSAzIDNhMyAzIDAgMCAxLS4xNyAxTDExIDkuMTdBMyAzIDAgMCAxIDEyIDltMC00LjVjNSAwIDkuMjcgMy4xMSAxMSA3LjVhMTEuOCAxMS44IDAgMCAxLTQgNS4xOWwtMS40Mi0xLjQzQTkuODYgOS44NiAwIDAgMCAyMC44MiAxMkE5LjgyIDkuODIgMCAwIDAgMTIgNi41Yy0xLjA5IDAtMi4xNi4xOC0zLjE2LjVMNy4zIDUuNDdjMS40NC0uNjIgMy4wMy0uOTcgNC43LS45N00zLjE4IDEyQTkuODIgOS44MiAwIDAgMCAxMiAxNy41Yy42OSAwIDEuMzctLjA3IDItLjIxTDExLjcyIDE1QTMuMDY0IDMuMDY0IDAgMCAxIDkgMTIuMjhMNS42IDguODdjLS45OS44NS0xLjgyIDEuOTEtMi40MiAzLjEzIi8+PC9zdmc+" alt="Hide" class="toggle-icon" id="hideIcon" style="display: none;">
+                    </div>
+                </button>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-btn" id="prevPopup">Previous</button>
+                <button class="nav-btn" id="nextPopup">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spacer content for scrolling -->
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <script src="birks.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+</body>
+</body>
+</html>

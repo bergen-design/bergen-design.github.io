@@ -20,28 +20,25 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="container-fluid ">
-            <div class="row mt-2 align-items-center justify-content-end">
-                <div class="col-md-3 justify-content-start align-items-center">
-                    <a href="index.html"><img id="imglogo" class="col-md-2 m-2" src="logo.png" alt="logo"></a>
-                </div>
-                <div class="col-md-5"></div>
-                <div class="menu nav col-md-1 mt-2 mx-2 justify-content-end align-items-center">
-                    <a onmouseover="changeColor(this)" class="nav-link" href="index.html#work">
-                        <h5>Work</h5>
-                    </a>
-                </div>
-                <div id="about-page" class="menu nav col-md-1 mt-2 mx-2 justify-content-end align-items-center">
-                    
-                        <h5 class="nav-link">About</h5>
-                
-                </div>
-                <div id="contact-btn" class="col-md-1 p-2 mx-2 justify-content-end align-items-center ">
-                    <a class="contact" href="index.html#contactme">
-                        <h5>Contact</h5>
-                    </a>
-                </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <header id="change">
+        <nav class="navigation">
+            <input type="checkbox" id="mob-ham-nav">
+            <label for="mob-ham-nav">
+                <i class="material-icons" id="res-sign-one">menu</i>
+                <i class="material-icons" id="res-sign-two">close</i>
+            </label>
+                <a href="https://www.micahandre.ca"><img class="site-logo" src="profile.gif" alt="Logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#latestwork">Work</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item btn2"><a class="" href="index.html#contactme" style="color:#f2f2f2;">Contact</a></li>
+            </ul>
+           
+            
+            
+        </nav>
+    </header>
                 <!-- <div class="menu nav col-md-1 mt-2 justify-content-end align-items-center">
                     <a onmouseover="changeColor(this)" 
                     onmouseover="increaseSize(this)"class="nav-link" href="404.html">
@@ -59,58 +56,48 @@
     <br>
     <br>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-4 p-5 bp1-animate-enter1">
-                <h5 id="about-me"> Hi, I'm Micah! My wife and I, along with our 4 kids, live on a small island off the
-                    coast of British Columbia, Canada. I am a natural dreamer and a coffee
-                    snob.
-                    I love to inovate and strategize about the future, reforming old ways of doing things into
-                    something better and more efficient.
-                    I am a natural problem solver, and I love working with people to bring out the best in them.
-                </h5>
-            </div>
-            <div class="col-md-1"></div>
+        <div class="row" style="background-color: #212121;"> 
             <div class="col-md-4  m-2 mb-4 align-content-end justify-content-end">
-                <image id="profile" class="image slideIn" src="profile2.jpeg">
+                <image id="profile" class="image slideIn" src="profile-2.png">
                 </image>
             </div>
+            <div class="col-md-7 p-5 bp1-animate-enter1">
+                <div class="qa-block">
+                    <h4 class="q-title"><b>Born in:</b></h4><p class="answer">Canada</p>
+                    <h4 class="q-title"><b>Raised in:</b></h4><p class="answer">Senegal</p>
+                    <h4 class="q-title"><b>Currently living in:</b></h4><p class="answer">Israel</p>
+                    <h4 class="q-title"><b>Fun fact:</b></h4>
+                    <p class="answer">in 2023 my family and I sold everything we owned, bought a 5th wheel and a truck and drove 12,000kms coast to coast and back (across Canada) while homeschooling our kids and working remotely. </p>
+                    <h4 class="q-title"><b>More about me:</b></h4>
+                    <p class="answer">
+                    I love to inovate and strategize about the future, reforming old ways of doing things into
+                    something better and more efficient.
+                    I am a natural problem solver, and I love working with people to bring out the best in them.</p>
+                </div>
+            </div>
+           
         </div>
     </div>
     <br><br>
-
-    <div class="cotainer-fluid">
-        <div class="row">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-1 headline bp1-animate-enter4">
-                <h3>education</h3>
-            </div>
-            <div class="col-md-5"></div>
-
-        </div>
-        <div class="row bp1-animate-enter4">
-            <div class="col-md-1"></div>
-            <div class=" m-2 col-md-5">
-                    <h5><b>UI/UX Design</b></h5>
-                <h6>Bethel School of Technology • January 2021 - October 2021</h6>
-                <p>Powered by WozU, Apple’s co-founder Steve Wozniak’s coding boot camp university. Awarded 1 of 15
-                    <br><a
-                        href="https://www.einnews.com/pr_news/537577028/university-research-review-announces-initial-selections-for-its-best-value-college-alternatives-awards">“Best
-                        Value College Alternative Award”</a> - by University Research & Review LLC</p>
-            </div>
-            <br><br>
-            <div class=" m-2 col-md-5">
-                    <h5><b>Leadership Development</b></h5>
-                <h6>Capernwray Bible School • September 2009 - June 2010</h6>
-                <p>Developing leadership through personal transformation, teamwork, public speaking and humanitarian service</p>
-            </div>
-        </div>
-        <br><br>
         <div class="row">
             <div class="col-md-1 bp1-animate-enter4"> </div>
-            <div class=" m-2 col-md-4">
-                <h2 class="headline">experience</h2><br>
+            <div class="  col-md-4">
+                <h2 class="headline">Experience</h2><br>
+                <span>
+                    <h5><b>Senior UI/UX Designer | Brand Designer | Owner </b></h5><br>
+                    <h6>Birks Group Inc. • Dec 2022 - Current </h6>
+                </span><br>
+                <span>
+                    <span>
+                        <h5><b>White Label UI/UX Contractor </b></h5><br>
+                        <h6>3816 Creative • Sept 2022 - Sept 2025</h6>
+                    </span><br>
+                    <span>
+                <span>
+                    <h5><b>Senior UI/UX Designer | Project Manager | QA</b></h5><br>
+                    <h6>Birks Group Inc. • Feb 2022 - Current </h6>
+                </span><br>
+                <span>
                 <span>
                     <h5><b>Chief Operations Officer</b></h5><br>
                     <h6>Community Gospel Chapel • July 2017 - April 2021 </h6>
@@ -123,10 +110,10 @@
                     <h5><b>Lead UI/UX Designer</b></h5><br>
                     <h6>Living Waters Community Church • October 2012 - April 2017</h6>
                 </span><br><br>
-                <button id="btn-resume" type="button" onclick="window.open('https://drive.google.com/file/d/10fa6T5PJM44sDqAEh0lFpO9T-iWFWqXB/view?usp=sharing','newtab'); return false;"> View Resume<span class="iconify doc-icon" data-icon="fe:document"></span></button>
+                <button id="btn-resume" type="button" onclick="window.open('https://drive.google.com/file/d/1djY-ixJN0spWtZ680S4bWRdAoA0gRKxQ/view?usp=sharing','newtab'); return false;"> View Resume<span class="iconify doc-icon" data-icon="fe:document"></span></button>
             </div>
             <div class="col-md-6">
-                <h2 class="headline">skills</h2>
+                <h2 class="headline">Skills</h2>
                 <h5 class="mt-3 style: font-family: 'Avenir Medium', sans-serif;">General</h5>
                 <span class="sk-display">Design Thinking</span><span class="sk-display">UI/UX</span><span
                     class="sk-display">Product Design</span><br><br>
@@ -148,19 +135,63 @@
             </div>
         </div>
     </div>
-    <br><br><br>
+    <br>
+    <div class="row">
+        <div class="col-md-1 bp1-animate-enter4"> </div>
+        <div class=" m-2 col-md-4">
+            <h2 class="headline">Education</h2><br>
+            
+
+        </div>
+        <div class="row bp1-animate-enter4">
+            <div class="col-md-1"></div>
+            <div class=" m-2 col-md-5">
+                    <h5><b>UI/UX Design</b></h5>
+                <h6>Bethel School of Technology • January 2021 - October 2021</h6>
+                <p>Powered by WozU, Apple’s co-founder Steve Wozniak’s coding boot camp university. Awarded 1 of 15
+                    <br><a
+                        href="https://www.einnews.com/pr_news/537577028/university-research-review-announces-initial-selections-for-its-best-value-college-alternatives-awards">“Best
+                        Value College Alternative Award”</a> - by University Research & Review LLC</p>
+            </div>
+            <br><br>
+            <div class=" m-2 col-md-5">
+                    <h5><b>Leadership Development</b></h5>
+                <h6>Capernwray Bible School • September 2009 - June 2010</h6>
+                <p>Developing leadership through personal transformation, teamwork, public speaking and humanitarian service</p>
+            </div>
+        </div>
+        <br><br>
 <!-- 
     Collaboration?? Section??? -->
     <div class="row footer">
-        <div style="font-size: 12px" class="col-md-3 m-3">
-            <a class="social-link" href="https://www.instagram.com/the_micah_bergen/">instagram |</a>
-            <a class="social-link" href="https://www.facebook.com/micah.bergen.9/"> facebook |</a>
-            <a class="social-link" href="https://www.linkedin.com/in/micah-bergen/"> linkedin |</a>
-            <a class="social-link" href="https://github.com/bergen-design"> github</a><br>       
+
+        <div class="col-md-5"></div>
+        <div style="font-size: 24px; font-weight: 200;" class="col-md-3 mt-3">
+
+            <div id="insertAdvice" class=" row justify-content-center align-items-center text-muted">
+                <div id="insertAdvice" class=" advice col-md-6 mb-2 text-muted"> </div>
+            </div>
+            <hr>
+            <a class="social-link col-md-3" href="https://www.instagram.com/the_micah_bergen/"><iconify-icon
+                    icon="bxl:instagram"></iconify-icon>
+            </a>
+
+            <a class="social-link col-md-3" href="https://www.linkedin.com/in/micah-bergen/"> <iconify-icon
+                    icon="jam:linkedin-square"></iconify-icon>
+            </a>
+           
         </div>
-        <div style="font-size: 10px" class="row m-3"> © Micah Andre Bergen 2021</div>
+        <div class="col-md-12"></div>
+        <div style="font-size: 10px; text-align: center; justify-content: center; align-self: center; padding-left: 40px;;" class="row m-1 mx-4"> © Micah Andre Bergen 2025</div>
     </div>
     <script src="about-script.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+
+
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 </body>
 

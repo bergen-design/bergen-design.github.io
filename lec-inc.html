@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design for Resource Management - UI/UX Design Case Study</title>
+    <meta name="description" content="UI/UX design case study for a resource management platform">
+    <meta name="keywords" content="UI/UX design, resource management, user experience, user interface, case study">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="lec.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+
+    <div class="mini-control-island">
+        <div class="segmented-toggle">
+            <button class="segment-option" data-view="ia">Information Architecture</button>
+            <button class="segment-option" data-view="lofi">Lo-Fi Designs</button>
+            <button class="segment-option active" data-view="hifi">Hi-Fi Designs</button>
+            <div class="segment-indicator"></div>
+        </div>
+        <div class="ia-flyout" id="iaFlyout" aria-hidden="true">
+            <button class="mini-control-btn ia-flyout-btn" data-stack="sitemap">Sitemap</button>
+            <button class="mini-control-btn ia-flyout-btn" data-stack="userflows">User Flows</button>
+        </div>
+    </div>
+
+    <!-- Background iframe -->
+    <div class="background-iframe">
+        <div class="loading-animation" id="loadingAnimation">
+            <div class="loading-spinner"></div>
+        </div>
+        <iframe id="caseStudyFrame" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/zHyVeZMFI9bBQIIuMTicKp/LEC-inc.?page-id=144%3A390&node-id=174-7302&viewport=661%2C1002%2C0.14&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=174%3A7302&embed-host=share" allowfullscreen title="background" onload="hideLoadingAnimation()"></iframe>
+        <div class="image-stack" id="imageStack" aria-live="polite" hidden></div>
+    </div>
+
+    <div class="overlay-container active" id="overlayContainer">
+        <button class="back-button" onclick="window.location.href='index.html'">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im05IDExbC00IDRsNCA0bS00LTRoMTFhNCA0IDAgMCAwIDAtOGgtMSIvPjwvc3ZnPg==" alt="Back" class="back-icon">
+            <span>Home</span>
+        </button>
+        <!-- Popup 1: Project Overview -->
+        <div class="popup popup-1" data-index="0">
+            <h2>Project Overview</h2>
+            <p><strong>Category:</strong> Mobile & Web · UI/UX Design · UX Copywriting</p>
+            <p><strong>Software:</strong> Figma</p>
+            <p><strong>Services:</strong> UI/UX Design, UX Copywriting</p>
+            <p>When a large-scale resource management company approached me, they were ready to evolve beyond their dated visual identity. They needed a refreshed digital experience that would resonate with municipalities across the United States while showcasing their commitment to innovation and sustainability.</p>
+        </div>
+
+        <!-- Popup 2: The Problem -->
+        <div class="popup popup-2" data-index="1">
+            <h2>01. The Challenge</h2>
+            <p>The brand’s traditional visuals and jargon-heavy messaging no longer resonated with their audience. They were hesitant to abandon familiar language, yet they needed to reach non-technical decision-makers in cities and municipalities.</p>
+            <ul>
+                <li><strong>Styling Rebrand:</strong> Modernize visuals without losing credibility.</li>
+                <li><strong>Environmental Perception:</strong> Communicate sustainability in a believable way.</li>
+                <li><strong>Innovation Demand:</strong> Deliver a digital experience that feels fresh and insightful.</li>
+                <li><strong>Target Market:</strong> Engage municipal stakeholders with accessible language.</li>
+                <li><strong>Resistance to Change:</strong> Navigate internal hesitation around shifting tone and design.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 3: The Solution -->
+        <div class="popup popup-3" data-index="2">
+            <h2>02. The Solution</h2>
+            <p>I blended modern UI/UX design with strategic copywriting so the brand felt both authoritative and approachable. The goal: communicate expertise without overwhelming users.</p>
+            <ul>
+                <li><strong>Modernized Interface:</strong> Designed a sleek experience for both desktop and mobile.</li>
+                <li><strong>Jargon-Free Copy:</strong> Reframed messaging so municipal leaders could understand it quickly.</li>
+                <li><strong>Sustainability Visuals:</strong> Highlighted eco-forward storytelling through imagery and infographics.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 4: How I Did It -->
+        <div class="popup popup-4" data-index="3">
+            <h2>Modernized UI/UX Design</h2>
+            <p>I redesigned the entire interface to be intuitive, airy, and data-forward. The refreshed navigation surfaces the most important information first and adapts seamlessly between web and mobile so teams can access insights anywhere.</p>
+            <p>Sleek typography, modular layout blocks, and interactive highlights help guide municipal stakeholders through complex offerings without friction.</p>
+        </div>
+
+        <!-- Popup 5: How I Did It (Continued) -->
+        <div class="popup popup-5" data-index="4">
+            <h2>Jargon-Free Copywriting</h2>
+            <p>The previous copy relied on industry buzzwords that didn’t translate outside of the sector. I rewrote everything to be clear, conversational, and still authoritative—so city-level decision makers could quickly understand the offering without needing a translator.</p>
+            <p>Sustainability statements, product explanations, and proof points were rewritten to sound modern, confident, and focused on outcomes.</p>
+        </div>
+
+        <!-- Popup 6: The Results -->
+        <div class="popup popup-6" data-index="5">
+            <h2>03. The Result</h2>
+            <p>The rebrand elevated the client’s market presence and positioned them as a sustainability-forward leader.</p>
+            <ul>
+                <li><strong>Innovative UI/UX:</strong> A cohesive experience across desktop and mobile.</li>
+                <li><strong>User-Friendly Navigation:</strong> Stakeholders can now find data quickly and confidently.</li>
+                <li><strong>Relatable Copy:</strong> Messaging balances clarity with authority, making complex services approachable.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 7: Wrapping Up -->
+        <div class="popup popup-7" data-index="6">
+            <h2>Wrapping Up</h2>
+            <p>By embracing a modern aesthetic and trusting the copywriting process, the client now communicates like an innovative, environmentally-conscious partner. This project proves how strategic UI/UX and messaging can keep long-standing companies relevant in a rapidly evolving market.</p>
+            <p><em>This engagement was completed under a white label agreement</em></p>
+        </div>
+
+        <div class="control-bar">
+            <div class="toggle-container">
+                <div class="toggle-label" id="toggleLabel">Hide Overview</div>
+                <button class="toggle-overlay active" id="toggleBtn">
+                    <div class="toggle-slider">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xNCAxMmMtMS4wOTUgMC0yLS45MDUtMi0yYzAtLjM1NC4xMDMtLjY4My4yNjgtLjk3M0MxMi4xNzggOS4wMiAxMi4wOTIgOSAxMiA5YTMuMDIgMy4wMiAwIDAgMC0zIDNjMCAxLjY0MiAxLjM1OCAzIDMgM3MzLTEuMzU4IDMtM2MwLS4wOTItLjAyLS4xNzgtLjAyNy0uMjY4Yy0uMjkuMTY1LS42MTkuMjY4LS45NzMuMjY4Ii8+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTIgNWMtNy42MzMgMC05LjkyNyA2LjYxNy05Ljk0OCA2LjY4NEwxLjk0NiAxMmwuMTA1LjMxNkMyLjA3MyAxMi4zODMgNC4zNjcgMTkgMTIgMTlzOS45MjctNi42MTcgOS45NDgtNi42ODRsLjEwNi0uMzE2bC0uMTA1LS4zMTZDMjEuOTI3IDExLjYxNyAxOS42MzMgNSAxMiA1bTAgMTJjLTUuMzUxIDAtNy40MjQtMy44NDYtNy45MjYtNUM0LjU3OCAxMC44NDIgNi42NTIgNyAxMiA3YzUuMzUxIDAgNy40MjQgMy44NDYgNy45MjYgNWMtLjUwNCAxLjE1OC0yLjU3OCA1LTcuOTI2IDUiLz48L3N2Zz4=" alt="Show" class="toggle-icon" id="showIcon">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0yIDUuMjdMMy4yOCA0TDIwIDIwLjcyTDE4LjczIDIybC0zLjA4LTMuMDhjLTEuMTUuMzgtMi4zNy41OC0zLjY1LjU4Yy01IDAtOS4yNy0zLjExLTExLTcuNWMuNjktMS43NiAxLjc5LTMuMzEgMy4xOS00LjU0ek0xMiA5YTMgMyAwIDAgMSAzIDNhMyAzIDAgMCAxLS4xNyAxTDExIDkuMTdBMyAzIDAgMCAxIDEyIDltMC00LjVjNSAwIDkuMjcgMy4xMSAxMSA3LjVhMTEuOCAxMS44IDAgMCAxLTQgNS4xOWwtMS40Mi0xLjQzQTkuODYgOS44NiAwIDAgMCAyMC44MiAxMkE5LjgyIDkuODIgMCAwIDAgMTIgNi41Yy0xLjA5IDAtMi4xNi4xOC0zLjE2LjVMNy4zIDUuNDdjMS40NC0uNjIgMy4wMy0uOTcgNC43LS45N00zLjE4IDEyQTkuODIgOS44MiAwIDAgMCAxMiAxNy41Yy42OSAwIDEuMzctLjA3IDItLjIxTDExLjcyIDE1QTMuMDY0IDMuMDY0IDAgMCAxIDkgMTIuMjhMNS42IDguODdjLS45OS44NS0xLjgyIDEuOTEtMi40MiAzLjEzIi8+PC9zdmc+" alt="Hide" class="toggle-icon" id="hideIcon" style="display: none;">
+                    </div>
+                </button>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-btn" id="prevPopup">Previous</button>
+                <button class="nav-btn" id="nextPopup">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spacer content for scrolling -->
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <script src="lec.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+</body>
+</body>
+</html>

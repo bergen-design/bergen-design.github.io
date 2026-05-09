@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design for Resource Management - UI/UX Design Case Study</title>
+    <meta name="description" content="UI/UX design case study for a resource management platform">
+    <meta name="keywords" content="UI/UX design, resource management, user experience, user interface, case study">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="bridal-app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+
+    <div class="mini-control-island">
+        <div class="segmented-toggle">
+            <button class="segment-option" data-view="ia">Information Architecture</button>
+            <button class="segment-option" data-view="lofi">Lo-Fi Designs</button>
+            <button class="segment-option active" data-view="hifi">Hi-Fi Designs</button>
+            <div class="segment-indicator"></div>
+        </div>
+        <div class="ia-flyout" id="iaFlyout" aria-hidden="true">
+            <button class="mini-control-btn ia-flyout-btn" data-stack="sitemap">Sitemap</button>
+            <button class="mini-control-btn ia-flyout-btn" data-stack="userflows">User Flows</button>
+        </div>
+    </div>
+
+    <!-- Background iframe -->
+    <div class="background-iframe">
+        <div class="loading-animation" id="loadingAnimation">
+            <div class="loading-spinner"></div>
+        </div>
+        <iframe id="caseStudyFrame" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="http://maisonbirks.com" allowfullscreen title="Maison Birks Website" onload="hideLoadingAnimation()"></iframe>
+        <div class="image-stack" id="imageStack" aria-live="polite" hidden></div>
+    </div>
+
+    <div class="overlay-container active" id="overlayContainer">
+        <button class="back-button" onclick="window.location.href='index.html'">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im05IDExbC00IDRsNCA0bS00LTRoMTFhNCA0IDAgMCAwIDAtOGgtMSIvPjwvc3ZnPg==" alt="Back" class="back-icon">
+            <span>Home</span>
+        </button>
+        <!-- Popup 1: Project Overview -->
+        <div class="popup popup-1" data-index="0">
+            <h2>Project Overview</h2>
+            <p><strong>Category:</strong> Design</p>
+            <p><strong>Software:</strong> Figma</p>
+            <p><strong>Services:</strong> User Research, UI/UX Design, App Design</p>
+            <p>I was asked to create a user-friendly product design for a luxury bridal app. I created a product that the client was excited to integrate into their workflow, helping to enhance the in-store bridal experience and boost engagement ring sales.</p>
+        </div>
+
+        <!-- Popup 2: The Challenge -->
+        <div class="popup popup-2" data-index="1">
+            <h2>The Challenge</h2>
+            <p>When a Canadian leader in unified commerce approached me about designing a tablet app to improve their in-store bridal experience, I was excited to tackle the project. They had seen an increased drop in diamond engagement sales, and after improving their digital experience, they wanted to provide something similar to help boost their in-store sales.</p>
+            <p>However, after budget delays, and pausing and re-starting the project due to internal challenges, the timeline to produce the designs came down to only a few weeks for the complete research, design, and approval process.</p>
+            <ul>
+                <li><strong>Tight Timeline:</strong> Only a few weeks to complete research, design, and get approval.</li>
+                <li><strong>Project Disruptions:</strong> Multiple pauses and restarts due to internal challenges.</li>
+                <li><strong>Sales Decline:</strong> Need to address the drop in diamond engagement ring sales.</li>
+                <li><strong>Integration:</strong> The app needed to fit seamlessly into the existing sales workflow.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 3: The Solution -->
+        <div class="popup popup-3" data-index="2">
+            <h2>The Solution</h2>
+            <p>With the deadline fast approaching, I got to work designing a tablet application that would seamlessly integrate into the sales professionals' regular workflow. I provided a solution that would be easy to use and would meet the needs of both the sales staff and in-store clients.</p>
+            <p>I created a visually appealing app that allowed sales professionals to quickly quote a client their ideal ring. Whether the client comes into the store with an ideal ring/mount or stone, the sales professionals can quickly and easily show the client their ring, quote them a price, and provide them a printed or emailed quote that they can come back to.</p>
+            <p>I also designed a client profile to house the provided quotes so they can be easily found, and to quickly search for clients in the database to ensure we reduce duplicates and provide sales professionals the tools they need to communicate with each other across the client journey.</p>
+            <p><em>"WOW where have you been hiding this guy! Can he do all of our designs?!!!" – MONTREAL STORE MANAGER</em></p>
+        </div>
+
+        <!-- Popup 4: The Results -->
+        <div class="popup popup-4" data-index="3">
+            <h2>The Results</h2>
+            <p>After the short turnaround, the results were shock and awe. Initial testing with the sales professionals elicited more joy than I could have expected as I walked them through the product. The response was met with one repeated sentiment… WOW!!!</p>
+            <p>Both sales professionals and high-level stakeholders were all amazed at the product I provided in such a short turnaround time.</p>
+            <ul>
+                <li><strong>Positive Reception:</strong> The app was met with overwhelming enthusiasm from both sales staff and management.</li>
+                <li><strong>Streamlined Process:</strong> Sales professionals could now quickly generate quotes and manage client information in one place.</li>
+                <li><strong>Improved Client Experience:</strong> Clients received a more professional and efficient service during their in-store visits.</li>
+                <li><strong>Sales Enablement:</strong> The app provided the tools needed to boost in-store sales of engagement rings.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 5: Key Achievements -->
+        <div class="popup popup-5" data-index="4">
+            <h2>Key Achievements</h2>
+            <p>This project demonstrated how thoughtful UX/UI design can transform the in-store retail experience, even under tight deadlines.</p>
+            <ul>
+                <li><strong>Rapid Delivery:</strong> Delivered a complete, production-ready design in just a few weeks.</li>
+                <li><strong>Seamless Integration:</strong> Created an app that fit perfectly into the existing sales workflow.</li>
+                <li><strong>Client Delight:</strong> Received enthusiastic feedback from both sales staff and management.</li>
+                <li><strong>Sales Impact:</strong> Provided tools to help reverse the decline in engagement ring sales.</li>
+                <li><strong>Future-Proof:</strong> Established a foundation for additional features and enhancements.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 6: Design Process -->
+        <div class="popup popup-6" data-index="5">
+            <h2>Design Process</h2>
+            <p>Despite the tight timeline, I followed a thorough design process to ensure the app met all requirements and provided an exceptional user experience.</p>
+            <ul>
+                <li><strong>User Research:</strong> Conducted interviews with sales staff to understand their workflow and pain points.</li>
+                <li><strong>Rapid Prototyping:</strong> Created quick iterations of the design to test concepts and gather feedback.</li>
+                <li><strong>User Testing:</strong> Worked closely with sales staff to refine the interface and ensure it met their needs.</li>
+                <li><strong>Visual Design:</strong> Developed a clean, professional interface that reflected the luxury brand's identity.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 7: Wrapping Up -->
+        <div class="popup popup-7" data-index="6">
+            <h2>Wrapping Up</h2>
+            <p>This project was a perfect example of how thoughtful UX/UI design can have an immediate and tangible impact on business results, even with significant time constraints. The enthusiastic response from both the sales team and management was incredibly rewarding.</p>
+            <p>The success of this project has opened up opportunities for further collaboration on enhancing the in-store experience with digital tools, demonstrating the value of investing in well-designed technology solutions for retail environments.</p>
+            <p><em>This engagement was completed under a white label agreement</em></p>
+        </div>
+
+        <div class="control-bar">
+            <div class="toggle-container">
+                <div class="toggle-label" id="toggleLabel">Hide Overview</div>
+                <button class="toggle-overlay active" id="toggleBtn">
+                    <div class="toggle-slider">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xNCAxMmMtMS4wOTUgMC0yLS45MDUtMi0yYzAtLjM1NC4xMDMtLjY4My4yNjgtLjk3M0MxMi4xNzggOS4wMiAxMi4wOTIgOSAxMiA5YTMuMDIgMy4wMiAwIDAgMC0zIDNjMCAxLjY0MiAxLjM1OCAzIDMgM3MzLTEuMzU4IDMtM2MwLS4wOTItLjAyLS4xNzgtLjAyNy0uMjY4Yy0uMjkuMTY1LS42MTkuMjY4LS45NzMuMjY4Ii8+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTIgNWMtNy42MzMgMC05LjkyNyA2LjYxNy05Ljk0OCA2LjY4NEwxLjk0NiAxMmwuMTA1LjMxNkMyLjA3MyAxMi4zODMgNC4zNjcgMTkgMTIgMTlzOS45MjctNi42MTcgOS45NDgtNi42ODRsLjEwNi0uMzE2bC0uMTA1LS4zMTZDMjEuOTI3IDExLjYxNyAxOS42MzMgNSAxMiA1bTAgMTJjLTUuMzUxIDAtNy40MjQtMy44NDYtNy45MjYtNUM0LjU3OCAxMC44NDIgNi42NTIgNyAxMiA3YzUuMzUxIDAgNy40MjQgMy44NDYgNy45MjYgNWMtLjUwNCAxLjE1OC0yLjU3OCA1LTcuOTI2IDUiLz48L3N2Zz4=" alt="Show" class="toggle-icon" id="showIcon">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0yIDUuMjdMMy4yOCA0TDIwIDIwLjcyTDE4LjczIDIybC0zLjA4LTMuMDhjLTEuMTUuMzgtMi4zNy41OC0zLjY1LjU4Yy01IDAtOS4yNy0zLjExLTExLTcuNWMuNjktMS43NiAxLjc5LTMuMzEgMy4xOS00LjU0ek0xMiA5YTMgMyAwIDAgMSAzIDNhMyAzIDAgMCAxLS4xNyAxTDExIDkuMTdBMyAzIDAgMCAxIDEyIDltMC00LjVjNSAwIDkuMjcgMy4xMSAxMSA3LjVhMTEuOCAxMS44IDAgMCAxLTQgNS4xOWwtMS40Mi0xLjQzQTkuODYgOS44NiAwIDAgMCAyMC44MiAxMkE5LjgyIDkuODIgMCAwIDAgMTIgNi41Yy0xLjA5IDAtMi4xNi4xOC0zLjE2LjVMNy4zIDUuNDdjMS40NC0uNjIgMy4wMy0uOTcgNC43LS45N00zLjE4IDEyQTkuODIgOS44MiAwIDAgMCAxMiAxNy41Yy42OSAwIDEuMzctLjA3IDItLjIxTDExLjcyIDE1QTMuMDY0IDMuMDY0IDAgMCAxIDkgMTIuMjhMNS42IDguODdjLS45OS44NS0xLjgyIDEuOTEtMi40MiAzLjEzIi8+PC9zdmc+" alt="Hide" class="toggle-icon" id="hideIcon" style="display: none;">
+                    </div>
+                </button>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-btn" id="prevPopup">Previous</button>
+                <button class="nav-btn" id="nextPopup">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spacer content for scrolling -->
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <script src="bridal-app.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+</body>
+</body>
+</html>

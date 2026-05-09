@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design for Resource Management - UI/UX Design Case Study</title>
+    <meta name="description" content="UI/UX design case study for a resource management platform">
+    <meta name="keywords" content="UI/UX design, resource management, user experience, user interface, case study">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="maison-birks.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+
+    <div class="mini-control-island">
+        <div class="segmented-toggle">
+            <button class="segment-option" data-view="ia">Information Architecture</button>
+            <button class="segment-option" data-view="lofi">Lo-Fi Designs</button>
+            <button class="segment-option active" data-view="hifi">Hi-Fi Designs</button>
+            <div class="segment-indicator"></div>
+        </div>
+        <div class="ia-flyout" id="iaFlyout" aria-hidden="true">
+            <button class="mini-control-btn ia-flyout-btn" data-stack="sitemap">Sitemap</button>
+            <button class="mini-control-btn ia-flyout-btn" data-stack="userflows">User Flows</button>
+        </div>
+    </div>
+
+    <!-- Background iframe -->
+    <div class="background-iframe">
+        <div class="loading-animation" id="loadingAnimation">
+            <div class="loading-spinner"></div>
+        </div>
+        <iframe id="caseStudyFrame" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="http://maisonbirks.com" allowfullscreen title="Maison Birks Website" onload="hideLoadingAnimation()"></iframe>
+        <div class="image-stack" id="imageStack" aria-live="polite" hidden></div>
+    </div>
+
+    <div class="overlay-container active" id="overlayContainer">
+        <button class="back-button" onclick="window.location.href='index.html'">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im05IDExbC00IDRsNCA0bS00LTRoMTFhNCA0IDAgMCAwIDAtOGgtMSIvPjwvc3ZnPg==" alt="Back" class="back-icon">
+            <span>Home</span>
+        </button>
+        <!-- Popup 1: Project Overview -->
+        <div class="popup popup-1" data-index="0">
+            <h2>Project Overview</h2>
+            <p><strong>Category:</strong> E-commerce · UI/UX Design · Luxury Branding</p>
+            <p><strong>Software:</strong> Figma, Adobe Creative Suite</p>
+            <p><strong>Services:</strong> UI/UX Design, E-commerce Strategy, Conversion Optimization</p>
+            <p>I was brought on to rescue the redesign of a renowned luxury jewelry company's e-commerce platform after their initial launch fell short. The challenge was to transform their digital presence while preserving their prestigious brand identity and significantly improving the user experience.</p>
+        </div>
+
+        <!-- Popup 2: The Challenge -->
+        <div class="popup popup-2" data-index="1">
+            <h2>The Challenge</h2>
+            <p>After a contentious first design phase, the company brought me on to fix their original designs. The luxury jewelry brand was facing significant challenges with its website launch, primarily due to poor UX design that resulted in high user frustration and an alarmingly low conversion rate of just 0.015%.</p>
+            <ul>
+                <li><strong>Poor User Experience:</strong> Unintuitive navigation and confusing user flows were driving customers away.</li>
+                <li><strong>Low Conversion:</strong> The abysmal 0.015% conversion rate was far below industry standards.</li>
+                <li><strong>Brand Alignment:</strong> The design failed to reflect the luxury and prestige of the brand.</li>
+                <li><strong>Technical Debt:</strong> The existing implementation had numerous UX issues that needed addressing.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 3: The Solution -->
+        <div class="popup popup-3" data-index="2">
+            <h2>The Solution</h2>
+            <p>I implemented a comprehensive end-to-end redesign of the website, strategically released in phases to accommodate budget constraints while maximizing impact.</p>
+            <ul>
+                <li><strong>Complete Redesign:</strong> Overhauled the UI/UX to create an intuitive, luxury shopping experience.</li>
+                <li><strong>Technical Implementation:</strong> Worked closely with developers to ensure pixel-perfect implementation of designs.</li>
+                <li><strong>Quality Assurance:</strong> Conducted thorough testing and created detailed tickets to address all identified issues.</li>
+                <li><strong>Innovative Problem-Solving:</strong> Redesigned and improved existing components for better functionality.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 4: The Results -->
+        <div class="popup popup-4" data-index="3">
+            <h2>The Results</h2>
+            <p>The redesigned platform delivered exceptional results, significantly enhancing both user experience and business performance.</p>
+            <ul>
+                <li><strong>Conversion Rate:</strong> More than doubled the conversion rate following the launch of the redesigned product pages.</li>
+                <li><strong>Sales Performance:</strong> The company broke monthly sales records, achieving over $1 million in revenue in a single month.</li>
+                <li><strong>Brand Perception:</strong> Successfully modernized the brand's digital presence while maintaining its luxury heritage.</li>
+                <li><strong>Market Position:</strong> Strengthened the brand's position as an industry leader in the luxury jewelry market.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 5: Key Achievements -->
+        <div class="popup popup-5" data-index="4">
+            <h2>Key Achievements</h2>
+            <p>The success of this project can be measured in both quantitative and qualitative terms.</p>
+            <ul>
+                <li>Achieved a 100% increase in conversion rates post-redesign</li>
+                <li>Exceeded annual fiscal targets with the new platform</li>
+                <li>Created a scalable design system for future growth</li>
+                <li>Established new best practices for luxury e-commerce in the jewelry sector</li>
+                <li>Received overwhelmingly positive feedback from both customers and internal stakeholders</li>
+            </ul>
+        </div>
+
+        <!-- Popup 6: Technical Implementation -->
+        <div class="popup popup-6" data-index="5">
+            <h2>Technical Implementation</h2>
+            <p>The project required careful planning and execution to ensure a smooth transition and optimal performance.</p>
+            <ul>
+                <li><strong>Phased Rollout:</strong> Implemented changes in stages to minimize disruption and allow for testing.</li>
+                <li><strong>Custom Development:</strong> Created tailored solutions for unique functionality requirements.</li>
+                <li><strong>Performance Optimization:</strong> Ensured fast loading times and smooth interactions across all devices.</li>
+                <li><strong>Cross-Browser Compatibility:</strong> Tested and optimized for all major browsers and devices.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 7: Wrapping Up -->
+        <div class="popup popup-7" data-index="6">
+            <h2>Wrapping Up</h2>
+            <p>This project stands as a testament to the power of user-centered design in transforming digital experiences. By focusing on both aesthetics and functionality, I was able to help this luxury brand achieve remarkable business results while enhancing their digital presence.</p>
+            <p>The success of this redesign demonstrates how thoughtful UI/UX can directly impact the bottom line, even for established luxury brands with discerning customers.</p>
+            <p><em>View the full site <a href="https://maisonbirks.com" target="_blank">here</a></em></p>
+        </div>
+
+        <div class="control-bar">
+            <div class="toggle-container">
+                <div class="toggle-label" id="toggleLabel">Hide Overview</div>
+                <button class="toggle-overlay active" id="toggleBtn">
+                    <div class="toggle-slider">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xNCAxMmMtMS4wOTUgMC0yLS45MDUtMi0yYzAtLjM1NC4xMDMtLjY4My4yNjgtLjk3M0MxMi4xNzggOS4wMiAxMi4wOTIgOSAxMiA5YTMuMDIgMy4wMiAwIDAgMC0zIDNjMCAxLjY0MiAxLjM1OCAzIDMgM3MzLTEuMzU4IDMtM2MwLS4wOTItLjAyLS4xNzgtLjAyNy0uMjY4Yy0uMjkuMTY1LS42MTkuMjY4LS45NzMuMjY4Ii8+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTIgNWMtNy42MzMgMC05LjkyNyA2LjYxNy05Ljk0OCA2LjY4NEwxLjk0NiAxMmwuMTA1LjMxNkMyLjA3MyAxMi4zODMgNC4zNjcgMTkgMTIgMTlzOS45MjctNi42MTcgOS45NDgtNi42ODRsLjEwNi0uMzE2bC0uMTA1LS4zMTZDMjEuOTI3IDExLjYxNyAxOS42MzMgNSAxMiA1bTAgMTJjLTUuMzUxIDAtNy40MjQtMy44NDYtNy45MjYtNUM0LjU3OCAxMC44NDIgNi42NTIgNyAxMiA3YzUuMzUxIDAgNy40MjQgMy44NDYgNy45MjYgNWMtLjUwNCAxLjE1OC0yLjU3OCA1LTcuOTI2IDUiLz48L3N2Zz4=" alt="Show" class="toggle-icon" id="showIcon">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0yIDUuMjdMMy4yOCA0TDIwIDIwLjcyTDE4LjczIDIybC0zLjA4LTMuMDhjLTEuMTUuMzgtMi4zNy41OC0zLjY1LjU4Yy01IDAtOS4yNy0zLjExLTExLTcuNWMuNjktMS43NiAxLjc5LTMuMzEgMy4xOS00LjU0ek0xMiA5YTMgMyAwIDAgMSAzIDNhMyAzIDAgMCAxLS4xNyAxTDExIDkuMTdBMyAzIDAgMCAxIDEyIDltMC00LjVjNSAwIDkuMjcgMy4xMSAxMSA3LjVhMTEuOCAxMS44IDAgMCAxLTQgNS4xOWwtMS40Mi0xLjQzQTkuODYgOS44NiAwIDAgMCAyMC44MiAxMkE5LjgyIDkuODIgMCAwIDAgMTIgNi41Yy0xLjA5IDAtMi4xNi4xOC0zLjE2LjVMNy4zIDUuNDdjMS40NC0uNjIgMy4wMy0uOTcgNC43LS45N00zLjE4IDEyQTkuODIgOS44MiAwIDAgMCAxMiAxNy41Yy42OSAwIDEuMzctLjA3IDItLjIxTDExLjcyIDE1QTMuMDY0IDMuMDY0IDAgMCAxIDkgMTIuMjhMNS42IDguODdjLS45OS44NS0xLjgyIDEuOTEtMi40MiAzLjEzIi8+PC9zdmc+" alt="Hide" class="toggle-icon" id="hideIcon" style="display: none;">
+                    </div>
+                </button>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-btn" id="prevPopup">Previous</button>
+                <button class="nav-btn" id="nextPopup">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spacer content for scrolling -->
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <script src="maison-birks.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+</body>
+</body>
+</html>

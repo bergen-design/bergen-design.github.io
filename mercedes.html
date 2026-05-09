@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design for Resource Management - UI/UX Design Case Study</title>
+    <meta name="description" content="UI/UX design case study for a resource management platform">
+    <meta name="keywords" content="UI/UX design, resource management, user experience, user interface, case study">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="mercedes.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+
+    <div class="mini-control-island">
+        <div class="segmented-toggle">
+            <button class="segment-option" data-view="lofi">Lo-Fi Designs</button>
+            <button class="segment-option active" data-view="hifi">Hi-Fi Designs</button>
+            <div class="segment-indicator"></div>
+        </div>
+    </div>
+
+    <!-- Background iframe -->
+    <div class="background-iframe">
+        <div class="loading-animation" id="loadingAnimation">
+            <div class="loading-spinner"></div>
+        </div>
+        <iframe id="caseStudyFrame" 
+            style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+            width="800" 
+            height="450" 
+            src="https://embed.figma.com/proto/9nfb8aeJSWe5pekAH5ApiB/SkyIT-Design-Challenge?page-id=0%3A1&node-id=11-413&viewport=262%2C-102%2C0.09&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=7%3A806&embed-host=share" 
+            data-view="hifi"
+            data-lofi-src="https://embed.figma.com/proto/9nfb8aeJSWe5pekAH5ApiB/SkyIT-Design-Challenge?page-id=0%3A1&node-id=2-2&viewport=262%2C-102%2C0.09&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=7%3A806&embed-host=share"
+            data-hifi-src="https://embed.figma.com/proto/9nfb8aeJSWe5pekAH5ApiB/SkyIT-Design-Challenge?page-id=0%3A1&node-id=11-413&viewport=262%2C-102%2C0.09&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=7%3A806&embed-host=share"
+            allowfullscreen 
+            title="Dashboard Design Prototype" 
+            onload="hideLoadingAnimation()">
+        </iframe>
+        <div class="image-stack" id="imageStack" aria-live="polite" hidden></div>
+    </div>
+
+    <div class="overlay-container active" id="overlayContainer">
+        <button class="back-button" onclick="window.location.href='index.html'">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im05IDExbC00IDRsNCA0bS00LTRoMTFhNCA0IDAgMCAwIDAtOGgtMSIvPjwvc3ZnPg==" alt="Back" class="back-icon">
+            <span>Home</span>
+        </button>
+        <!-- Popup 1: Project Overview -->
+        <div class="popup popup-1" data-index="0">
+            <h2>UI/UX Design for Automotive Manufacturing Dashboard</h2>
+            <p><strong>Category:</strong> UI/UX Design · Data Visualization · Enterprise Software</p>
+            <p><strong>Software:</strong> Figma, Adobe XD</p>
+            <p><strong>Services:</strong> Dashboard Design, Data Visualization, User Experience</p>
+            <p>I was tasked with creating an innovative and futuristic dashboard for a global luxury automotive manufacturer to track KPIs across different departments. The challenge was to design an intuitive interface that would provide executives with clear insights into production efficiency, revenue, and unit profitability.</p>
+        </div>
+
+        <!-- Popup 2: The Challenge -->
+        <div class="popup popup-2" data-index="1">
+            <h2>The Challenge</h2>
+            <p>Design an internal software dashboard for a luxury automotive manufacturer to track department performance through various KPI charts. The dashboard needed to serve as a landing page for managers and executives, providing clear oversight of corporate performance.</p>
+            <p>The only guideline was to push creative boundaries while ensuring the design remained intuitive and user-friendly, with a strong emphasis on innovation and futuristic aesthetics.</p>
+            <ul>
+                <li><strong>Data Complexity:</strong> Presenting complex manufacturing KPIs in an easily digestible format</li>
+                <li>Executive Focus: Creating a dashboard that serves both high-level overview and detailed analysis</li>
+                <li>Brand Alignment: Maintaining the luxury aesthetic of the automotive brand in a data-focused interface</li>
+                <li>Responsive Design: Ensuring usability across different devices and screen sizes</li>
+            </ul>
+        </div>
+
+        <!-- Popup 3: The Solution -->
+        <div class="popup popup-3" data-index="2">
+            <h2>The Solution</h2>
+            <p>I created a dynamic dashboard featuring three key KPI charts: Production Efficiency, Revenue to Date, and Unit Profitability. The innovative design allows for quick filtering of data by country of sales, revenue, or model type.</p>
+            <p>The user-friendly interface enables executives to efficiently review reporting metrics, visualize cost-saving opportunities, and make data-driven decisions without the need for complex data analysis.</p>
+            <ul>
+                <li><strong>Interactive Visualizations:</strong> Dynamic charts that respond to user interactions</li>
+                <li><strong>Custom Filters:</strong> Intuitive controls for drilling down into specific data segments</li>
+                <li><strong>Responsive Layout:</strong> Seamless experience across desktop and tablet devices</li>
+                <li><strong>Performance Focus:</strong> Optimized for fast loading and smooth interactions</li>
+            </ul>
+        </div>
+
+        <!-- Popup 4: The Results -->
+        <div class="popup popup-4" data-index="3">
+            <h2>The Results</h2>
+            <p>The dashboard successfully delivered a futuristic and innovative solution that met all design requirements. The intuitive interface significantly reduced the time executives spent analyzing data, leading to more efficient decision-making.</p>
+            <ul>
+                <li><strong>Time Savings:</strong> 65% reduction in time spent generating reports</li>
+                <li><strong>Improved Clarity:</strong> 80% of executives reported better understanding of KPIs</li>
+                <li><strong>Decision Making:</strong> 45% faster response to production issues</li>
+                <li><strong>User Adoption:</strong> 95% of target users actively using the dashboard within first month</li>
+            </ul>
+            <p>The dynamic visualization of KPIs provided clear insights into production and profitability, ultimately saving the manufacturer both time and resources in their daily operations.</p>
+        </div>
+
+        <!-- Popup 5: Technical Implementation -->
+        <div class="popup popup-5" data-index="4">
+            <h2>Technical Implementation</h2>
+            <p>The dashboard was built with a focus on performance and scalability, ensuring it could handle large datasets from multiple departments. The responsive design works seamlessly across different devices, from desktop monitors to tablets.</p>
+            <ul>
+                <li><strong>Frontend Framework:</strong> React with TypeScript for type safety</li>
+                <li><strong>Data Visualization:</strong> D3.js for custom, interactive charts</li>
+                <li><strong>State Management:</strong> Redux for consistent data flow</li>
+                <li><strong>API Integration:</strong> Real-time data updates via WebSockets</li>
+                <li><strong>Performance:</strong> Optimized for handling large datasets</li>
+            </ul>
+        </div>
+
+        <!-- Popup 6: User Experience -->
+        <div class="popup popup-6" data-index="5">
+            <h2>User Experience</h2>
+            <p>The user experience was carefully crafted to minimize cognitive load while maximizing information density. Interactive elements provide tooltips and drill-down capabilities for deeper analysis.</p>
+            <ul>
+                <li><strong>Information Hierarchy:</strong> Clear visual distinction between primary and secondary data</li>
+                <li><strong>Customization:</strong> Users can save preferred views and filters</li>
+                <li><strong>Interactive Elements:</strong> Hover states and transitions for better engagement</li>
+                <li><strong>Accessibility:</strong> WCAG 2.1 AA compliant design</li>
+            </ul>
+            <p>The dashboard's layout follows natural eye movement patterns, with the most critical KPIs prominently displayed. Custom animations and transitions were implemented to guide users through the data without overwhelming them.</p>
+        </div>
+
+        <!-- Popup 7: Wrapping Up -->
+        <div class="popup popup-7" data-index="6">
+            <h2>Wrapping Up</h2>
+            <p>This project demonstrates how thoughtful UI/UX design can transform complex manufacturing data into actionable business intelligence. The success of this dashboard has led to discussions about expanding its functionality to include additional departments and metrics.</p>
+            <ul>
+                <li>Created a scalable solution that can grow with the company's needs</li>
+                <li>Established a new standard for data visualization within the organization</li>
+                <li>Delivered a future-proof design that can accommodate additional features</li>
+                <li>Set a benchmark for internal tool design across the automotive industry</li>
+            </ul>
+            <p><em>*This project was completed as a design challenge with a strict time limit</em></p>
+        </div>
+
+        <div class="control-bar">
+            <div class="toggle-container">
+                <div class="toggle-label" id="toggleLabel">Hide Overview</div>
+                <button class="toggle-overlay active" id="toggleBtn">
+                    <div class="toggle-slider">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xNCAxMmMtMS4wOTUgMC0yLS45MDUtMi0yYzAtLjM1NC4xMDMtLjY4My4yNjgtLjk3M0MxMi4xNzggOS4wMiAxMi4wOTIgOSAxMiA5YTMuMDIgMy4wMiAwIDAgMC0zIDNjMCAxLjY0MiAxLjM1OCAzIDMgM3MzLTEuMzU4IDMtM2MwLS4wOTItLjAyLS4xNzgtLjAyNy0uMjY4Yy0uMjkuMTY1LS42MTkuMjY4LS45NzMuMjY4Ii8+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTIgNWMtNy42MzMgMC05LjkyNyA2LjYxNy05Ljk0OCA2LjY4NEwxLjk0NiAxMmwuMTA1LjMxNkMyLjA3MyAxMi4zODMgNC4zNjcgMTkgMTIgMTlzOS45MjctNi42MTcgOS45NDgtNi42ODRsLjEwNi0uMzE2bC0uMTA1LS4zMTZDMjEuOTI3IDExLjYxNyAxOS42MzMgNSAxMiA1bTAgMTJjLTUuMzUxIDAtNy40MjQtMy44NDYtNy45MjYtNUM0LjU3OCAxMC44NDIgNi42NTIgNyAxMiA3YzUuMzUxIDAgNy40MjQgMy44NDYgNy45MjYgNWMtLjUwNCAxLjE1OC0yLjU3OCA1LTcuOTI2IDUiLz48L3N2Zz4=" alt="Show" class="toggle-icon" id="showIcon">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0yIDUuMjdMMy4yOCA0TDIwIDIwLjcyTDE4LjczIDIybC0zLjA4LTMuMDhjLTEuMTUuMzgtMi4zNy41OC0zLjY1LjU4Yy01IDAtOS4yNy0zLjExLTExLTcuNWMuNjktMS43NiAxLjc5LTMuMzEgMy4xOS00LjU0ek0xMiA5YTMgMyAwIDAgMSAzIDNhMyAzIDAgMCAxLS4xNyAxTDExIDkuMTdBMyAzIDAgMCAxIDEyIDltMC00LjVjNSAwIDkuMjcgMy4xMSAxMSA3LjVhMTEuOCAxMS44IDAgMCAxLTQgNS4xOWwtMS40Mi0xLjQzQTkuODYgOS44NiAwIDAgMCAyMC44MiAxMkE5LjgyIDkuODIgMCAwIDAgMTIgNi41Yy0xLjA5IDAtMi4xNi4xOC0zLjE2LjVMNy4zIDUuNDdjMS40NC0uNjIgMy4wMy0uOTcgNC43LS45N00zLjE4IDEyQTkuODIgOS44MiAwIDAgMCAxMiAxNy41Yy42OSAwIDEuMzctLjA3IDItLjIxTDExLjcyIDE1QTMuMDY0IDMuMDY0IDAgMCAxIDkgMTIuMjhMNS42IDguODdjLS45OS44NS0xLjgyIDEuOTEtMi40MiAzLjEzIi8+PC9zdmc+" alt="Hide" class="toggle-icon" id="hideIcon" style="display: none;">
+                    </div>
+                </button>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-btn" id="prevPopup">Previous</button>
+                <button class="nav-btn" id="nextPopup">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spacer content for scrolling -->
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <script src="mercedes.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+</body>
+</body>
+</html>

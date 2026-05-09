@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design for Luxury Bus Booking - UI/UX Design Case Study</title>
+    <meta name="description" content="UI/UX design case study for a luxury bus booking platform">
+    <meta name="keywords" content="UI/UX design, luxury bus booking, user experience, user interface, case study">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="premiere.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+
+    <div class="mini-control-island">
+        <div class="segmented-toggle">
+            <button class="segment-option" data-view="ia">Information Architecture</button>
+            <button class="segment-option" data-view="lofi">Lo-Fi Designs</button>
+            <button class="segment-option active" data-view="hifi">Hi-Fi Designs</button>
+            <div class="segment-indicator"></div>
+        </div>
+        <div class="ia-flyout" id="iaFlyout" aria-hidden="true">
+            <button class="mini-control-btn ia-flyout-btn" data-stack="sitemap">Sitemap</button>
+            <button class="mini-control-btn ia-flyout-btn" data-stack="userflows">User Flows</button>
+        </div>
+    </div>
+
+    <!-- Background iframe -->
+    <div class="background-iframe">
+        <div class="loading-animation" id="loadingAnimation">
+            <div class="loading-spinner"></div>
+        </div>
+        <iframe id="caseStudyFrame" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://premieretransportation.com/" allowfullscreen title="background" onload="hideLoadingAnimation()"></iframe>
+        <div class="image-stack" id="imageStack" aria-live="polite" hidden></div>
+    </div>
+
+    <div class="overlay-container active" id="overlayContainer">
+        <button class="back-button" onclick="window.location.href='index.html'">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im05IDExbC00IDRsNCA0bS00LTRoMTFhNCA0IDAgMCAwIDAtOGgtMSIvPjwvc3ZnPg==" alt="Back" class="back-icon">
+            <span>Home</span>
+        </button>
+        <!-- Popup 1: Project Overview -->
+        <div class="popup popup-1" data-index="0">
+            <h2>Case Study: Elevating Luxury Travel for Premiere Transportation</h2>
+            <h3>Project Overview</h3>
+            <p>Premiere Transportation—trusted by U.S. Presidents, Members of Congress, renowned authors, and touring musicians—offers some of the most luxurious coaches on the road. But while their fleet delivered unmatched prestige, their digital presence didn't reflect the sophistication, ease, or exclusivity they were known for. Our project set out to transform their outdated, text-heavy site into a refined, intuitive, luxury-grade experience that showcased their fleet, simplified decision-making, and elevated every touchpoint. The goal was clear: create a digital experience as extraordinary as the journeys Premiere provides.</p>
+        </div>
+
+        <!-- Popup 2: The Challenge -->
+        <div class="popup popup-2" data-index="1">
+            <h2>The Challenge</h2>
+            <p>Premiere needed a full styling rebrand—one that communicated luxury, credibility, and the white-glove experience their clients already received offline. Their previous site made it difficult for users to understand the differences between buses, compare features, or trust alternative options when specific models weren't available. Copy was dense, visuals lacked impact, and the overall experience felt outdated—not the impression you want to give a presidential campaign or bestselling author. The challenge was designing something innovative, elegant, and user-friendly enough to serve a high-stakes, high-expectation audience.</p>
+        </div>
+
+        <!-- Popup 3: The Solution -->
+        <div class="popup popup-3" data-index="2">
+            <h2>The Solution</h2>
+            <p>We crafted a modern, prestige-driven digital experience aligned with the caliber of Premiere's clientele. The new design introduced cinematic visuals, intuitive pathways, and clean content architecture that made exploring the fleet effortless. By simplifying the copy, elevating the imagery, and reorganizing navigation, we created a site that radiates luxury while showcasing Premiere's expertise working with high-value individuals. Above all, the experience reassures users that no matter which coach they book, they're choosing uncompromising comfort and excellence.</p>
+        </div>
+
+        <!-- Popup 4: How We Did It (Part 1) -->
+        <div class="popup popup-4" data-index="3">
+            <h2>How We Did It (Part 1)</h2>
+            <p>We began by analyzing the old site, identifying friction points and gaps in user confidence. The previous interface relied heavily on text, lacked visual hierarchy, and made it difficult for users to understand the fleet at a glance. We introduced a clean, intuitive layout that makes each coach easy to explore visually—no scanning through walls of text. By reorganizing the structure and elevating the visual identity, users now understand Premiere's value in seconds, not minutes. The result: an interface that feels as refined as the interiors of the buses themselves.</p>
+        </div>
+
+        <!-- Popup 5: How We Did It (Part 2) -->
+        <div class="popup popup-5" data-index="4">
+            <h2>How We Did It (Part 2)</h2>
+            <p>Next, we modernized the entire UI/UX using luxury-inspired principles: generous white space, elegant typography, and photography that tells the story of comfort, productivity, and prestige. We streamlined the fleet experience with clean comparison cards, simplified feature lists, and mobile-first navigation for travelers on the go. We also refined the content strategy, replacing jargon-heavy descriptions with concise, confidence-building copy. Every design choice—from button sizing to micro-interactions—reinforced trust, clarity, and a sense of effortless luxury.</p>
+        </div>
+
+        <!-- Popup 6: The Results -->
+        <div class="popup popup-6" data-index="5">
+            <h2>The Result</h2>
+            <p>The redesigned premiereTransportation.com is a polished, intuitive, and mobile-optimized experience that feels unmistakably luxurious. Users can now browse the fleet with ease, quickly compare features, and feel confident booking any available coach. The UI/UX is modern and visually elevated, with an interface that communicates professionalism, prestige, and trust. The experience aligns perfectly with Premiere's reputation and delivers a digital presence worthy of its elite clientele.</p>
+            <p><strong>Key Results:</strong></p>
+            <ul>
+                <li>A modern, luxury-focused UI/UX</li>
+                <li>Enhanced mobile and desktop navigation</li>
+                <li>Simplified fleet comparison experience</li>
+                <li>Elevated visuals and brand storytelling</li>
+                <li>High-end UX that communicates trust and sophistication</li>
+            </ul>
+        </div>
+
+        <!-- Popup 7: Wrapping Up -->
+        <div class="popup popup-7" data-index="6">
+            <h2>Wrapping Up</h2>
+            <p>Through innovative design, refined content strategy, and a renewed focus on prestige and usability, we transformed Premiere Transportation's site into a best-in-class luxury travel experience. The new digital presence not only showcases the fleet beautifully—it sets a new standard for how high-end transportation brands communicate online. The journey now mirrors the service: seamless, elegant, and unforgettable.</p>
+        </div>
+
+        <div class="control-bar">
+            <div class="toggle-container">
+                <div class="toggle-label" id="toggleLabel">Hide Overview</div>
+                <button class="toggle-overlay active" id="toggleBtn">
+                    <div class="toggle-slider">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xNCAxMmMtMS4wOTUgMC0yLS45MDUtMi0yYzAtLjM1NC4xMDMtLjY4My4yNjgtLjk3M0MxMi4xNzggOS4wMiAxMi4wOTIgOSAxMiA5YTMuMDIgMy4wMiAwIDAgMC0zIDNjMCAxLjY0MiAxLjM1OCAzIDMgM3MzLTEuMzU4IDMtM2MwLS4wOTItLjAyLS4xNzgtLjAyNy0uMjY4Yy0uMjkuMTY1LS42MTkuMjY4LS45NzMuMjY4Ii8+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTIgNWMtNy42MzMgMC05LjkyNyA2LjYxNy05Ljk0OCA2LjY4NEwxLjk0NiAxMmwuMTA1LjMxNkMyLjA3MyAxMi4zODMgNC4zNjcgMTkgMTIgMTlzOS45MjctNi42MTcgOS45NDgtNi42ODRsLjEwNi0uMzE2bC0uMTA1LS4zMTZDMjEuOTI3IDExLjYxNyAxOS42MzMgNSAxMiA1bTAgMTJjLTUuMzUxIDAtNy40MjQtMy44NDYtNy45MjYtNUM0LjU3OCAxMC44NDIgNi42NTIgNyAxMiA3YzUuMzUxIDAgNy40MjQgMy44NDYgNy45MjYgNWMtLjUwNCAxLjE1OC0yLjU3OCA1LTcuOTI2IDUiLz48L3N2Zz4=" alt="Show" class="toggle-icon" id="showIcon">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0yIDUuMjdMMy4yOCA0TDIwIDIwLjcyTDE4LjczIDIybC0zLjA4LTMuMDhjLTEuMTUuMzgtMi4zNy41OC0zLjY1LjU4Yy01IDAtOS4yNy0zLjExLTExLTcuNWMuNjktMS43NiAxLjc5LTMuMzEgMy4xOS00LjU0ek0xMiA5YTMgMyAwIDAgMSAzIDNhMyAzIDAgMCAxLS4xNyAxTDExIDkuMTdBMyAzIDAgMCAxIDEyIDltMC00LjVjNSAwIDkuMjcgMy4xMSAxMSA3LjVhMTEuOCAxMS44IDAgMCAxLTQgNS4xOWwtMS40Mi0xLjQzQTkuODYgOS44NiAwIDAgMCAyMC44MiAxMkE5LjgyIDkuODIgMCAwIDAgMTIgNi41Yy0xLjA5IDAtMi4xNi4xOC0zLjE2LjVMNy4zIDUuNDdjMS40NC0uNjIgMy4wMy0uOTcgNC43LS45N00zLjE4IDEyQTkuODIgOS44MiAwIDAgMCAxMiAxNy41Yy42OSAwIDEuMzctLjA3IDItLjIxTDExLjcyIDE1QTMuMDY0IDMuMDY0IDAgMCAxIDkgMTIuMjhMNS42IDguODdjLS45OS44NS0xLjgyIDEuOTEtMi40MiAzLjEzIi8+PC9zdmc+" alt="Hide" class="toggle-icon" id="hideIcon" style="display: none;">
+                    </div>
+                </button>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-btn nav-btn-prev">Previous</button>
+                <button class="nav-btn nav-btn-next">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spacer content for scrolling -->
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <script src="premiere.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+</body>
+</body>
+</html>

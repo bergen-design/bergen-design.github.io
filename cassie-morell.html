@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassie Morell - UI/UX Design Case Study</title>
+    <meta name="description" content="UI/UX design case study for Cassie Morell's personal website">
+    <meta name="keywords" content="UI/UX design, personal website, user experience, user interface, case study">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="cassie-morell.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+
+    <div class="mini-control-island">
+        <div class="segmented-toggle">
+            <button class="segment-option" data-view="ia">Branding</button>
+            <button class="segment-option" data-view="lofi">Lo-Fi Designs</button>
+            <button class="segment-option active" data-view="hifi">Hi-Fi Designs</button>
+            <div class="segment-indicator"></div>
+        </div>
+        <div class="ia-flyout" id="iaFlyout" aria-hidden="true">
+            <button class="mini-control-btn ia-flyout-btn" data-stack="sitemap">Sitemap</button>
+            <button class="mini-control-btn ia-flyout-btn" data-stack="userflows">User Flows</button>
+        </div>
+    </div>
+
+    <!-- Background iframe -->
+    <div class="background-iframe">
+        <div class="loading-animation" id="loadingAnimation">
+            <div class="loading-spinner"></div>
+        </div>
+        <iframe id="caseStudyFrame" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="https://cassiemorell.com/" allowfullscreen title="Cassie Morell Website" onload="hideLoadingAnimation()"></iframe>
+        <div class="image-stack" id="imageStack" aria-live="polite" hidden></div>
+    </div>
+
+    <div class="overlay-container active" id="overlayContainer">
+        <button class="back-button" onclick="window.location.href='index.html'">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im05IDExbC00IDRsNCA0bS00LTRoMTFhNCA0IDAgMCAwIDAtOGgtMSIvPjwvc3ZnPg==" alt="Back" class="back-icon">
+            <span>Home</span>
+        </button>
+        <!-- Popup 1: Project Overview -->
+        <div class="popup popup-1" data-index="0">
+            <h2>Project Overview</h2>
+            <p><strong>Category:</strong> Branding · Web Design · UX Copywriting</p>
+            <p><strong>Software:</strong> Figma, Adobe CC</p>
+            <p><strong>Services:</strong> Brand Strategy, UI/UX Design, Bilingual Copywriting</p>
+            <p>Maa-min is a ministry helping young believers in Israel (13-25) navigate sex, gender, and identity with biblical truth and grace. I was tasked with creating a complete brand identity and website that would make these sensitive topics approachable and engaging for youth.</p>
+        </div>
+
+        <!-- Popup 2: The Problem -->
+        <div class="popup popup-2" data-index="1">
+            <h2>The Challenge</h2>
+            <p>Creating a safe, engaging space for Israeli youth to discuss sensitive topics required overcoming several key challenges:</p>
+            <ul>
+                <li><strong>Sensitive Subject Matter:</strong> Sexuality and faith are often taboo topics that can easily feel heavy or preachy.</li>
+                <li><strong>Youth Engagement:</strong> The 13-25 age group has a low tolerance for corporate or academic language.</li>
+                <li><strong>Cultural Nuance:</strong> Needed to work in both Hebrew and English while maintaining a consistent tone.</li>
+                <li><strong>Trust Building:</strong> Establishing credibility on deeply personal topics with a skeptical young audience.</li>
+                <li><strong>No Existing Brand:</strong> Started from scratch with no established visual identity or messaging framework.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 3: The Solution -->
+        <div class="popup popup-3" data-index="2">
+            <h2>The Solution</h2>
+            <p>I developed a complete brand ecosystem that balanced truth with grace, creating a safe space for open conversation:</p>
+            <ul>
+                <li><strong>Youth-Centric Brand Voice:</strong> Developed a warm, conversational tone that speaks to teens in their language.</li>
+                <li><strong>Visual Identity:</strong> Created a clean, modern aesthetic with soft colors and approachable typography.</li>
+                <li><strong>Bilingual Strategy:</strong> Crafted messaging that works naturally in both Hebrew and English.</li>
+                <li><strong>No-Shame Philosophy:</strong> Built the brand around core messages like "No Shame, Lots of Grace."</li>
+            </ul>
+        </div>
+
+        <!-- Popup 4: Key Features -->
+        <div class="popup popup-4" data-index="3">
+            <h2>Key Features</h2>
+            <p>The final implementation included several strategic elements:</p>
+            <ul>
+                <li><strong>Question-Based Content:</strong> Sections start with engaging questions to invite curiosity.</li>
+                <li><strong>Bite-Sized Information:</strong> Content broken into scannable chunks for better engagement.</li>
+                <li><strong>Safe Space Indicators:</strong> Visual and written cues that this is a judgment-free zone.</li>
+                <li><strong>Youth-First Navigation:</strong> Simple, intuitive interface that works across devices.</li>
+                <li><strong>Bilingual Support:</strong> Seamless language toggling between Hebrew and English.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 5: Design Approach -->
+        <div class="popup popup-5" data-index="4">
+            <h2>Design Approach</h2>
+            <p>The visual language was carefully crafted to support the brand's mission:</p>
+            <ul>
+                <li><strong>Color Psychology:</strong> Soft blues and warm neutrals create a calming, trustworthy environment.</li>
+                <li><strong>Typography:</strong> Clean, modern fonts that are highly readable across devices.</li>
+                <li><strong>Iconography:</strong> Simple, friendly icons that guide users without overwhelming.</li>
+                <li><strong>Whitespace:</strong> Generous spacing to prevent content from feeling heavy or overwhelming.</li>
+                <li><strong>Mobile-First:</strong> Designed for the way young people browse - primarily on phones.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 6: The Results -->
+        <div class="popup popup-6" data-index="5">
+            <h2>The Results</h2>
+            <p>The new brand and website successfully created a welcoming space for young people to explore sensitive topics:</p>
+            <ul>
+                <li><strong>Youth Engagement:</strong> Content that resonates with the target demographic while maintaining biblical truth.</li>
+                <li><strong>Clear Communication:</strong> Complex topics made accessible without being simplistic.</li>
+                <li><strong>Brand Cohesion:</strong> Visual and verbal identity that works across all touchpoints.</li>
+                <li><strong>Cultural Relevance:</strong> Authentic voice that connects with Israeli youth culture.</li>
+                <li><strong>Safe Environment:</strong> Design and copy that encourages open, shame-free conversation.</li>
+            </ul>
+        </div>
+
+        <!-- Popup 7: Wrapping Up -->
+        <div class="popup popup-7" data-index="6">
+            <h2>Wrapping Up</h2>
+            <p>This project demonstrates the power of thoughtful design in creating safe spaces for difficult conversations. By combining youth-friendly aesthetics with biblically-grounded content, we built a brand that's both relevant and respectful.</p>
+            <p>The success of Maa-min shows how strategic branding and UX can bridge generational and cultural gaps, making profound truths accessible to a new generation.</p>
+            <p><em>This engagement was completed under a white label agreement</em></p>
+        </div>
+
+        <div class="control-bar">
+            <div class="toggle-container">
+                <div class="toggle-label" id="toggleLabel">Hide Overview</div>
+                <button class="toggle-overlay active" id="toggleBtn">
+                    <div class="toggle-slider">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xNCAxMmMtMS4wOTUgMC0yLS45MDUtMi0yYzAtLjM1NC4xMDMtLjY4My4yNjgtLjk3M0MxMi4xNzggOS4wMiAxMi4wOTIgOSAxMiA5YTMuMDIgMy4wMiAwIDAgMC0zIDNjMCAxLjY0MiAxLjM1OCAzIDMgM3MzLTEuMzU4IDMtM2MwLS4wOTItLjAyLS4xNzgtLjAyNy0uMjY4Yy0uMjkuMTY1LS42MTkuMjY4LS45NzMuMjY4Ii8+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTIgNWMtNy42MzMgMC05LjkyNyA2LjYxNy05Ljk0OCA2LjY4NEwxLjk0NiAxMmwuMTA1LjMxNkMyLjA3MyAxMi4zODMgNC4zNjcgMTkgMTIgMTlzOS45MjctNi42MTcgOS45NDgtNi42ODRsLjEwNi0uMzE2bC0uMTA1LS4zMTZDMjEuOTI3IDExLjYxNyAxOS42MzMgNSAxMiA1bTAgMTJjLTUuMzUxIDAtNy40MjQtMy44NDYtNy45MjYtNUM0LjU3OCAxMC44NDIgNi42NTIgNyAxMiA3YzUuMzUxIDAgNy40MjQgMy44NDYgNy45MjYgNWMtLjUwNCAxLjE1OC0yLjU3OCA1LTcuOTI2IDUiLz48L3N2Zz4=" alt="Show" class="toggle-icon" id="showIcon">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0yIDUuMjdMMy4yOCA0TDIwIDIwLjcyTDE4LjczIDIybC0zLjA4LTMuMDhjLTEuMTUuMzgtMi4zNy41OC0zLjY1LjU4Yy01IDAtOS4yNy0zLjExLTExLTcuNWMuNjktMS43NiAxLjc5LTMuMzEgMy4xOS00LjU0ek0xMiA5YTMgMyAwIDAgMSAzIDNhMyAzIDAgMCAxLS4xNyAxTDExIDkuMTdBMyAzIDAgMCAxIDEyIDltMC00LjVjNSAwIDkuMjcgMy4xMSAxMSA3LjVhMTEuOCAxMS44IDAgMCAxLTQgNS4xOWwtMS40Mi0xLjQzQTkuODYgOS44NiAwIDAgMCAyMC44MiAxMkE5LjgyIDkuODIgMCAwIDAgMTIgNi41Yy0xLjA5IDAtMi4xNi4xOC0zLjE2LjVMNy4zIDUuNDdjMS40NC0uNjIgMy4wMy0uOTcgNC43LS45N00zLjE4IDEyQTkuODIgOS44MiAwIDAgMCAxMiAxNy41Yy42OSAwIDEuMzctLjA3IDItLjIxTDExLjcyIDE1QTMuMDY0IDMuMDY0IDAgMCAxIDkgMTIuMjhMNS42IDguODdjLS45OS44NS0xLjgyIDEuOTEtMi40MiAzLjEzIi8+PC9zdmc+" alt="Hide" class="toggle-icon" id="hideIcon" style="display: none;">
+                    </div>
+                </button>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-btn" id="prevPopup">Previous</button>
+                <button class="nav-btn" id="nextPopup">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spacer content for scrolling -->
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <script src="cassie-morell.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+</body>
+</html>
