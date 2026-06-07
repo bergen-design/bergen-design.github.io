@@ -9,32 +9,20 @@ const header = document.getElementById('change');
 const backButton = document.querySelector('.back-button');
 const segmentOptions = document.querySelectorAll('.segment-option[data-view]');
 const segmentIndicator = document.querySelector('.segment-indicator');
-const iaFlyout = document.getElementById('iaFlyout');
-const iaFlyoutButtons = document.querySelectorAll('.ia-flyout-btn');
 const caseStudyFrame = document.getElementById('caseStudyFrame');
 const imageStack = document.getElementById('imageStack');
 
 const VIEW_URLS = {
     hifi: 'https://brianacollins.net/',
-    lofi: 'https://embed.figma.com/proto/zHyVeZMFI9bBQIIuMTicKp/LEC-inc.?page-id=55%3A345&node-id=595-5835&p=f&viewport=-782%2C513%2C0.06&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=595%3A4950&embed-host=share',
-    hifi_mobile: 'https://brianacollins.net/',
-    lofi_mobile: 'https://embed.figma.com/proto/zHyVeZMFI9bBQIIuMTicKp/LEC-inc.?page-id=144%3A390&node-id=174-7563&viewport=661%2C1002%2C0.14&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=174%3A7563&show-proto-sidebar=1&embed-host=share'
+    hifi_mobile: 'https://brianacollins.net/'
 };
 
-const IA_IMAGE_MAP = {
-    sitemap: [
-        { src: 'clean-sitemap.png', alt: 'Clean sitemap visualization' },
-        { src: 'site-structure.png', alt: 'Site structure diagram' }
-    ],
-    userflows: [
-        { src: '3d-model-flow.png', alt: '3D model user flow' },
-        { src: 'book-user-flow.png', alt: 'Booking user flow' }
-    ]
-};
 
 let currentPopupIndex = 0; // Initialize with first popup visible
 let overlayVisible = true;
 let manualNavigation = false;
+let currentImageArray = [];
+let currentImageIndex = 0;
 
 // Initialize
 function init() {
@@ -204,31 +192,11 @@ function setupMiniControls() {
             
             // Update indicator position
             updateIndicator(option);
-            
-            if (view === 'ia') {
-                toggleFlyout();
-                return;
-            }
 
             if (VIEW_URLS[view]) {
-                hideFlyout();
                 showIframe(VIEW_URLS[view]);
             }
         });
-    });
-
-    iaFlyoutButtons.forEach((button) => {
-        button.addEventListener('click', () => {
-            const stack = button.dataset.stack;
-            if (!stack || !IA_IMAGE_MAP[stack]) return;
-            showImageStack(IA_IMAGE_MAP[stack]);
-        });
-    });
-
-    document.addEventListener('click', (event) => {
-        if (!iaFlyout) return;
-        if (iaFlyout.contains(event.target) || event.target.closest('.segment-option[data-view="ia"]')) return;
-        hideFlyout();
     });
 }
 
@@ -243,23 +211,6 @@ function updateIndicator(option) {
     
     segmentIndicator.style.transform = `translateX(${left}px)`;
     segmentIndicator.style.width = `${width}px`;
-    
-    // Update IA flyout position if IA is selected
-    if (option.dataset.view === 'ia' && iaFlyout) {
-        iaFlyout.style.left = `${left}px`;
-        iaFlyout.style.width = `${width}px`;
-    }
-}
-
-function toggleFlyout() {
-    if (!iaFlyout) return;
-    const expanded = iaFlyout.getAttribute('aria-hidden') === 'false';
-    iaFlyout.setAttribute('aria-hidden', expanded ? 'true' : 'false');
-}
-
-function hideFlyout() {
-    if (!iaFlyout) return;
-    iaFlyout.setAttribute('aria-hidden', 'true');
 }
 
 let loadingTimeout = null;
@@ -299,7 +250,6 @@ function showIframe(url) {
     let finalUrl = url;
     if (isMobile) {
         if (url === VIEW_URLS.hifi) finalUrl = VIEW_URLS.hifi_mobile;
-        else if (url === VIEW_URLS.lofi) finalUrl = VIEW_URLS.lofi_mobile;
     }
     
     caseStudyFrame.hidden = false;
@@ -317,30 +267,94 @@ function showImageStack(images) {
     hideLoadingAnimation();
     
     const imageMarkup = images
-        .map(({ src, alt }) => `<img src="${src}" alt="${alt}" class="stack-image clickable">`)
+        .map(({ src, alt }, index) => `<img src="${src}" alt="${alt}" class="stack-image clickable" data-index="${index}">`)
         .join('');
 
     imageStack.innerHTML = imageMarkup;
     imageStack.hidden = false;
     caseStudyFrame.hidden = true;
     
+    // Store current image array for modal navigation
+    currentImageArray = images;
+    
     // Add click handlers for images
     imageStack.querySelectorAll('.stack-image').forEach(img => {
-        img.addEventListener('click', () => showImageModal(img.src, img.alt));
+        img.addEventListener('click', () => {
+            const index = parseInt(img.dataset.index);
+            showImageModal(img.src, img.alt, index);
+        });
     });
 }
 
-function showImageModal(src, alt) {
+function showImageModal(src, alt, index = 0) {
+    // Set current image index
+    currentImageIndex = index;
+    
     // Create modal overlay
     const modal = document.createElement('div');
     modal.className = 'image-modal';
     modal.innerHTML = `
         <div class="modal-overlay" onclick="this.parentElement.remove()"></div>
+        <button class="modal-nav modal-nav-prev" onclick="navigateModalImage(-1)">‹</button>
         <img src="${src}" alt="${alt}" class="modal-image">
+        <button class="modal-nav modal-nav-next" onclick="navigateModalImage(1)">›</button>
         <button class="modal-close" onclick="this.parentElement.remove()">×</button>
     `;
     document.body.appendChild(modal);
     modal.classList.add('active');
+    
+    // Update navigation button states
+    updateModalNavButtons(modal);
+    
+    // Add keyboard navigation
+    modal.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            navigateModalImage(-1);
+        } else if (e.key === 'ArrowRight') {
+            navigateModalImage(1);
+        } else if (e.key === 'Escape') {
+            modal.remove();
+        }
+    });
+    
+    // Make modal focusable for keyboard events
+    modal.tabIndex = 0;
+    modal.focus();
+}
+
+function navigateModalImage(direction) {
+    const modal = document.querySelector('.image-modal.active');
+    if (!modal || currentImageArray.length === 0) return;
+    
+    const newIndex = currentImageIndex + direction;
+    
+    // Check bounds
+    if (newIndex < 0 || newIndex >= currentImageArray.length) return;
+    
+    // Update current index
+    currentImageIndex = newIndex;
+    
+    // Update modal image
+    const modalImage = modal.querySelector('.modal-image');
+    const imageData = currentImageArray[currentImageIndex];
+    modalImage.src = imageData.src;
+    modalImage.alt = imageData.alt;
+    
+    // Update navigation button states
+    updateModalNavButtons(modal);
+}
+
+function updateModalNavButtons(modal) {
+    const prevBtn = modal.querySelector('.modal-nav-prev');
+    const nextBtn = modal.querySelector('.modal-nav-next');
+    
+    if (prevBtn) {
+        prevBtn.disabled = currentImageIndex === 0;
+    }
+    
+    if (nextBtn) {
+        nextBtn.disabled = currentImageIndex === currentImageArray.length - 1;
+    }
 }
 
 function setupHeaderScrollBehavior() {

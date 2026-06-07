@@ -34,6 +34,8 @@ const IA_IMAGE_MAP = {
 let currentPopupIndex = 0; // Initialize with first popup visible
 let overlayVisible = true;
 let manualNavigation = false;
+let currentImageArray = [];
+let currentImageIndex = 0;
 
 // Initialize
 function init() {
@@ -339,30 +341,94 @@ function showImageStack(images) {
     hideLoadingAnimation();
     
     const imageMarkup = images
-        .map(({ src, alt }) => `<img src="${src}" alt="${alt}" class="stack-image clickable">`)
+        .map(({ src, alt }, index) => `<img src="${src}" alt="${alt}" class="stack-image clickable" data-index="${index}">`)
         .join('');
 
     imageStack.innerHTML = imageMarkup;
     imageStack.hidden = false;
     caseStudyFrame.hidden = true;
     
+    // Store current image array for modal navigation
+    currentImageArray = images;
+    
     // Add click handlers for images
     imageStack.querySelectorAll('.stack-image').forEach(img => {
-        img.addEventListener('click', () => showImageModal(img.src, img.alt));
+        img.addEventListener('click', () => {
+            const index = parseInt(img.dataset.index);
+            showImageModal(img.src, img.alt, index);
+        });
     });
 }
 
-function showImageModal(src, alt) {
+function showImageModal(src, alt, index = 0) {
+    // Set current image index
+    currentImageIndex = index;
+    
     // Create modal overlay
     const modal = document.createElement('div');
     modal.className = 'image-modal';
     modal.innerHTML = `
         <div class="modal-overlay" onclick="this.parentElement.remove()"></div>
+        <button class="modal-nav modal-nav-prev" onclick="navigateModalImage(-1)">‹</button>
         <img src="${src}" alt="${alt}" class="modal-image">
+        <button class="modal-nav modal-nav-next" onclick="navigateModalImage(1)">›</button>
         <button class="modal-close" onclick="this.parentElement.remove()">×</button>
     `;
     document.body.appendChild(modal);
     modal.classList.add('active');
+    
+    // Update navigation button states
+    updateModalNavButtons(modal);
+    
+    // Add keyboard navigation
+    modal.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            navigateModalImage(-1);
+        } else if (e.key === 'ArrowRight') {
+            navigateModalImage(1);
+        } else if (e.key === 'Escape') {
+            modal.remove();
+        }
+    });
+    
+    // Make modal focusable for keyboard events
+    modal.tabIndex = 0;
+    modal.focus();
+}
+
+function navigateModalImage(direction) {
+    const modal = document.querySelector('.image-modal.active');
+    if (!modal || currentImageArray.length === 0) return;
+    
+    const newIndex = currentImageIndex + direction;
+    
+    // Check bounds
+    if (newIndex < 0 || newIndex >= currentImageArray.length) return;
+    
+    // Update current index
+    currentImageIndex = newIndex;
+    
+    // Update modal image
+    const modalImage = modal.querySelector('.modal-image');
+    const imageData = currentImageArray[currentImageIndex];
+    modalImage.src = imageData.src;
+    modalImage.alt = imageData.alt;
+    
+    // Update navigation button states
+    updateModalNavButtons(modal);
+}
+
+function updateModalNavButtons(modal) {
+    const prevBtn = modal.querySelector('.modal-nav-prev');
+    const nextBtn = modal.querySelector('.modal-nav-next');
+    
+    if (prevBtn) {
+        prevBtn.disabled = currentImageIndex === 0;
+    }
+    
+    if (nextBtn) {
+        nextBtn.disabled = currentImageIndex === currentImageArray.length - 1;
+    }
 }
 
 function setupHeaderScrollBehavior() {

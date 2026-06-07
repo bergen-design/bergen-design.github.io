@@ -289,13 +289,14 @@ ul {
 
 
 .proj {
-  font-size: 320px;
-  overflow: hidden;
+  font-size: clamp(5rem,18vw, 35rem);
+  overflow: visible;
   font-family: var(--font-family-avenir-heavy);
   font-weight:bolder;
   margin: 0px;
   text-decoration: none;
-  max-width: 100vw;
+  max-width: 100%;
+  line-height: 0.95;
   background: rgba(213, 213, 213, 0.6);
     backdrop-filter: blur(15px) saturate(180%);
   /* Mask the color to the text, and remove the rest  */
@@ -304,13 +305,34 @@ ul {
 -webkit-text-fill-color: transparent;
 }
 .proj-small-1{
-font-size: 180px;
+font-size: clamp(2rem, 12vw, 20rem);
+overflow: visible;
+  font-family: var(--font-family-avenir-heavy);
+  font-weight:bolder;
+  margin: 0px;
+  text-decoration: none;
+  max-width: 100%;
+  line-height: 0.95;
 }
 .proj-small-2{
-  font-size: 250px;
+  font-size: clamp(2.5rem, 15vw, 25rem);
+  overflow: visible;
+  font-family: var(--font-family-avenir-heavy);
+  font-weight:bolder;
+  margin: 0px;
+  text-decoration: none;
+  max-width: 100%;
+  line-height: 0.95;
 }
 .proj-small-3{
-  font-size: 270px;
+  font-size: clamp(3rem, 17vw, 30rem);
+  overflow: visible;
+  font-family: var(--font-family-avenir-heavy);
+  font-weight:bolder;
+  margin: 0px;
+  text-decoration: none;
+  max-width: 100%;
+  line-height: 0.95;
 }
 /*ADDED for PROJECT DESCRIPTIONS 2025*/
 .proj-desc{
@@ -340,10 +362,46 @@ transition-duration: 1s;
 
 }
 .recent-proj{
-  padding: 100px 50px;
-  
-
+  padding: 100px clamp(12px, 2vw, 32px);
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
+
+.recent-proj .proj {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.recent-proj .proj a {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.recent-proj h2[class*="proj"] {
+  max-width: 100%;
+  overflow: visible;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+/* Compound titles: scale span relative to parent h2 so line fits viewport */
+.recent-proj h2.proj-small-1 .proj-small-3 {
+  font-size: 1.15em;
+}
+.recent-proj h2.proj-small-3 .proj-small-2 {
+  font-size: 0.82em;
+}
+.recent-proj h2 .proj-small-1,
+.recent-proj h2 .proj-small-2,
+.recent-proj h2 .proj-small-3 {
+  display: inline;
+}
+
 .recent-proj:hover {
 color: rgb(152, 151, 151);
 }
@@ -447,7 +505,7 @@ label #res-sign-one, label #res-sign-two{
     width: 100vw;
     height: 100vh;
     text-align: center;
-    background: white;
+    background: #0000001a;
     top: 50px;
     right: -120%;
     text-align: left;
@@ -480,57 +538,33 @@ label #res-sign-one, label #res-sign-two{
     display: block;
     
   }
-  .proj{
-    font-size: 90px;
-    padding-bottom: 30px;
+  /* Recent projects: one fluid size, natural wraps, max ~2 lines at full width */
+  .recent-proj h2[class*="proj"] {
+    font-size: clamp(1.35rem, 7.25vw, 2.125rem) !important;
+    line-height: 1.08;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 4px 1.25rem;
+    margin: 0;
+    box-sizing: border-box;
     color: white;
     transition: all 0.3s ease;
-    overflow: hidden;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    max-width: 100vw;
-    box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
+    overflow: visible;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+    letter-spacing: -0.02em;
   }
-  .proj-small-1{
-    font-size: 50px;
-    padding-bottom: 30px;
-    color: white;
-    transition: all 0.3s ease;
-    overflow: hidden;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    max-width: 100vw;
-    box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
+
+  .recent-proj h2 [class*="proj-small"],
+  .recent-proj h2 span:not([class]) {
+    font-size: inherit !important;
+    display: inline;
   }
-  .proj-small-2{
-    font-size: 70px;
-    padding-bottom: 30px;
-    color: white;
-    transition: all 0.3s ease;
-    overflow: hidden;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    max-width: 100vw;
-    box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-  .proj-small-3{
-    font-size: 70px;
-    padding-bottom: 30px;
-    color: white;
-    transition: all 0.3s ease;
-    overflow: hidden;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    max-width: 100vw;
-    box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
+
+  .recent-proj h2.proj-small-1 .proj-small-3,
+  .recent-proj h2.proj-small-3 .proj-small-2 {
+    font-size: inherit !important;
   }
   /* Active state when centered in viewport on mobile */
   .proj.proj-centered,
@@ -546,8 +580,11 @@ label #res-sign-one, label #res-sign-two{
     color: transparent !important;
   }
   .recent-proj{
-    padding: 8px;
+    padding: 8px 12px;
     color: #6e6c6c;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
   
   /* Contact form mobile styles */

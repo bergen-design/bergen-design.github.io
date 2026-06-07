@@ -16,25 +16,58 @@ const imageStack = document.getElementById('imageStack');
 
 const VIEW_URLS = {
     hifi: 'https://maa-min.com/',
-    lofi: 'https://embed.figma.com/proto/zHyVeZMFI9bBQIIuMTicKp/LEC-inc.?page-id=55%3A345&node-id=595-5835&p=f&viewport=-782%2C513%2C0.06&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=595%3A4950&embed-host=share',
+    lofi: 'https://embed.figma.com/proto/DeLeiLAR6oTkCJKtRwQWYs/Proposal-for-maa-min.com?node-id=504-4792&viewport=367%2C175%2C0.07&scaling=scale-down&content-scaling=fixed&page-id=126%3A1148&embed-host=share',
     hifi_mobile: 'https://maa-min.com/',
-    lofi_mobile: 'https://embed.figma.com/proto/zHyVeZMFI9bBQIIuMTicKp/LEC-inc.?page-id=144%3A390&node-id=174-7563&viewport=661%2C1002%2C0.14&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=174%3A7563&show-proto-sidebar=1&embed-host=share'
+    lofi_mobile: 'https://embed.figma.com/proto/DeLeiLAR6oTkCJKtRwQWYs/Proposal-for-maa-min.com?node-id=504-4792&viewport=367%2C175%2C0.07&scaling=scale-down&content-scaling=fixed&page-id=126%3A1148&embed-host=share'
 };
 
 const IA_IMAGE_MAP = {
     sitemap: [
-        { src: 'clean-sitemap.png', alt: 'Clean sitemap visualization' },
-        { src: 'site-structure.png', alt: 'Site structure diagram' }
+        { src: 'img/maa-min/comp-1.png', alt: 'Competitive Analysis Page 1' },
+        { src: 'img/maa-min/comp-2.png', alt: 'Competitive Analysis Page 2' },
+        { src: 'img/maa-min/comp-3.png', alt: 'Competitive Analysis Page 3' },
+        { src: 'img/maa-min/comp-4.png', alt: 'Competitive Analysis Page 4' },
+        { src: 'img/maa-min/comp-5.png', alt: 'Competitive Analysis Page 5' }
     ],
     userflows: [
-        { src: '3d-model-flow.png', alt: '3D model user flow' },
-        { src: 'book-user-flow.png', alt: 'Booking user flow' }
+        { src: 'img/maa-min/brand-1.png', alt: 'brand book Page 1' },
+        { src: 'img/maa-min/brand-2.png', alt: 'brand book Page 2' },
+        { src: 'img/maa-min/brand-3.png', alt: 'brand book Page 3' },
+        { src: 'img/maa-min/brand-4.png', alt: 'brand book Page 4' },
+        { src: 'img/maa-min/brand-5.png', alt: 'brand book Page 5' },
+        { src: 'img/maa-min/brand-6.png', alt: 'brand book Page 6' },
+        { src: 'img/maa-min/brand-7.png', alt: 'brand book Page 7' },
+        { src: 'img/maa-min/brand-8.png', alt: 'brand book Page 8' },
+        { src: 'img/maa-min/brand-9.png', alt: 'brand book Page 9' },
+        { src: 'img/maa-min/brand-10.png', alt: 'brand book Page 10' },
+        { src: 'img/maa-min/brand-11.png', alt: 'brand book Page 11' },
+        { src: 'img/maa-min/brand-12.png', alt: 'brand book Page 12' },
+        { src: 'img/maa-min/brand-13.png', alt: 'brand book Page 13' },
+        { src: 'img/maa-min/brand-14.png', alt: 'brand book Page 14' },
+        { src: 'img/maa-min/brand-15.png', alt: 'brand book Page 15' },
+        { src: 'img/maa-min/brand-16.png', alt: 'brand book Page 16' },
+        { src: 'img/maa-min/brand-17.png', alt: 'brand book Page 17' },
+        { src: 'img/maa-min/brand-18.png', alt: 'brand book Page 18' },
+        { src: 'img/maa-min/brand-19.png', alt: 'brand book Page 19' },
+        { src: 'img/maa-min/brand-20.png', alt: 'brand book Page 20' },
+        { src: 'img/maa-min/brand-21.png', alt: 'brand book Page 21' },
+        { src: 'img/maa-min/brand-22.png', alt: 'brand book Page 22' },
+        { src: 'img/maa-min/brand-23.png', alt: 'brand book Page 23' },
+        { src: 'img/maa-min/brand-24.png', alt: 'brand book Page 24' },
+        { src: 'img/maa-min/brand-25.png', alt: 'brand book Page 25' },
+        { src: 'img/maa-min/brand-26.png', alt: 'brand book Page 26' },
+        { src: 'img/maa-min/brand-27.png', alt: 'brand book Page 27' },
+        { src: 'img/maa-min/brand-28.png', alt: 'brand book Page 28' }
+        
+
     ]
 };
 
 let currentPopupIndex = 0; // Initialize with first popup visible
 let overlayVisible = true;
 let manualNavigation = false;
+let currentImageArray = [];
+let currentImageIndex = 0;
 
 // Initialize
 function init() {
@@ -179,7 +212,16 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Initialize on load
-init();
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+} else {
+    init();
+}
+
+// Ensure loading overlay clears even if iframe onload never fires
+window.addEventListener('load', () => {
+    setTimeout(hideLoadingAnimation, 4000);
+});
 
 function setupMiniControls() {
     if (!segmentOptions.length || !segmentIndicator) return;
@@ -317,30 +359,94 @@ function showImageStack(images) {
     hideLoadingAnimation();
     
     const imageMarkup = images
-        .map(({ src, alt }) => `<img src="${src}" alt="${alt}" class="stack-image clickable">`)
+        .map(({ src, alt }, index) => `<img src="${src}" alt="${alt}" class="stack-image clickable" data-index="${index}">`)
         .join('');
 
     imageStack.innerHTML = imageMarkup;
     imageStack.hidden = false;
     caseStudyFrame.hidden = true;
     
+    // Store current image array for modal navigation
+    currentImageArray = images;
+    
     // Add click handlers for images
     imageStack.querySelectorAll('.stack-image').forEach(img => {
-        img.addEventListener('click', () => showImageModal(img.src, img.alt));
+        img.addEventListener('click', () => {
+            const index = parseInt(img.dataset.index);
+            showImageModal(img.src, img.alt, index);
+        });
     });
 }
 
-function showImageModal(src, alt) {
+function showImageModal(src, alt, index = 0) {
+    // Set current image index
+    currentImageIndex = index;
+    
     // Create modal overlay
     const modal = document.createElement('div');
     modal.className = 'image-modal';
     modal.innerHTML = `
         <div class="modal-overlay" onclick="this.parentElement.remove()"></div>
+        <button class="modal-nav modal-nav-prev" onclick="navigateModalImage(-1)">‹</button>
         <img src="${src}" alt="${alt}" class="modal-image">
+        <button class="modal-nav modal-nav-next" onclick="navigateModalImage(1)">›</button>
         <button class="modal-close" onclick="this.parentElement.remove()">×</button>
     `;
     document.body.appendChild(modal);
     modal.classList.add('active');
+    
+    // Update navigation button states
+    updateModalNavButtons(modal);
+    
+    // Add keyboard navigation
+    modal.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            navigateModalImage(-1);
+        } else if (e.key === 'ArrowRight') {
+            navigateModalImage(1);
+        } else if (e.key === 'Escape') {
+            modal.remove();
+        }
+    });
+    
+    // Make modal focusable for keyboard events
+    modal.tabIndex = 0;
+    modal.focus();
+}
+
+function navigateModalImage(direction) {
+    const modal = document.querySelector('.image-modal.active');
+    if (!modal || currentImageArray.length === 0) return;
+    
+    const newIndex = currentImageIndex + direction;
+    
+    // Check bounds
+    if (newIndex < 0 || newIndex >= currentImageArray.length) return;
+    
+    // Update current index
+    currentImageIndex = newIndex;
+    
+    // Update modal image
+    const modalImage = modal.querySelector('.modal-image');
+    const imageData = currentImageArray[currentImageIndex];
+    modalImage.src = imageData.src;
+    modalImage.alt = imageData.alt;
+    
+    // Update navigation button states
+    updateModalNavButtons(modal);
+}
+
+function updateModalNavButtons(modal) {
+    const prevBtn = modal.querySelector('.modal-nav-prev');
+    const nextBtn = modal.querySelector('.modal-nav-next');
+    
+    if (prevBtn) {
+        prevBtn.disabled = currentImageIndex === 0;
+    }
+    
+    if (nextBtn) {
+        nextBtn.disabled = currentImageIndex === currentImageArray.length - 1;
+    }
 }
 
 function setupHeaderScrollBehavior() {

@@ -94,6 +94,42 @@
     transform: scale(1.1);
 }
 
+.modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: white;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    z-index: 10;
+}
+
+.modal-nav:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.modal-nav:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.modal-nav-prev {
+    left: 20px;
+}
+
+.modal-nav-next {
+    right: 20px;
+}
+
 .mini-control-island {
     position: fixed;
     bottom: calc(8vh - 20px);
@@ -546,12 +582,13 @@ label #res-sign-two {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 24px;
     padding: 4vw;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.05);
+    overflow-y: auto;
 }
 
 .image-stack[hidden] {
@@ -623,12 +660,12 @@ label #res-sign-two {
 }
 
 /* Popup positions */
-.popup-1 { top: 20vh; left: 2%; max-height: 72vh; overflow-y: auto; }
+.popup-1 { top: 12vh; left: 2%; max-height: 72vh; overflow-y: auto; }
 .popup-2 { top: 12vh; left: 2%; max-height: 72vh; overflow-y: auto; }
-.popup-3 { top: 16vh; left: 2%; max-height: 72vh; overflow-y: auto; }
-.popup-4 { top: 18vh; left: 2%; max-height: 72vh; overflow-y: auto; }
-.popup-5 { top: 18vh; left: 2%; max-height: 72vh; overflow-y: auto; }
-.popup-6 { top: 16vh; left: 2%; max-height: 72vh; overflow-y: auto; }
+.popup-3 { top: 12vh; left: 2%; max-height: 72vh; overflow-y: auto; }
+.popup-4 { top: 12vh; left: 2%; max-height: 72vh; overflow-y: auto; }
+.popup-5 { top: 12vh; left: 2%; max-height: 72vh; overflow-y: auto; }
+.popup-6 { top: 45vh; left: 2%; max-height: 72vh; overflow-y: auto; }
 .popup-7 { top: 16vh; left: 2%; max-height: 72vh; overflow-y: auto; }
 
 .toggle-container {

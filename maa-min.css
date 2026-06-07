@@ -1,0 +1,2 @@
+/* Loads styles from css/ — keeps older links to maa-min.css working */
+@import url("css/maa-min.css");
